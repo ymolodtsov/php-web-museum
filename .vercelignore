@@ -1,0 +1,10 @@
+tools/
+.claude/
+node_modules/
+README.md
+exhibits/mybb/
+exhibits/postnuke/
+exhibits/vanilla/
+forums/mybb/
+cms/postnuke/
+forums/vanilla/

@@ -6,13 +6,18 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
 <style>
 .gbempty { border: 1px solid #DEDEDE; background: #FFFFFF; padding: 12px 8px; color: #555555; }
+.gbentry { border: 1px solid #DEDEDE; margin-bottom: 8px; }
+.gbhead { background: #F3F3F3; padding: 4px 8px; font-weight: bold; color: #23466C; border-bottom: 1px solid #DEDEDE; overflow: hidden; }
+.gbhead .gbdate { float: right; font-weight: normal; color: #777777; }
+.gbbody { padding: 8px; white-space: pre-wrap; word-wrap: break-word; }
 .gbform { border: 1px solid #B7B7B7; background: #F3F3F3; padding: 10px; margin-top: 16px; }
 .gbform input[type=text], .gbform textarea { width: 300px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; border: 1px solid #B7B7B7; }
 .gbform input.code { width: 80px; text-transform: uppercase; }
 .gbform textarea { height: 60px; }
 .gbform table td { padding: 3px; vertical-align: top; }
-.gbform canvas { border: 1px solid #B7B7B7; vertical-align: middle; }
+.gbform img.captcha { border: 1px solid #B7B7B7; vertical-align: middle; width: 150px; height: 44px; background: #E4E8EE; }
 .gbform .hint { color: #777777; font-size: 10px; }
+.gbform .trap { position: absolute; left: -9999px; }
 .gbmsg { margin: 0 0 8px 0; padding: 5px 8px; border: 1px solid #B7B7B7; background: #FFFFFF; display: none; }
 .gbmsg.err { border-color: #C0392B; color: #A02018; }
 </style>
@@ -28,13 +33,11 @@
 <div id="navbar">
 <ul>
 <li><a href="../index.html">Home</a></li>
-<li><a href="../cms/index.html">CMS</a></li>
-<li><a href="../forums/index.html">Forums</a></li>
-<li><a href="../other/index.html">Other</a></li>
+<li><a href="../exhibits/index.html">Exhibits</a></li>
 <li><a href="../timeline/index.html">Timeline</a></li>
 <li><a href="../about/index.html">About</a></li>
 <li><a href="../links/index.html">Links</a></li>
-<li><a href="index.html">Guestbook</a></li>
+<li><a href="../guestbook/index.html">Guestbook</a></li>
 </ul>
 </div>
 
@@ -45,9 +48,10 @@
 <div id="content">
 
 <h2>Guestbook</h2>
-<p class="subtitle">0 entries.</p>
+<p class="subtitle" id="gbcount">Loading entries&hellip;</p>
 
-<div class="gbempty">No one has signed the guestbook yet.</div>
+<div id="gbentries"></div>
+<noscript><div class="gbempty">The guestbook needs JavaScript to show and sign entries.</div></noscript>
 
 <div class="gbform">
 <h3>Sign the guestbook</h3>
@@ -55,16 +59,15 @@
 <form id="gbform" action="#" method="get">
 <table>
 <tr><td>Name:</td><td><input type="text" id="gbname" maxlength="40"></td></tr>
-<tr><td>E-mail:</td><td><input type="text" id="gbemail" maxlength="80"> <span class="hint">(not displayed)</span></td></tr>
 <tr><td>Message:</td><td><textarea id="gbtext" maxlength="1000"></textarea></td></tr>
 <tr><td>Code:</td><td>
-<canvas id="gbcaptcha" width="120" height="36"></canvas>
+<img id="gbcaptcha" class="captcha" alt="Confirmation code">
 <a href="#" id="gbnew" class="hint">new code</a><br>
 <input type="text" id="gbcode" class="code" maxlength="5" autocomplete="off">
 <span class="hint">Type the characters shown in the image.</span>
-<noscript><br><span class="hint">Signing the guestbook needs JavaScript.</span></noscript>
+<span class="trap" aria-hidden="true">Homepage: <input type="text" id="gbhome" tabindex="-1" autocomplete="off"></span>
 </td></tr>
-<tr><td></td><td><input type="submit" value="Sign Guestbook"> <input type="reset" value="Clear"></td></tr>
+<tr><td></td><td><input type="submit" id="gbsubmit" value="Sign Guestbook"> <input type="reset" value="Clear"></td></tr>
 </table>
 </form>
 </div>
@@ -74,48 +77,17 @@
 <div id="footer">
 <p>PHP Web Museum &copy; 2026</p>
 <p>Best viewed at 1024&times;768</p>
+<p class="debug">[ Page generated in 0.0003 seconds ] [ 0 Queries ] [ GZIP : On ]</p>
 <p><span class="badge80 xhtml"><span class="l">W3C</span><span class="r">XHTML 1.0</span></span><span class="badge80 css"><span class="l">W3C</span><span class="r">CSS</span></span></p>
 </div>
 
 </div>
 <script>
 (function () {
-	var CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-	var canvas = document.getElementById("gbcaptcha");
-	var ctx = canvas.getContext("2d");
-	var code = "";
-
-	function rand(a, b) { return a + Math.random() * (b - a); }
-
-	function draw() {
-		code = "";
-		for (var i = 0; i < 5; i++) code += CHARS.charAt(Math.floor(Math.random() * CHARS.length));
-		var g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-		g.addColorStop(0, "#E4E8EE");
-		g.addColorStop(1, "#C9D1DC");
-		ctx.fillStyle = g;
-		ctx.fillRect(0, 0, canvas.width, canvas.height);
-		for (var n = 0; n < 160; n++) {
-			ctx.fillStyle = "rgba(35,70,108," + rand(0.1, 0.4) + ")";
-			ctx.fillRect(rand(0, canvas.width), rand(0, canvas.height), 1, 1);
-		}
-		for (var l = 0; l < 4; l++) {
-			ctx.strokeStyle = "rgba(49,90,137," + rand(0.3, 0.6) + ")";
-			ctx.beginPath();
-			ctx.moveTo(rand(0, 20), rand(5, 31));
-			ctx.bezierCurveTo(rand(30, 60), rand(0, 36), rand(60, 90), rand(0, 36), rand(100, 120), rand(5, 31));
-			ctx.stroke();
-		}
-		for (var c = 0; c < code.length; c++) {
-			ctx.save();
-			ctx.translate(14 + c * 21, rand(22, 28));
-			ctx.rotate(rand(-0.35, 0.35));
-			ctx.font = "bold " + Math.round(rand(17, 21)) + "px Verdana, Arial, sans-serif";
-			ctx.fillStyle = ["#23466C", "#315A89", "#4A3A28", "#2F2F2F"][c % 4];
-			ctx.fillText(code.charAt(c), -6, 0);
-			ctx.restore();
-		}
-	}
+	var token = "";
+	var entriesBox = document.getElementById("gbentries");
+	var countLine = document.getElementById("gbcount");
+	var shown = [];
 
 	function show(text, isError) {
 		var box = document.getElementById("gbmsg");
@@ -124,27 +96,88 @@
 		box.style.display = "block";
 	}
 
-	document.getElementById("gbnew").onclick = function () { draw(); return false; };
+	function fmtDate(iso) {
+		var d = new Date(iso);
+		var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()];
+		return ("0" + d.getDate()).slice(-2) + " " + m + " " + d.getFullYear();
+	}
+
+	function render() {
+		entriesBox.innerHTML = "";
+		countLine.textContent = shown.length + (shown.length === 1 ? " entry." : " entries.");
+		if (!shown.length) {
+			var empty = document.createElement("div");
+			empty.className = "gbempty";
+			empty.textContent = "No one has signed the guestbook yet.";
+			entriesBox.appendChild(empty);
+			return;
+		}
+		shown.forEach(function (e) {
+			var box = document.createElement("div"); box.className = "gbentry";
+			var head = document.createElement("div"); head.className = "gbhead";
+			var date = document.createElement("span"); date.className = "gbdate"; date.textContent = fmtDate(e.date);
+			head.appendChild(date);
+			head.appendChild(document.createTextNode(e.name));
+			var body = document.createElement("div"); body.className = "gbbody"; body.textContent = e.message;
+			box.appendChild(head); box.appendChild(body);
+			entriesBox.appendChild(box);
+		});
+	}
+
+	function loadEntries() {
+		fetch("../api/guestbook").then(function (r) { return r.json(); }).then(function (data) {
+			shown = (data.entries || []).sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+			render();
+		}).catch(function () {
+			countLine.textContent = "The guestbook could not be loaded right now.";
+		});
+	}
+
+	function newCode() {
+		document.getElementById("gbcode").value = "";
+		fetch("../api/captcha", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (data) {
+			if (!data.token) throw new Error();
+			token = data.token;
+			document.getElementById("gbcaptcha").src = data.image;
+		}).catch(function () {
+			show("The guestbook is not available right now.", true);
+		});
+	}
+
+	document.getElementById("gbnew").onclick = function () { newCode(); return false; };
 
 	document.getElementById("gbform").onsubmit = function () {
-		var name = document.getElementById("gbname").value.trim();
-		var text = document.getElementById("gbtext").value.trim();
-		var typed = document.getElementById("gbcode").value.trim().toUpperCase();
-		if (!name || !text) {
-			show("Please fill in your name and a message.", true);
-		} else if (typed !== code) {
-			show("The code you entered doesn't match the image. Please try again.", true);
-			document.getElementById("gbcode").value = "";
-			draw();
-		} else {
-			show("Thanks for signing! Entries aren't being saved yet, so yours won't appear here.", false);
-			this.reset();
-			draw();
-		}
+		var form = this, button = document.getElementById("gbsubmit");
+		var payload = {
+			name: document.getElementById("gbname").value,
+			message: document.getElementById("gbtext").value,
+			code: document.getElementById("gbcode").value,
+			homepage: document.getElementById("gbhome").value,
+			token: token
+		};
+		if (!payload.name.trim() || !payload.message.trim()) { show("Please fill in your name and a message.", true); return false; }
+		button.disabled = true;
+		fetch("../api/guestbook", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+			.then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
+			.then(function (res) {
+				if (res.ok) {
+					shown.unshift(res.data.entry);
+					render();
+					form.reset();
+					show("Thanks for signing!", false);
+					newCode();
+				} else {
+					show(res.data.error || "Something went wrong. Please try again.", true);
+					if (res.data.newCode) newCode();
+				}
+			})
+			.catch(function () { show("Something went wrong. Please try again.", true); })
+			.then(function () { button.disabled = false; });
 		return false;
 	};
 
-	draw();
+	loadEntries();
+	newCode();
 })();
 </script>
 </body>

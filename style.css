@@ -311,3 +311,9 @@ ul.plain {
 ul.plain li {
 	margin-bottom: 3px;
 }
+
+#footer p.debug {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	color: #999999;
+}

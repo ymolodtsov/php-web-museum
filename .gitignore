@@ -1,4 +1,9 @@
+*.pyc
 .DS_Store
 .claude/
+.env*
+.env*.local
+.vercel
+.vercel/
 __pycache__/
-*.pyc
+node_modules/

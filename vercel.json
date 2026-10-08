@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "/exhibits/oscommerce/(.*).html",
+      "headers": [{ "key": "Content-Type", "value": "text/html; charset=iso-8859-1" }]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Aperture Photography Community | Simple Machines Forum 1.1.3 | 21 Jul 2007 |
 | /dev/null | PunBB 1.2.10 | 15 Jan 2006 |
 | Open Source Planet | PHP-Nuke 7.1 | 14 Mar 2004 |
-| Riverside Linux User Group | Mambo 4.5 | 2004 |
+| Riverside Linux User Group | Mambo 4.5.1a (solarflare) | 14 Oct 2004 |
 | Orbital Design Studio | Joomla 1.5.3 | 9 Jun 2008 |
 | Open Computing History Project | Drupal 6.14 | 3 Nov 2009 |
 | signal & noise | WordPress 2.2.1 (Kubrick) | 2 Aug 2007 |
@@ -26,7 +26,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Wanderlens Travel Gallery | Coppermine 1.3.3 | 8 Jun 2005 |
 | TechBits Computer Accessories | osCommerce 2.2 MS2 | 19 Nov 2004 |
 
-MyBB and PostNuke exhibits are on the way.
+MyBB, PostNuke and Vanilla exhibits are on the way.
 
 ## Viewing it locally
 
@@ -36,9 +36,11 @@ python3 tools/serve.py
 
 Then open http://127.0.0.1:8842/. Any static web server works; `serve.py` just turns off browser caching while you edit.
 
+The guestbook is the only dynamic part: two small Vercel functions in `api/` (a server-drawn captcha and the entry list) with entries stored in Vercel Blob. Run `vercel dev` to try it locally; under a plain static server the guestbook shows an error.
+
 ## How the exhibits are built
 
-`tools/METHOD.md` describes the method. Each exhibit has its own folder in `tools/` with a `build.sh` (or `build.py`) that downloads the original release, installs it in Docker, loads the content, and captures the pages with `tools/capture.py`. Rebuilding needs Docker; the base PHP 5.6 images are in `tools/docker/`.
+`tools/METHOD.md` describes the method. `tools/shell.py` applies the shared navigation, breadcrumbs and footer to the museum pages. Each exhibit has its own folder in `tools/` with a `build.sh` (or `build.py`) that downloads the original release, installs it in Docker, loads the content, and captures the pages with `tools/capture.py`. Rebuilding needs Docker; the base PHP 5.6 images are in `tools/docker/`.
 
 ## Credits and licences
 
