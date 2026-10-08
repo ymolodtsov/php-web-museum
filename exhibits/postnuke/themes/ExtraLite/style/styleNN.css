@@ -1,0 +1,70 @@
+BODY {
+background: #FFFFFF;
+color: #000000;
+font-family: Tahoma, Verdana, sans-serif;
+font-size: 12px;
+margin: 0px;
+}
+IMG {
+border: 0px;
+}
+TD, TH, DIV, SELECT, TEXTAREA, INPUT {
+font-family: Tahoma, Verdana, sans-serif;
+font-size: 12px;
+}
+
+/* link classes 
+Note: we only specify anything that changes from the base class in 
+all other classes */
+A, A.pn-normal {
+color: #0000FF;
+font-size: 13px;
+text-decoration: underline;
+background: none;
+}
+A.pn-title {
+font-size: 14px;
+font-weight: bold;
+}
+A.pn-sub {
+font-size: 12px;
+}
+A.pn-logo {
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 3px;
+text-decoration: none;
+}
+
+/* postnuke specific classes */
+.pn-logo {
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 3px;
+}
+.pn-logo-small {
+font-size: 13px;
+font-weight: bold;
+}
+.pn-pagetitle, h1 {
+font-size: 16px;
+font-weight: bold;
+}
+.pn-title, h2 {
+font-size: 14px;
+font-weight: bold;
+}
+.pn-normal {
+color: #000000;
+font-size: 13px;
+text-decoration: none;
+}
+.pn-sub {
+}
+
+/* news styles */
+.pn-storytitle {
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;
+}

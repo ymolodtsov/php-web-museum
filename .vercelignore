@@ -2,7 +2,5 @@ tools/
 .claude/
 node_modules/
 README.md
-exhibits/postnuke/
-cms/postnuke/
 exhibits/phpbb3/
 forums/phpbb3/

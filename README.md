@@ -18,6 +18,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Inkwell | MyBB 1.2.3 | 27 Mar 2007 |
 | Clearfix | Vanilla 1.1.5a | 16 Oct 2008 |
 | Open Source Planet | PHP-Nuke 7.1 | 14 Mar 2004 |
+| Northern Sky | PostNuke 0.750 (ExtraLite) | 20 Feb 2005 |
 | Riverside Linux User Group | Mambo 4.5.1a (solarflare) | 14 Oct 2004 |
 | Orbital Design Studio | Joomla 1.5.3 | 9 Jun 2008 |
 | Open Computing History Project | Drupal 6.14 | 3 Nov 2009 |
@@ -28,7 +29,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Wanderlens Travel Gallery | Coppermine 1.3.3 | 8 Jun 2005 |
 | TechBits Computer Accessories | osCommerce 2.2 MS2 | 19 Nov 2004 |
 
-PostNuke and phpBB 3 exhibits are on the way.
+A phpBB 3 exhibit is on the way.
 
 ## Viewing it locally
 
