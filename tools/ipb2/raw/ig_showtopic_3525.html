@@ -1,0 +1,2528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Corn Pile Has a New High Score&#33; - InvisionGames</title>
+<link rel="alternate" type="application/rss+xml" title="Arcade Downloads" href="http://invisiongames.org/forum/index.php?act=rssout&amp;id=1" />
+ 
+<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style> 
+ 
+</head> 
+<body>
+<div id="ipbwrapper">
+<!--ipb.javascript.start-->
+<script type="text/javascript">
+ //<![CDATA[
+ var ipb_var_st            = "";
+ var ipb_lang_tpl_q1       = "Please enter a page number to jump to between 1 and";
+ var ipb_var_s             = "";
+ var ipb_var_phpext        = "php";
+ var ipb_var_base_url      = "http://invisiongames.org/forum/index.php?s=&";
+ var ipb_var_image_url     = "style_images/1";
+ var ipb_input_f           = "20";
+ var ipb_input_t           = "3525";
+ var ipb_input_p           = "";
+ var ipb_var_cookieid      = "";
+ var ipb_var_cookie_domain = "";
+ var ipb_var_cookie_path   = "/";
+ var ipb_md5_check         = "880ea6a14ea49e853634fbdc5015a024";
+ var ipb_new_msgs          = 0;
+ var use_enhanced_js       = 0;
+ var use_charset       = "iso-8859-1";
+var ipb_myass_chars_lang = "Not enough characters";
+ //]]>
+</script>
+<script type="text/javascript" src='jscripts/ipb_global.js'></script>
+<script type="text/javascript" src='jscripts/ips_menu.js'></script>
+<script type="text/javascript" src='style_images/1/folder_js_skin/ips_menu_html.js'></script>
+<!--ipb.javascript.end-->
+<div class="borderwrap">
+	<div id="logostrip"><a href='http://invisiongames.org/forum/index.php?'><!--ipb.logo.start--><img src='style_images/1/logo4.gif' style='vertical-align:top' alt='IPB' border='0' /><!--ipb.logo.end--></a></div>
+	<div id="submenu">
+		<p class="home"><!--ipb.leftlinks.start--><a href="http://www.invisiongames.org">InvisionGames</a><!--IBF.RULES--><!--ipb.leftlinks.end--></p>
+		<p><!--ipb.rightlinks.start--><a href="http://invisiongames.org/forum/index.php?act=downloads">Downloads</a><a href="http://invisiongames.org/forum/index.php?act=Arcade">Arcade</a>	<a href="http://invisiongames.org/forum/index.php?act=Help">Help</a><a href="http://invisiongames.org/forum/index.php?act=Search&amp;f=20">Search</a><a href="http://invisiongames.org/forum/index.php?act=Members">Members</a><a href="http://invisiongames.org/forum/index.php?act=calendar">Calendar</a>
+		<!--ipb.rightlinks.end--></p>
+	</div>
+</div><!-- / End board header -->
+<div id="userlinksguest">
+	<p class="pcen"><b>Welcome Guest</b> ( <a href="http://invisiongames.org/forum/index.php?act=Login&amp;CODE=00">Log In</a> | <a href="http://invisiongames.org/forum/index.php?act=Reg&amp;CODE=00">Register</a> )	</p>
+</div>
+<div id="navstrip"><img src='style_images/1/nav.gif' border='0'  alt='&gt;' />&nbsp;<a href='http://invisiongames.org/forum/index.php?act=idx'>InvisionGames</a>&nbsp;>&nbsp;<a href='http://invisiongames.org/forum/index.php?showforum=18'>Invision Games</a>&nbsp;>&nbsp;<a href='http://invisiongames.org/forum/index.php?showforum=20'>Arcade Announcements</a></div>
+<!--IBF.NEWPMBOX-->
+<script type="text/javascript">
+<!--
+var ipb_lang_tt_prompt = "Manually copy the direct link to this post below to store the link in your computer's clipboard";
+var ipb_lang_js_del_1  = "Are you sure you want to delete this message?";
+var ipb_lang_js_del_2  = "Ok, no action has been taken";
+var addquotebutton     = "style_images/1/p_mq_add.gif";
+var removequotebutton  = "style_images/1/p_mq_remove.gif";
+var unselectedbutton = "style_images/1/topic_unselected.gif";
+var selectedbutton   = "style_images/1/topic_selected.gif";
+var lang_gobutton    = "With Selected";
+var lang_suredelete  = "Are you sure you wish to delete these posts?";
+var js_error_no_permission = "Sorry, you do not have permission to edit that post";
+-->
+</script>
+<script type="text/javascript" src="jscripts/ipb_topic.js"></script>
+<a name="top"></a>
+<table class='ipbtable' cellspacing="0">
+	<tr>
+		<td style='padding-left:0px' width="40%" valign="middle" nowrap="nowrap"><div>&nbsp;</div></td>
+		<td class='nopad' style='padding:0px 0px 5px 0px' align="right" width="60%" valign="middle"><a href="http://invisiongames.org/forum/index.php?act=post&amp;do=reply_post&amp;f=20&amp;t=3525"><img src='style_images/1/t_reply.gif' border='0'  alt='Reply to this topic' /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=00&amp;f=20" title="Start a new topic"><img src='style_images/1/t_new.gif' border='0'  alt='Start new topic' /></a></td>
+	</tr>
+</table><div class="borderwrap">
+	<div class="maintitle" style='padding:4px'>
+	<!-- TABLE FIX FOR MOZILLA WRAPPING-->
+	<table width='100%' style='padding:0px' cellspacing='0' cellpadding='0'>
+	<tr>
+	 <td width='99%' style='word-wrap:break-word;''><div><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<b>Corn Pile Has a New High Score&#33;</b>, &lt;br /&gt;Congratulations The_Killer &#33;&#33;&#33;</div></td>
+	 <td width='1%' align='right' nowrap='nowrap'>
+	    <div class='popmenubutton' id='topicmenu-options'><a href='#topicoptions'>Options</a> <img src='style_images/1/menu_action_down.gif' alt='V' title='Open Menu' border='0' /></div>
+	 </td>
+	 <td width='1%' align='right' nowrap='nowrap'>         </td>
+	</tr>
+  </table>
+	 
+ </div>
+ <!--{IBF.POLL}-->
+<script type="text/javascript">
+  menu_build_menu(
+  "topicmenu-options",
+  new Array( img_item + " <a href='http://invisiongames.org/forum/index.php?act=usercp&amp;CODE=start_subs&amp;method=topic&amp;tid=3525'>Track this topic</a>",
+  			 img_item + " <a href='http://invisiongames.org/forum/index.php?act=Forward&amp;f=20&amp;t=3525'>Email this topic</a>",
+  			 img_item + " <a href='http://invisiongames.org/forum/index.php?act=Print&amp;client=printer&amp;f=20&amp;t=3525'>Print this topic</a>",
+                         img_item + " <a href='http://invisiongames.org/forum/index.php?act=Print&amp;client=choose&amp;f=20&amp;t=3525'>Download this topic</a>",
+  			 img_item + " <a href='http://invisiongames.org/forum/index.php?act=usercp&amp;CODE=start_subs&amp;method=forum&amp;fid=20'>Subscribe to this forum</a>",
+  			 "--NODIV--<div class='popupmenu-category' align='center'>Display Modes</div>",
+  			 img_item + " <a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=threaded'>Switch to: Outline</a>",
+  			 img_item + " <strong><em><a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=linear'>Standard</a></em></strong>",
+  			 img_item + " <a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=linearplus'>Switch to: Linear+</a>"
+		    ) );
+ </script><!--Begin Msg Number 3623-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3623"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 28 2006, 07:02 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3623); return false;">#1</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post2">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post2" id='post-main-3623'>
+			<!-- THE POST 3623 -->
+			<div class="postcolor" id='post-3623'>You scored 125 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating The_Killer &#39;s score of 85 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3623-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3623); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3623" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3623" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3623',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3623&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3623, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3651-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3651"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 29 2006, 12:04 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3651); return false;">#2</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post1">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post1" id='post-main-3651'>
+			<!-- THE POST 3651 -->
+			<div class="postcolor" id='post-3651'>You scored 180 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating The_Killer &#39;s score of 125 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3651-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3651); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3651" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3651" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3651',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3651&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3651, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3676-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3676"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 31 2006, 01:00 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3676); return false;">#3</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post2">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post2" id='post-main-3676'>
+			<!-- THE POST 3676 -->
+			<div class="postcolor" id='post-3676'>You scored 305 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating The_Killer &#39;s score of 180 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3676-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3676); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3676" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3676" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3676',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3676&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3676, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3677-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3677"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 31 2006, 01:03 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3677); return false;">#4</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post1">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post1" id='post-main-3677'>
+			<!-- THE POST 3677 -->
+			<div class="postcolor" id='post-3677'>You scored 420 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating nick &#39;s score of 305 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3677-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3677); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3677" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3677" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3677',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3677&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3677, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3684-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3684"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 31 2006, 05:13 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3684); return false;">#5</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post2">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post2" id='post-main-3684'>
+			<!-- THE POST 3684 -->
+			<div class="postcolor" id='post-3684'>You scored 805 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating nick &#39;s score of 420 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3684-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3684); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3684" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3684" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3684',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3684&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3684, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3687-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3687"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> May 31 2006, 05:42 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3687); return false;">#6</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post1">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post1" id='post-main-3687'>
+			<!-- THE POST 3687 -->
+			<div class="postcolor" id='post-3687'>You scored 1,260 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating The_Killer &#39;s score of 805 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3687-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3687); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3687" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3687" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3687',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3687&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3687, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3697-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3697"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> Jun 1 2006, 04:07 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3697); return false;">#7</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post2">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post2" id='post-main-3697'>
+			<!-- THE POST 3697 -->
+			<div class="postcolor" id='post-3697'>You scored 1,385 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating nick &#39;s score of 1,260 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3697-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3697); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3697" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3697" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3697',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3697&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3697, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3702-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3702"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> Jun 1 2006, 06:43 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3702); return false;">#8</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post1">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post1" id='post-main-3702'>
+			<!-- THE POST 3702 -->
+			<div class="postcolor" id='post-3702'>You scored 1,610 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating The_Killer &#39;s score of 1,385 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3702-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3702); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3702" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3702" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3702',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3702&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3702, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!--Begin Msg Number 3705-->
+<table class='ipbtable' cellspacing="1">
+	<tr>
+		<td valign="middle" class="row2" width="1%"><a name="entry3705"></a><span class="normalname"><a href='http://invisiongames.org/forum/index.php?showuser=5'>Arcade Bot</a></span></td>
+		<td class="row2" valign="top" width="99%">
+			<!-- POSTED DATE DIV -->
+			<div style="float: left;">
+				<span class="postdetails"> <img src='style_images/1/to_post_off.gif' alt='post' border='0' style='padding-bottom:2px' /> Jun 1 2006, 08:57 PM</span>
+			</div>
+			<!-- REPORT / DELETE / EDIT / QUOTE DIV -->
+			<div align="right">
+				<span class="postdetails"> Post
+					<a title="Show the link to this post" href="#" onclick="link_to_post(3705); return false;">#9</a>				</span>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="post2">
+        	<span class="postdetails">
+        		<br /><br />
+        		Arcade Support<br />
+        		<img src="style_images/1/folder_team_icons/privatemember.png" alt="Group Icon" /><br /><br />
+        		Group: Private Members<br />
+        		Posts: 209<br />
+        		Joined: 9-May 06<br />
+        		From: Arcade Heaven<br />
+        		Member No.: 5<br /><br />
+        		 
+        	</span><br />
+        	<img src="style_images/1/spacer.gif" alt="" width="160" height="1" /><br /> 
+       </td>
+       <td width="100%" valign="top" class="post2" id='post-main-3705'>
+			<!-- THE POST 3705 -->
+			<div class="postcolor" id='post-3705'>You scored 2,010 points playing <a href=?act=Arcade&do=stats&gameid=46>Corn Pile</a>, beating nick &#39;s score of 1,610 points&#33;&#33;</div>
+			<!--IBF.ATTACHMENT_3705-->
+			
+			<!-- THE POST -->		
+		</td>
+	</tr>
+	<tr>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<div style='text-align:left'><img src='style_images/1/p_offline.gif' border='0'  alt='User is offline' /><a href="javascript:PopUp('http://invisiongames.org/forum/index.php?act=Profile&amp;CODE=showcard&amp;MID=5','AddressCard','600','300','0','1','1','1')" title="Show Contact Card"><img src='style_images/1/p_card.gif' border='0'  alt='Profile Card' /></a><a href="http://invisiongames.org/forum/index.php?act=Msg&amp;CODE=04&amp;MID=5"><img src='style_images/1/p_pm.gif' border='0'  alt='PM' /></a><!--<a href="http://invisiongames.org/forum/index.php?act=Mail&amp;CODE=00&amp;MID=5"><img src='style_images/1/p_email.gif' border='0'  alt='Email Poster' /></a>--></div>
+		</td>
+		<td class="formbuttonrow" nowrap="nowrap">
+			<!-- PM / EMAIL / WWW / MSGR -->
+			<div style="float: left;">
+				<a href="javascript:scroll(0,0);"><img src='style_images/1/p_up.gif' border='0'  alt='Go to the top of the page' /></a>
+			</div>
+			<!-- REPORT / UP -->
+         	<div align="right">
+         		<a href="#" onclick="multiquote_add(3705); return false;" title="Toggle multiquote addition"><img src="style_images/1/p_mq_add.gif" name="mad_3705" alt="+" /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=02&amp;f=20&amp;t=3525&amp;qpid=3705" title="Reply directly to this post"><img src='style_images/1/p_quote.gif' border='0'  alt='Quote Post' /></a>
+         	</div>
+         </td>
+	</tr><tr>
+	<td class="catend" colspan="2">
+	<!-- no content -->
+	</td>
+</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+if ( ajax_loaded && use_enhanced_js )
+{
+menu_build_menu( 'edit-but-3705',
+	new Array(  img_item + " <a title='Full edit screen with all options' href='http://invisiongames.org/forum/index.php?act=post&amp;do=edit_post&amp;f=20&amp;t=3525&amp;p=3705&amp;st='>Full Edit</a>",
+				img_item + " <a href='#' title='Edit this post in place with basic options' onclick='return ajax_prep_for_edit(3705, event);'>Quick Edit</a>" ) );
+}
+//]]>
+</script><!-- END TABLE --><!-- TABLE FOOTER -->
+<div class="barc">
+	<div style="float: right; padding: 5px 5px 0 0;"><a href="http://invisiongames.org/forum/index.php?showtopic=3525&amp;view=old" style='text-decoration:none'>&laquo; Next Oldest</a>
+	&middot; <a href="http://invisiongames.org/forum/index.php?showforum=20" style='font-weight: bold;text-decoration:none'>Arcade Announcements</a>
+	&middot; <a href="http://invisiongames.org/forum/index.php?showtopic=3525&amp;view=new" style='text-decoration:none'>Next Newest &raquo;</a></div>
+	<div>
+		<form action="http://invisiongames.org/forum/index.php?" method="post" name="search">
+			<input type="hidden" name="forums" value="20" />
+			<input type="hidden" name="topic" value="3525" />
+			<input type="hidden" name="act" value="Search" />
+			<input type="hidden" name="CODE" value="searchtopic" />
+			<input type="text" size="25" name="keywords" class="searchinput" value="Enter Keywords" onfocus="this.value = '';" />&nbsp;
+			<input type="submit" value="Search Topic" class="button" />
+		</form>
+	</div>
+</div>
+</div>
+<br /><table class='ipbtable' cellspacing="0">
+	<tr>
+		<td style='padding-left:0px' width="30%" nowrap="nowrap" valign="middle"><div></div></td>
+		<td class='nopad' style='padding:5px 0px 5px 0px' align="right" width="70%"><a href="javascript:ShowHide('qr_open','qr_closed');" title="Open Fast Reply Window" accesskey="f"><img src='style_images/1/t_qr.gif' border='0'  alt='Fast Reply' /></a><a href="http://invisiongames.org/forum/index.php?act=post&amp;do=reply_post&amp;f=20&amp;t=3525"><img src='style_images/1/t_reply.gif' border='0'  alt='Reply to this topic' /></a><a href="http://invisiongames.org/forum/index.php?act=Post&amp;CODE=00&amp;f=20" title="Start a new topic"><img src='style_images/1/t_new.gif' border='0'  alt='Start new topic' /></a><!----></td>
+	</tr>
+</table>
+<div class="borderwrap" style='padding-bottom:1px;'>
+	<div class="formsubtitle" style="padding: 4px;">1 User(s) are reading this topic (1 Guests and 0 Anonymous Users)</div>
+	<div class="row1" style="padding: 4px;">0 Members: </div>
+</div>
+
+<script type="text/javascript">
+<!--
+	var emowindow = '';
+	function emo_pop(){
+	emowindow = window.open("index.php?act=legends&amp;CODE=emoticons&amp;s=","Legends","width=250,height=500,resizable=yes,scrollbars=yes"); 
+	}
+-->
+</script>
+<div id="qr_open" style="display: none; position: relative;">
+<br />
+<form name="REPLIER" action="http://invisiongames.org/forum/index.php?" method="post">
+<input type="hidden" name="act" value="Post" />
+<input type="hidden" name="CODE" value="03" />
+<input type="hidden" name="f" value="20" />
+<input type="hidden" name="t" value="3525" />
+<input type="hidden" name="st" value="" />
+<input type="hidden" name="auth_key" value="880ea6a14ea49e853634fbdc5015a024" />
+<input type="hidden" name="fast_reply_used" value="1" />
+<!-- TITLE DIV -->
+<div class="borderwrap">
+	<div class="maintitle"><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;Fast Reply</div>
+	<div style='padding:6px' align="center">
+		<textarea onmouseover='checkselection()' id='fastreplyarea' cols="70" rows="8" name="Post" class="textarea" tabindex="1"></textarea>
+		<!-- HIDDEN PASTE SELECTION QUESTION --> 
+		<div id='fastreply-pastesel' align='center' style='display:none;'>
+		   <input type="button" name="pastesel" onclick="pasteselection();" value="Add Selected Text As Quote" class="button" />
+		</div>
+		<!-- / HIDDEN PASTE SELECTION QUESTION -->
+		<br /><input type="checkbox" name="enabletrack" value="1" class="checkbox" />&nbsp;Enable email notification of replies &#124;		<input type="checkbox" name="enableemo" value="yes" class="checkbox" checked="checked" />&nbsp;<a href="javascript:emo_pop();">Enable Smilies</a> &#124;
+		<input type="checkbox" name="enablesig" value="yes" class="checkbox" checked="checked" />&nbsp;Enable Signature
+		<br />
+		<br />
+		<input type="submit" name="submit" value="Add Reply" class="button" tabindex="2" accesskey="s" /> &nbsp;
+		<input type="submit" name="preview" value="More Options" class="button" /> &nbsp;
+		<input type="button" name="qrc" onclick="ShowHide('qr_open','qr_closed');" value="Close Fast Reply" class="button" />
+	</div>
+</div>
+</form>
+</div>
+<br />
+<div class="borderwrap">
+	<div class="row2" style="padding: 5px;">
+		
+		<div align="right"><form onsubmit="if(document.jumpmenu.f.value == -1){return false;}" action='http://invisiongames.org/forum/index.php?act=SF' method='get' name='jumpmenu'>
+			             <input type='hidden' name='act' value='SF' />
+<input type='hidden' name='s' value='' />
+			             <select name='f' onchange="if(this.options[this.selectedIndex].value != -1){ document.jumpmenu.submit() }" class='dropdown'>
+			             <optgroup label="Site Jump">
+			              <option value='sj_home'>Forum Home</option>
+			              <option value='sj_search'>Search</option>
+			              <option value='sj_help'>Help</option>
+			             </optgroup>
+			             <optgroup label="Forum Jump"><option value="1">Home Sweet Home</option>
+<option value="2">&nbsp;&nbsp;&#0124;-- Living Room</option>
+<option value="8">&nbsp;&nbsp;&#0124;-- PlayRoom</option>
+<option value="6">&nbsp;&nbsp;&#0124;-- Balcony</option>
+<option value="4">&nbsp;&nbsp;&#0124;-- TV Set</option>
+<option value="14">&nbsp;&nbsp;&#0124;-- Entrance Hall</option>
+<option value="18">Invision Games</option>
+<option value="10">&nbsp;&nbsp;&#0124;-- IbPro Arcade Games</option>
+<option value="19">&nbsp;&nbsp;&#0124;-- Arcade Feedback</option>
+<option value="20" selected="selected">&nbsp;&nbsp;&#0124;-- Arcade Announcements</option>
+<option value="9">Gaming Zone</option>
+<option value="11">&nbsp;&nbsp;&#0124;-- PC Games</option>
+<option value="12">&nbsp;&nbsp;&#0124;-- Console Games</option>
+<option value="13">&nbsp;&nbsp;&#0124;-- Retro Gaming</option>
+<option value="22">&nbsp;&nbsp;&#0124;-- Emulation</option>
+<option value="24">&nbsp;&nbsp;&#0124;---- Emulation Stage News</option>
+<option value="23">&nbsp;&nbsp;&#0124;-- Cheats, Hints, Tips &amp; Tricks</option>
+<option value="3">Site Related Information</option>
+<option value="15">&nbsp;&nbsp;&#0124;-- Rules</option>
+<option value="16">&nbsp;&nbsp;&#0124;-- Suggestions &amp; Site feedback</option>
+<option value="17">&nbsp;&nbsp;&#0124;-- FAQ</option>
+<option value="21">&nbsp;&nbsp;&#0124;-- News Section</option>
+</optgroup>
+</select>&nbsp;<input type='submit' value='Go' class='button' /></form></div>
+	</div>
+</div>
+<br />
+<!-- NON JS STUFF -->
+<div id='topicoptionsjs'>
+ <a name='topicdisplay'></a>
+ <div class='borderwrap'>
+  <div class="bar" style="padding: 5px;text-align:center">
+  <strong>Display Mode:</strong> <strong><em><a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=linear'>Standard</a></em></strong> &middot;
+  <a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=linearplus'>Switch to: Linear+</a> &middot;
+  <a href='http://invisiongames.org/forum/index.php?showtopic=3525&amp;mode=threaded'>Switch to: Outline</a>
+  </div>
+ </div>
+ <br />
+ <a name='topicoptions'></a>
+ <div class='borderwrap'>
+  <div class="bar" style="padding: 5px;text-align:center">
+  <a href='http://invisiongames.org/forum/index.php?act=usercp&amp;CODE=start_subs&amp;method=topic&amp;tid=3525'>Track this topic</a> &middot;
+  <a href='http://invisiongames.org/forum/index.php?act=Forward&amp;f=20&amp;t=3525'>Email this topic</a> &middot;
+  <a href='http://invisiongames.org/forum/index.php?act=Print&amp;client=printer&amp;f=20&amp;t=3525'>Print this topic</a> &middot;
+  <a href='http://invisiongames.org/forum/index.php?act=usercp&amp;CODE=start_subs&amp;method=forum&amp;fid=20'>Subscribe to this forum</a>
+  </div>
+ </div>
+ <br /></div>
+<script type='text/javascript'>
+//<![CDATA[
+ document.getElementById('topicoptionsjs').style.display = 'none';
+ 
+ // Scroll to PID?
+ topic_scroll_to_post( parseInt("") );
+//]]>
+</script>
+<table cellspacing="0" id="gfooter">
+	<tr>
+		<td width="45%"><img id="rsssyndication" src='style_images/1/rss.png' border='0' alt='-' class='ipd' />
+<script type="text/javascript">
+//<![CDATA[
+  menu_build_menu(
+  "rsssyndication",
+  new Array( "<a href='http://invisiongames.org/forum/index.php?act=rssout&amp;id=1' style='color:black'>Arcade Downloads</a>"
+           ) );
+//]]>
+</script> </td>
+		<td width="10%" align="center" nowrap="nowrap"><a href="lofiversion/index.php/t3525.html"><b>Lo-Fi Version</b></a></td>
+		<td width="45%" align="right" nowrap="nowrap">Time is now: 29th June 2006 - 11:46 AM</td>
+	</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+menu_do_global_init();//]]>
+</script>
+ 
+<!-- Copyright Information -->
+        				  <div align='center' class='copyright'>
+        				  	<a href='http://www.invisionboard.com' style='text-decoration:none' target='_blank'>Invision Power Board</a>
+        				  	v2.1.6 &copy; 2006 &nbsp;IPS, Inc.
+        				  <div>Licensed to: invisiongames.org</div></div>
+		<!-- / Copyright -->
+</div>
+</body> 
+</html>

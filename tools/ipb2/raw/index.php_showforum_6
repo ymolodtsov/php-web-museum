@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>ImgBurn Support Forum -> ImgBurn Support</title>
+ 
+<style type="text/css" media="all">@import url(http://forum.imgburn.com/style_images/css_3.css);</style> 
+ 
+</head> 
+<body>
+<div id="ipbwrapper">
+<!--ipb.javascript.start-->
+<script type="text/javascript">
+ //<![CDATA[
+ var ipb_var_st            = "0";
+ var ipb_lang_tpl_q1       = "Please enter a page number to jump to between 1 and";
+ var ipb_var_s             = "";
+ var ipb_var_phpext        = "php";
+ var ipb_var_base_url      = "http://forum.imgburn.com/index.php?s=&";
+ var ipb_var_image_url     = "style_images/1";
+ var ipb_input_f           = "6";
+ var ipb_input_t           = "";
+ var ipb_input_p           = "";
+ var ipb_var_cookieid      = "";
+ var ipb_var_cookie_domain = "";
+ var ipb_var_cookie_path   = "/";
+ var ipb_md5_check         = "880ea6a14ea49e853634fbdc5015a024";
+ var ipb_new_msgs          = 0;
+ var use_enhanced_js       = 0;
+ var use_charset       = "iso-8859-1";
+var ipb_myass_chars_lang = "Not enough characters";
+ //]]>
+</script>
+<script type="text/javascript" src='jscripts/ipb_global.js'></script>
+<script type="text/javascript" src='jscripts/ips_menu.js'></script>
+<script type="text/javascript" src='style_images/1/folder_js_skin/ips_menu_html.js'></script>
+<!--ipb.javascript.end-->
+<div class="borderwrap">
+	<div id="logostrip"><a href='http://forum.imgburn.com/index.php?'><!--ipb.logo.start--><img src='style_images/1/logo4.gif' style='vertical-align:top' alt='IPB' border='0' /><!--ipb.logo.end--></a></div>
+	<div id="submenu">
+		<p class="home"><!--ipb.leftlinks.start--><a href="http://www.imgburn.com">ImgBurn Website</a><!--IBF.RULES--><!--ipb.leftlinks.end--></p>
+		<p><!--ipb.rightlinks.start-->	<a href="http://forum.imgburn.com/index.php?act=Help">Help</a><a href="http://forum.imgburn.com/index.php?act=Search&amp;f=6">Search</a><a href="http://forum.imgburn.com/index.php?act=Members">Members</a><a href="http://forum.imgburn.com/index.php?act=calendar">Calendar</a>
+		<!--ipb.rightlinks.end--></p>
+	</div>
+</div><!-- / End board header -->
+<div id="userlinksguest">
+	<p class="pcen"><b>Welcome Guest</b> ( <a href="http://forum.imgburn.com/index.php?act=Login&amp;CODE=00">Log In</a> | <a href="http://forum.imgburn.com/index.php?act=Reg&amp;CODE=00">Register</a> )	</p>
+</div>
+<div id="adverts_banner" style="text-align:center;">
+<table style="text-align:center;background: #F0F5FA;border: 1px solid #C2CFDF;"><tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0434161978769668";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="1952629270";
+google_color_border = "F0F5FA";
+google_color_bg = "F0F5FA";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</td></tr></table>
+</div>
+<div id="navstrip"><img src='style_images/1/nav.gif' border='0'  alt='&gt;' />&nbsp;<a href='http://forum.imgburn.com/index.php?act=idx'>ImgBurn Support Forum</a>&nbsp;>&nbsp;<a href='http://forum.imgburn.com/index.php?showforum=5'>ImgBurn</a>&nbsp;>&nbsp;<a href='http://forum.imgburn.com/index.php?showforum=6'>ImgBurn Support</a></div>
+<!--IBF.NEWPMBOX-->
+<script language="javascript" type="text/javascript">
+<!--
+var unselectedbutton  = "style_images/1/topic_unselected.gif";
+var selectedbutton    = "style_images/1/topic_selected.gif";
+var lang_gobutton     = "With Selected";
+var lang_suredelete   = "Are you sure you wish to delete these topics?";
+var lang_clickhold    = "Click and hold to edit title";
+var img_folder_closed = 'f_closed.gif';
+var img_folder_normal = 'f_norm_no.gif';
+var perm_can_edit     = 0;
+var perm_can_open     = 0;
+var perm_can_close    = 0;
+var perm_max_length   = 150;
+//-->
+</script>
+<script type="text/javascript" src="jscripts/ipb_forum.js"></script>   
+<!--IBF.SUBFORUMS-->
+<table class='ipbtable' cellspacing="0">
+	<tr>
+		<td style='padding-left:0px' width="60%"><span class="pagelink" id='page-jump'>12 Pages <img src='style_images/1/menu_action_down.gif' alt='V' title='Open Menu' border='0' /></span>&nbsp;&nbsp;<span class="pagecurrent">1</span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=30" title="2">2</a></span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=60" title="3">3</a></span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=30" title="Next page">&gt;</a></span>&nbsp;<span class="pagelinklast"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=330" title="Go to last page">&raquo;</a></span>&nbsp;
+<script type="text/javascript">
+//<![CDATA[
+ipb_pages_shown++;
+var pgjmp = document.getElementById( 'page-jump' );
+pgjmp.id  = 'page-jump-'+ipb_pages_shown;
+ipb_pages_array[ ipb_pages_shown ] = new Array( 'http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all', 30, 351 );
+menu_build_menu(
+	pgjmp.id,
+	new Array(  "--NODIV--<div onmouseover='pages_st_focus("+ipb_pages_shown+")' class='popupmenu-category' align='center'>Jump to Page</div>",
+				"<input type='text' size='5' name='st' id='st-"+ipb_pages_shown+"' /> <input type='button' class='button' onclick='do_multi_page_jump("+ipb_pages_shown+");' value='Go' />" ) );
+//]]>
+</script></td>
+		<td class='nopad' style='padding:0px 0px 5px 0px' align="right" nowrap="nowrap"><a href="http://forum.imgburn.com/index.php?act=post&amp;do=new_post&amp;f=6"><img src='style_images/1/t_new.gif' border='0'  alt='Start new topic' /></a></td>
+	</tr>
+</table>
+<div class="borderwrap">
+	<div class="maintitle" style='padding:4px'>
+	<!-- TABLE FIX FOR MOZILLA WRAPPING-->
+	<table width='100%' cellspacing='0' cellpadding='0'>
+	<tr>
+	 <td width='99%'><div><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;ImgBurn Support</div></td>
+	 <td width='1%' nowrap='nowrap' align='right'>
+	  <div class='popmenubutton' id='forummenu-options'><a href='#forumoptions'>Forum Options</a> <img src='style_images/1/menu_action_down.gif' alt='V' title='Open Menu' border='0' /></div>
+	 </td>
+	</tr>
+	</table>
+   </div>
+   <table class='ipbtable' cellspacing="1">
+	<tr> 
+		<th align="center">&nbsp;</th>
+		<th align="center">&nbsp;</th>
+		<th width="50%" nowrap="nowrap">Topic Title</th>
+		<th width="7%" align="center" nowrap="nowrap">Replies</th>
+		<th width="14%" align="center" nowrap="nowrap">Topic Starter</th>
+		<th width="7%" align="center" nowrap="nowrap">Views</th>
+		<th width="22%" nowrap="nowrap">Last Action</th>	</tr>
+<script type="text/javascript">
+  menu_build_menu(
+  "forummenu-options",
+  new Array(  			 img_item + " <a href='http://forum.imgburn.com/index.php?act=Login&amp;CODE=04&amp;f=6&amp;fromforum=6'>Mark forum as read and return</a>",
+  			 img_item + " <a href='http://forum.imgburn.com/index.php?act=Login&amp;CODE=04&amp;f=6&amp;fromforum=0'>Mark forum as read and return to board index</a>",
+  			 img_item + " <a href='http://forum.imgburn.com/index.php?act=usercp&amp;CODE=start_subs&amp;method=forum&amp;fid=6'>Subscribe to this forum</a>"
+		    ) );
+ </script>
+	<!-- Forum page unique top -->
+	<!--IBF.ANNOUNCEMENTS--><!--PINNED-->    <!-- END PINNED --><!-- Begin Topic Entry 131 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-131' onclick='return topic_toggle_folder("131");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			Pinned:  <span id='tid-span-131'><a id="tid-link-131" href="http://forum.imgburn.com/index.php?showtopic=131" title="This topic was started: Oct 6 2005, 09:44 PM">Guide on how to use ImgBurn with DVD Shrink</a></span> &nbsp;<a href="javascript:multi_page_jump('http://forum.imgburn.com/index.php?showtopic=131', 75, 20 );" title="multipage jump"><img src='style_images/1/pages_icon.gif' alt='*' border='0' /></a> <span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=131&amp;st=0">1</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=131&amp;st=20">2</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=131&amp;st=40">3</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=131&amp;st=60">4</a></span>
+			<div class="desc"><span onclick='return span_desc_to_input("131");' id='tid-desc-131'>as a selectable &quot;Backup Target&quot;</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(131);">74</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=42'>jmet</a></td>
+	<td align="center" class="row2">6,487</td>
+	<td class="row2"><span class="lastaction">27th March 2006 - 06:01 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=131&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2837'>Groundrush</a></b></span></td></tr>
+<!-- End Topic Entry 131 --><!-- END PINNED -->
+<tr>
+   <td class="darkrow1" colspan="8"><b>Forum Topics</b></td>
+</tr><!-- Begin Topic Entry 1162 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1162' onclick='return topic_toggle_folder("1162");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <a href="#" onclick="PopUp('http://forum.imgburn.com/index.php?act=attach&amp;code=showtopic&amp;tid=1162', 'Attach1162', 500,400); return false;" title="4 attachment(s): View"><img src='style_images/1/attachicon.gif' border='0'  alt='Topic has attachments' /></a><span id='tid-span-1162'><a id="tid-link-1162" href="http://forum.imgburn.com/index.php?showtopic=1162" title="This topic was started: Mar 26 2006, 04:46 PM">BAD SCANS PART 2&#33;&#33;</a></span> &nbsp;<a href="javascript:multi_page_jump('http://forum.imgburn.com/index.php?showtopic=1162', 21, 20 );" title="multipage jump"><img src='style_images/1/pages_icon.gif' alt='*' border='0' /></a> <span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1162&amp;st=0">1</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1162&amp;st=20">2</a></span>
+			<div class="desc"><span onclick='return span_desc_to_input("1162");' id='tid-desc-1162'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1162);">20</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1595'>the olde</a></td>
+	<td align="center" class="row2">275</td>
+	<td class="row2"><span class="lastaction">Yesterday, 08:40 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1162&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1162 --><!-- Begin Topic Entry 1176 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1176' onclick='return topic_toggle_folder("1176");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1176'><a id="tid-link-1176" href="http://forum.imgburn.com/index.php?showtopic=1176" title="This topic was started: Mar 27 2006, 10:14 PM">Yet more coasters</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1176");' id='tid-desc-1176'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1176);">3</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2837'>Groundrush</a></td>
+	<td align="center" class="row2">76</td>
+	<td class="row2"><span class="lastaction">Yesterday, 06:33 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1176&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2837'>Groundrush</a></b></span></td></tr>
+<!-- End Topic Entry 1176 --><!-- Begin Topic Entry 1178 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1178' onclick='return topic_toggle_folder("1178");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1"><img src="style_images/1/folder_post_icons/icon14.gif" border="0" alt="" /></td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1178'><a id="tid-link-1178" href="http://forum.imgburn.com/index.php?showtopic=1178" title="This topic was started: Yesterday, 01:40 PM">Don&#39;t know how to burn imgs</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1178");' id='tid-desc-1178'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1178);">5</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2846'>Shush</a></td>
+	<td align="center" class="row2">74</td>
+	<td class="row2"><span class="lastaction">Yesterday, 05:20 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1178&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2846'>Shush</a></b></span></td></tr>
+<!-- End Topic Entry 1178 --><!-- Begin Topic Entry 1172 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1172' onclick='return topic_toggle_folder("1172");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1172'><a id="tid-link-1172" href="http://forum.imgburn.com/index.php?showtopic=1172" title="This topic was started: Mar 27 2006, 07:16 AM">how to use the settings</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1172");' id='tid-desc-1172'>BURN-proof</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1172);">4</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2841'>bobby</a></td>
+	<td align="center" class="row2">93</td>
+	<td class="row2"><span class="lastaction">27th March 2006 - 10:03 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1172&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1172 --><!-- Begin Topic Entry 1173 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1173' onclick='return topic_toggle_folder("1173");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1173'><a id="tid-link-1173" href="http://forum.imgburn.com/index.php?showtopic=1173" title="This topic was started: Mar 27 2006, 08:19 AM">Having some trouble</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1173");' id='tid-desc-1173'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1173);">3</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2842'>Nene</a></td>
+	<td align="center" class="row2">74</td>
+	<td class="row2"><span class="lastaction">27th March 2006 - 10:02 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1173&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1173 --><!-- Begin Topic Entry 1168 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1168' onclick='return topic_toggle_folder("1168");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1168'><a id="tid-link-1168" href="http://forum.imgburn.com/index.php?showtopic=1168" title="This topic was started: Mar 26 2006, 08:17 PM">+RW formatted in Nero, ImgBurn wants to reformat</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1168");' id='tid-desc-1168'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1168);">2</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2108'>Schweino</a></td>
+	<td align="center" class="row2">61</td>
+	<td class="row2"><span class="lastaction">27th March 2006 - 06:02 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1168&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2108'>Schweino</a></b></span></td></tr>
+<!-- End Topic Entry 1168 --><!-- Begin Topic Entry 1159 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1159' onclick='return topic_toggle_folder("1159");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1159'><a id="tid-link-1159" href="http://forum.imgburn.com/index.php?showtopic=1159" title="This topic was started: Mar 25 2006, 11:01 PM">Deletion of Incorrect Layer Break Flags in ISO image?</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1159");' id='tid-desc-1159'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1159);">7</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2506'>fordman</a></td>
+	<td align="center" class="row2">124</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 10:58 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1159&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2506'>fordman</a></b></span></td></tr>
+<!-- End Topic Entry 1159 --><!-- Begin Topic Entry 1169 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1169' onclick='return topic_toggle_folder("1169");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1169'><a id="tid-link-1169" href="http://forum.imgburn.com/index.php?showtopic=1169" title="This topic was started: Mar 26 2006, 08:20 PM">Hi ... and DL query ...</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1169");' id='tid-desc-1169'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1169);">2</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2839'>F.B.I.</a></td>
+	<td align="center" class="row2">71</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 10:35 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1169&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2839'>F.B.I.</a></b></span></td></tr>
+<!-- End Topic Entry 1169 --><!-- Begin Topic Entry 1167 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1167' onclick='return topic_toggle_folder("1167");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1167'><a id="tid-link-1167" href="http://forum.imgburn.com/index.php?showtopic=1167" title="This topic was started: Mar 26 2006, 07:44 PM">ANYDVD Error</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1167");' id='tid-desc-1167'>ANYDVD</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1167);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1665'>Keeper</a></td>
+	<td align="center" class="row2">60</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 07:58 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1167&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2'>lfcrule1972</a></b></span></td></tr>
+<!-- End Topic Entry 1167 --><!-- Begin Topic Entry 1139 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1139' onclick='return topic_toggle_folder("1139");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1139'><a id="tid-link-1139" href="http://forum.imgburn.com/index.php?showtopic=1139" title="This topic was started: Mar 22 2006, 06:47 PM">Ritek DL +R Media</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1139");' id='tid-desc-1139'>Can I burn as DVD-5?</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1139);">16</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1203'>grampaw</a></td>
+	<td align="center" class="row2">208</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 07:27 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1139&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2'>lfcrule1972</a></b></span></td></tr>
+<!-- End Topic Entry 1139 --><!-- Begin Topic Entry 1166 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1166' onclick='return topic_toggle_folder("1166");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1166'><a id="tid-link-1166" href="http://forum.imgburn.com/index.php?showtopic=1166" title="This topic was started: Mar 26 2006, 05:52 PM">not enough space</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1166");' id='tid-desc-1166'>DL burners</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1166);">2</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2836'>choreboy</a></td>
+	<td align="center" class="row2">41</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 06:53 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1166&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=29'>Kenadjian</a></b></span></td></tr>
+<!-- End Topic Entry 1166 --><!-- Begin Topic Entry 487 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-487' onclick='return topic_toggle_folder("487");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-487'><a id="tid-link-487" href="http://forum.imgburn.com/index.php?showtopic=487" title="This topic was started: Dec 31 2005, 06:19 PM">synchronize cache is stuck&#33;&#33;</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("487");' id='tid-desc-487'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(487);">8</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2408'>andrew4592</a></td>
+	<td align="center" class="row2">273</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 06:16 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=487&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 487 --><!-- Begin Topic Entry 1161 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1161' onclick='return topic_toggle_folder("1161");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <a href="#" onclick="PopUp('http://forum.imgburn.com/index.php?act=attach&amp;code=showtopic&amp;tid=1161', 'Attach1161', 500,400); return false;" title="1 attachment(s): View"><img src='style_images/1/attachicon.gif' border='0'  alt='Topic has attachments' /></a><span id='tid-span-1161'><a id="tid-link-1161" href="http://forum.imgburn.com/index.php?showtopic=1161" title="This topic was started: Mar 26 2006, 04:13 PM">Really bad scan</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1161");' id='tid-desc-1161'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1161);">0</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1595'>the olde</a></td>
+	<td align="center" class="row2">37</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 04:13 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1161&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1595'>the olde</a></b></span></td></tr>
+<!-- End Topic Entry 1161 --><!-- Begin Topic Entry 1105 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1105' onclick='return topic_toggle_folder("1105");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <a href="#" onclick="PopUp('http://forum.imgburn.com/index.php?act=attach&amp;code=showtopic&amp;tid=1105', 'Attach1105', 500,400); return false;" title="1 attachment(s): View"><img src='style_images/1/attachicon.gif' border='0'  alt='Topic has attachments' /></a><span id='tid-span-1105'><a id="tid-link-1105" href="http://forum.imgburn.com/index.php?showtopic=1105" title="This topic was started: Mar 15 2006, 10:12 AM">Media</a></span> &nbsp;<a href="javascript:multi_page_jump('http://forum.imgburn.com/index.php?showtopic=1105', 34, 20 );" title="multipage jump"><img src='style_images/1/pages_icon.gif' alt='*' border='0' /></a> <span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1105&amp;st=0">1</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1105&amp;st=20">2</a></span>
+			<div class="desc"><span onclick='return span_desc_to_input("1105");' id='tid-desc-1105'>The best of the best</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1105);">33</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1595'>the olde</a></td>
+	<td align="center" class="row2">622</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 02:13 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1105&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=13'>polopony</a></b></span></td></tr>
+<!-- End Topic Entry 1105 --><!-- Begin Topic Entry 1144 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1144' onclick='return topic_toggle_folder("1144");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1144'><a id="tid-link-1144" href="http://forum.imgburn.com/index.php?showtopic=1144" title="This topic was started: Mar 23 2006, 07:44 PM">Imgburner freezes..</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1144");' id='tid-desc-1144'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1144);">11</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2818'>RHead</a></td>
+	<td align="center" class="row2">182</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 12:28 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1144&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1144 --><!-- Begin Topic Entry 1154 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1154' onclick='return topic_toggle_folder("1154");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1154'><a id="tid-link-1154" href="http://forum.imgburn.com/index.php?showtopic=1154" title="This topic was started: Mar 25 2006, 02:26 AM">help please</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1154");' id='tid-desc-1154'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1154);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2829'>rws229</a></td>
+	<td align="center" class="row2">75</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 01:45 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1154&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=13'>polopony</a></b></span></td></tr>
+<!-- End Topic Entry 1154 --><!-- Begin Topic Entry 1155 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1155' onclick='return topic_toggle_folder("1155");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1155'><a id="tid-link-1155" href="http://forum.imgburn.com/index.php?showtopic=1155" title="This topic was started: Mar 25 2006, 04:14 AM">Support for creating ISO&#39;s?</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1155");' id='tid-desc-1155'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1155);">8</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2832'>here</a></td>
+	<td align="center" class="row2">190</td>
+	<td class="row2"><span class="lastaction">26th March 2006 - 01:16 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1155&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2506'>fordman</a></b></span></td></tr>
+<!-- End Topic Entry 1155 --><!-- Begin Topic Entry 1156 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1156' onclick='return topic_toggle_folder("1156");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1156'><a id="tid-link-1156" href="http://forum.imgburn.com/index.php?showtopic=1156" title="This topic was started: Mar 25 2006, 08:25 AM">USING IMGBURN &amp; DVD INFO PRO</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1156");' id='tid-desc-1156'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1156);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=1595'>the olde</a></td>
+	<td align="center" class="row2">79</td>
+	<td class="row2"><span class="lastaction">25th March 2006 - 08:52 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1156&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1156 --><!-- Begin Topic Entry 1140 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1140' onclick='return topic_toggle_folder("1140");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1140'><a id="tid-link-1140" href="http://forum.imgburn.com/index.php?showtopic=1140" title="This topic was started: Mar 22 2006, 06:53 PM">Book type set failure</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1140");' id='tid-desc-1140'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1140);">5</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2611'>newer than newbie</a></td>
+	<td align="center" class="row2">111</td>
+	<td class="row2"><span class="lastaction">24th March 2006 - 06:33 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1140&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2611'>newer than newbie</a></b></span></td></tr>
+<!-- End Topic Entry 1140 --><!-- Begin Topic Entry 1148 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1148' onclick='return topic_toggle_folder("1148");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1148'><a id="tid-link-1148" href="http://forum.imgburn.com/index.php?showtopic=1148" title="This topic was started: Mar 24 2006, 03:21 PM">Incomplete disc?&#33;?&#33;?</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1148");' id='tid-desc-1148'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1148);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2807'>jaaesa</a></td>
+	<td align="center" class="row2">69</td>
+	<td class="row2"><span class="lastaction">24th March 2006 - 04:47 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1148&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1148 --><!-- Begin Topic Entry 1075 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1075' onclick='return topic_toggle_folder("1075");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <a href="#" onclick="PopUp('http://forum.imgburn.com/index.php?act=attach&amp;code=showtopic&amp;tid=1075', 'Attach1075', 500,400); return false;" title="3 attachment(s): View"><img src='style_images/1/attachicon.gif' border='0'  alt='Topic has attachments' /></a><span id='tid-span-1075'><a id="tid-link-1075" href="http://forum.imgburn.com/index.php?showtopic=1075" title="This topic was started: Mar 10 2006, 05:58 PM">Error burning image files with ImgBurn and CloneDVD</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1075");' id='tid-desc-1075'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1075);">17</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2746'>Flawless115</a></td>
+	<td align="center" class="row2">453</td>
+	<td class="row2"><span class="lastaction">24th March 2006 - 11:21 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1075&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1075 --><!-- Begin Topic Entry 1147 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1147' onclick='return topic_toggle_folder("1147");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1147'><a id="tid-link-1147" href="http://forum.imgburn.com/index.php?showtopic=1147" title="This topic was started: Mar 24 2006, 10:27 AM">Hanging Imgburn</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1147");' id='tid-desc-1147'>ImgBurn gets stuck and a can&#39;t do a clean exit</span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1147);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2821'>andy5816</a></td>
+	<td align="center" class="row2">41</td>
+	<td class="row2"><span class="lastaction">24th March 2006 - 11:20 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1147&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1147 --><!-- Begin Topic Entry 1141 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1141' onclick='return topic_toggle_folder("1141");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1141'><a id="tid-link-1141" href="http://forum.imgburn.com/index.php?showtopic=1141" title="This topic was started: Mar 22 2006, 08:55 PM">Please Help&#33; Two ISO. Files Onto One Disc</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1141");' id='tid-desc-1141'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1141);">8</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2809'>digidean</a></td>
+	<td align="center" class="row2">109</td>
+	<td class="row2"><span class="lastaction">23rd March 2006 - 09:25 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1141&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=14'>blutach</a></b></span></td></tr>
+<!-- End Topic Entry 1141 --><!-- Begin Topic Entry 1118 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1118' onclick='return topic_toggle_folder("1118");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <a href="#" onclick="PopUp('http://forum.imgburn.com/index.php?act=attach&amp;code=showtopic&amp;tid=1118', 'Attach1118', 500,400); return false;" title="1 attachment(s): View"><img src='style_images/1/attachicon.gif' border='0'  alt='Topic has attachments' /></a><span id='tid-span-1118'><a id="tid-link-1118" href="http://forum.imgburn.com/index.php?showtopic=1118" title="This topic was started: Mar 18 2006, 04:59 PM">rip DVDD and burn with ImgBurn</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1118");' id='tid-desc-1118'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1118);">18</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2785'>lbouchard</a></td>
+	<td align="center" class="row2">463</td>
+	<td class="row2"><span class="lastaction">23rd March 2006 - 08:47 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1118&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=45'>Movie Junkie</a></b></span></td></tr>
+<!-- End Topic Entry 1118 --><!-- Begin Topic Entry 1019 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1019' onclick='return topic_toggle_folder("1019");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1019'><a id="tid-link-1019" href="http://forum.imgburn.com/index.php?showtopic=1019" title="This topic was started: Mar 2 2006, 12:21 AM">Error</a></span> &nbsp;<a href="javascript:multi_page_jump('http://forum.imgburn.com/index.php?showtopic=1019', 27, 20 );" title="multipage jump"><img src='style_images/1/pages_icon.gif' alt='*' border='0' /></a> <span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1019&amp;st=0">1</a></span><span class="minipagelink"><a href="http://forum.imgburn.com/index.php?showtopic=1019&amp;st=20">2</a></span>
+			<div class="desc"><span onclick='return span_desc_to_input("1019");' id='tid-desc-1019'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1019);">26</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2700'>sober</a></td>
+	<td align="center" class="row2">574</td>
+	<td class="row2"><span class="lastaction">23rd March 2006 - 08:40 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1019&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=2700'>sober</a></b></span></td></tr>
+<!-- End Topic Entry 1019 --><!-- Begin Topic Entry 1142 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1142' onclick='return topic_toggle_folder("1142");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1142'><a id="tid-link-1142" href="http://forum.imgburn.com/index.php?showtopic=1142" title="This topic was started: Mar 23 2006, 02:21 PM">Dual Layer Question</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1142");' id='tid-desc-1142'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1142);">1</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2404'>rew</a></td>
+	<td align="center" class="row2">108</td>
+	<td class="row2"><span class="lastaction">23rd March 2006 - 02:57 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1142&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=1'>LIGHTNING UK&#33;</a></b></span></td></tr>
+<!-- End Topic Entry 1142 --><!-- Begin Topic Entry 1138 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1138' onclick='return topic_toggle_folder("1138");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1"><img src="style_images/1/folder_post_icons/icon2.gif" border="0" alt="" /></td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1138'><a id="tid-link-1138" href="http://forum.imgburn.com/index.php?showtopic=1138" title="This topic was started: Mar 22 2006, 03:44 PM">Please help, DVD won&#39;t playback on DVD player&#33;</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1138");' id='tid-desc-1138'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1138);">7</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2807'>jaaesa</a></td>
+	<td align="center" class="row2">152</td>
+	<td class="row2"><span class="lastaction">23rd March 2006 - 09:24 AM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1138&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=13'>polopony</a></b></span></td></tr>
+<!-- End Topic Entry 1138 --><!-- Begin Topic Entry 1127 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1127' onclick='return topic_toggle_folder("1127");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1127'><a id="tid-link-1127" href="http://forum.imgburn.com/index.php?showtopic=1127" title="This topic was started: Mar 19 2006, 05:46 PM">unreadable dvd on toshiba</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1127");' id='tid-desc-1127'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1127);">13</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2789'>Phil Viton</a></td>
+	<td align="center" class="row2">191</td>
+	<td class="row2"><span class="lastaction">22nd March 2006 - 10:58 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1127&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=11'>volvofl10</a></b></span></td></tr>
+<!-- End Topic Entry 1127 --><!-- Begin Topic Entry 1133 -->
+<tr> 
+	<td align="center" class="row1" id='tid-folder-1133' onclick='return topic_toggle_folder("1133");'><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' /></td>
+	<td align="center" class="row1">&nbsp;</td>
+	<td class="row1" valign="middle">
+	    <div style='float:right'></div>
+		<div>
+			 <span id='tid-span-1133'><a id="tid-link-1133" href="http://forum.imgburn.com/index.php?showtopic=1133" title="This topic was started: Mar 21 2006, 12:38 AM">Salvaging CMC Media Burns</a></span> 
+			<div class="desc"><span onclick='return span_desc_to_input("1133");' id='tid-desc-1133'></span></div>
+		</div>
+	</td>
+	<td align='center' class="row2">
+     <a href="javascript:who_posted(1133);">6</a>    </td>
+	<td align="center" class="row2"><a href='http://forum.imgburn.com/index.php?showuser=2798'>epcot</a></td>
+	<td align="center" class="row2">88</td>
+	<td class="row2"><span class="lastaction">21st March 2006 - 11:20 PM<br /><a href="http://forum.imgburn.com/index.php?showtopic=1133&amp;view=getlastpost">Last post by:</a> <b><a href='http://forum.imgburn.com/index.php?showuser=45'>Movie Junkie</a></b></span></td></tr>
+<!-- End Topic Entry 1133 --><tr>
+			<td colspan="8" class="darkrow1">
+				<table class='ipbtable' cellspacing="0">
+					<tr>
+						<td width="50%" class="nopad">
+							<form action="http://forum.imgburn.com/index.php?" method="post" name="search">
+								<input type="hidden" name="forums" value="6" />
+								<input type="hidden" name="cat_forum" value="forum" />
+								<input type="hidden" name="act" value="Search" />
+								<input type="hidden" name="joinname" value="1" />
+								<input type="hidden" name="CODE" value="01" />
+								<input type="text" size="30" name="keywords" value="Enter Keywords" onfocus="this.value = '';" /> <input type="submit" value="Search forum" class="button" />
+							</form>
+						</td>					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr> 
+			<td class="catend" colspan="8"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<table class='ipbtable' cellspacing="0">
+	<tr>
+		<td style='padding-left:0px' width="50%" nowrap="nowrap"><span class="pagelink" id='page-jump'>12 Pages <img src='style_images/1/menu_action_down.gif' alt='V' title='Open Menu' border='0' /></span>&nbsp;&nbsp;<span class="pagecurrent">1</span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=30" title="2">2</a></span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=60" title="3">3</a></span>&nbsp;<span class="pagelink"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=30" title="Next page">&gt;</a></span>&nbsp;<span class="pagelinklast"><a href="http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all&amp;st=330" title="Go to last page">&raquo;</a></span>&nbsp;
+<script type="text/javascript">
+//<![CDATA[
+ipb_pages_shown++;
+var pgjmp = document.getElementById( 'page-jump' );
+pgjmp.id  = 'page-jump-'+ipb_pages_shown;
+ipb_pages_array[ ipb_pages_shown ] = new Array( 'http://forum.imgburn.com/index.php?showforum=6&amp;prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all', 30, 351 );
+menu_build_menu(
+	pgjmp.id,
+	new Array(  "--NODIV--<div onmouseover='pages_st_focus("+ipb_pages_shown+")' class='popupmenu-category' align='center'>Jump to Page</div>",
+				"<input type='text' size='5' name='st' id='st-"+ipb_pages_shown+"' /> <input type='button' class='button' onclick='do_multi_page_jump("+ipb_pages_shown+");' value='Go' />" ) );
+//]]>
+</script></td>
+		<td class='nopad' style='padding:5px 0px 5px 0px' align="right" width="50%"><a href="http://forum.imgburn.com/index.php?act=post&amp;do=new_post&amp;f=6"><img src='style_images/1/t_new.gif' border='0'  alt='Start new topic' /></a></td>
+	</tr>
+</table>
+<div class="borderwrap" style='padding-bottom:1px;'>
+	<div class="formsubtitle" style="padding: 4px;">1 User(s) are browsing this forum (1 Guests and 0 Anonymous Users)</div>
+	<div class="row1" style="padding: 4px;">0 Members: </div>
+</div>
+<br />
+<div class="activeusers">
+	<div class="row2">
+		<table class='ipbtable' cellspacing="0">
+			<tr>
+				<td width="5%" nowrap="nowrap">
+					<img src='style_images/1/f_norm.gif' border='0'  alt='New Posts' />&nbsp;&nbsp;<span class="desc">New Replies</span>
+					<br /><img src='style_images/1/f_norm_no.gif' border='0'  alt='No New Posts' />&nbsp;&nbsp;<span class="desc">No New Replies</span>
+					<br /><img src='style_images/1/f_hot.gif' border='0'  alt='Hot topic' />&nbsp;&nbsp;<span class="desc">Hot Topic (New)</span>
+					<br /><img src='style_images/1/f_hot_no.gif' border='0'  alt='No new' />&nbsp;&nbsp;<span class="desc">Hot Topic (No New)</span>&nbsp;
+				</td>
+				<td width="5%" nowrap="nowrap">
+					<img src='style_images/1/f_poll.gif' border='0'  alt='Poll' />&nbsp;&nbsp;<span class="desc">Poll (New)</span>
+					<br /><img src='style_images/1/f_poll_no.gif' border='0'  alt='No new votes' />&nbsp;&nbsp;<span class="desc">Poll (No New)</span>
+					<br /><img src='style_images/1/f_closed.gif' border='0'  alt='Closed' />&nbsp;&nbsp;<span class="desc">Locked Topic</span>
+					<br /><img src='style_images/1/f_moved.gif' border='0'  alt='Moved' />&nbsp;&nbsp;<span class="desc">Moved Topic</span>
+				</td>
+				<td align="right" width="90%">
+					<form onsubmit="if(document.jumpmenu.f.value == -1){return false;}" action='http://forum.imgburn.com/index.php?act=SF' method='get' name='jumpmenu'>
+			             <input type='hidden' name='act' value='SF' />
+<input type='hidden' name='s' value='' />
+			             <select name='f' onchange="if(this.options[this.selectedIndex].value != -1){ document.jumpmenu.submit() }" class='dropdown'>
+			             <optgroup label="Site Jump">
+			              <option value='sj_home'>Forum Home</option>
+			              <option value='sj_search'>Search</option>
+			              <option value='sj_help'>Help</option>
+			             </optgroup>
+			             <optgroup label="Forum Jump"><option value="1">General</option>
+<option value="2">&nbsp;&nbsp;&#0124;-- Announcements</option>
+<option value="15">&nbsp;&nbsp;&#0124;-- Drives &amp; Media</option>
+<option value="3">&nbsp;&nbsp;&#0124;-- FAQ</option>
+<option value="4">&nbsp;&nbsp;&#0124;-- Guides</option>
+<option value="5">ImgBurn</option>
+<option value="6" selected="selected">&nbsp;&nbsp;&#0124;-- ImgBurn Support</option>
+<option value="7">&nbsp;&nbsp;&#0124;-- ImgBurn Bugs</option>
+<option value="8">&nbsp;&nbsp;&#0124;-- ImgBurn Suggestions</option>
+<option value="9">&nbsp;&nbsp;&#0124;-- ImgBurn General</option>
+<option value="11">Other</option>
+<option value="12">&nbsp;&nbsp;&#0124;-- Chat</option>
+<option value="13">&nbsp;&nbsp;&#0124;-- Test</option>
+</optgroup>
+</select>&nbsp;<input type='submit' value='Go' class='button' /></form><br /><br />
+					<form action="http://forum.imgburn.com/index.php?act=SF&amp;f=6&amp;st=0&amp;changefilters=1" method="post">
+						<select name="sort_key"><option value='last_post' selected='selected'>Order: Last Post</option>
+<option value='last_poster_name'>Order: Last Poster</option>
+<option value='title'>Order: Topic Title</option>
+<option value='starter_name'>Order: Topic Starter</option>
+<option value='start_date'>Order: Topic Started</option>
+<option value='topic_hasattach'>Order: Attachments</option>
+<option value='posts'>Order: Replies</option>
+<option value='views'>Order: Views</option>
+</select>
+						<select name="sort_by"><option value='Z-A' selected='selected'>Z-A</option>
+<option value='A-Z'>A-Z</option>
+</select>
+						<select name="prune_day"><option value='1'>From: Today</option>
+<option value='5'>From: 5 days</option>
+<option value='7'>From: 7 days</option>
+<option value='10'>From: 10 days</option>
+<option value='15'>From: 15 days</option>
+<option value='20'>From: 20 days</option>
+<option value='25'>From: 25 days</option>
+<option value='30'>From: 30 days</option>
+<option value='60'>From: 60 days</option>
+<option value='90'>From: 90 days</option>
+<option value='100' selected='selected'>Show All</option>
+</select>
+						<select name="topicfilter"><option value='all' selected='selected'>Topics: All</option>
+<option value='open'>Topics: Open</option>
+<option value='hot'>Topics: Hot</option>
+<option value='poll'>Topics: Polls</option>
+<option value='locked'>Topics: Locked</option>
+<option value='moved'>Topics: Moved</option>
+</select>
+						<input type="submit" value="Go" class="button" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<br clear="all" /><script type='text/javascript'>
+//<![CDATA[
+ // INIT links for editing
+ 
+ if ( use_enhanced_js && perm_can_edit )
+ {
+ 	forum_init_topic_links();
+ }
+//]]>
+</script>
+<table cellspacing="0" id="gfooter">
+	<tr>
+		<td width="45%"> </td>
+		<td width="10%" align="center" nowrap="nowrap"><a href="lofiversion/index.php/f6.html"><b>Lo-Fi Version</b></a></td>
+		<td width="45%" align="right" nowrap="nowrap">Time is now: 29th March 2006 - 02:26 AM</td>
+	</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+menu_do_global_init();//]]>
+</script>
+ 
+<!-- Copyright Information -->
+        				  <div align='center' class='copyright'>
+        				  	<a href='http://www.invisionboard.com' style='text-decoration:none' target='_blank'>Invision Power Board</a>
+        				  	v2.1.5 &copy; 2006 &nbsp;IPS, Inc.
+        				  </div>
+		<!-- / Copyright -->
+</div>
+</body> 
+</html>

@@ -1,0 +1,47 @@
+Product photos added to the osCommerce 2.2 MS2 exhibit (exhibits/oscommerce/images/...).
+All are from Wikimedia Commons under public-domain or CC0 terms. Each was cropped (or padded with white)
+to osCommerce's 5:4 product image box and scaled to 200x160 JPEG; nothing else was changed.
+Everything else in the exhibit, including the Matrox/Microsoft product images and
+images/dvd/no_picture.gif, ships in oscommerce-2.2ms2.tar.gz.
+
+images/logitech/mx518.jpg
+  source:  https://commons.wikimedia.org/wiki/File:Logitech_MX-518.JPG
+  author:  Xanor
+  license: CC0 (CC0 1.0 Universal)
+  photo:   Logitech MX-518
+
+images/creative/audigy2zs.jpg
+  source:  https://commons.wikimedia.org/wiki/File:SoundBlaster_Audigy_2_ZS_SB0350.jpg
+  author:  HennR
+  license: CC0 (CC0 1.0 Universal)
+  photo:   Photo of a SoundBlaster Audigy 2 (model name SB0350) (actually Dell OEM model code SB0243) PCI sound card.
+
+images/buffalo/firestix512.jpg
+  source:  https://commons.wikimedia.org/wiki/File:USB_Stick_Buffalo_Firestix_512MB.jpg
+  author:  MOS6502
+  license: Public domain (public domain dedication by the author)
+  photo:   USB Stick Buffalo Firestix 512MB
+
+images/logitech/quickcam_pro4000.jpg
+  source:  https://commons.wikimedia.org/wiki/File:Logitech_Quickcam_Pro_4000.jpg
+  author:  Dave Pape
+  license: Public domain (public domain dedication by the author)
+  photo:   Logitech Quickcam Pro 4000 webcam (without "privacy cover")
+
+images/asus/v9950ultra.jpg
+  source:  https://commons.wikimedia.org/wiki/File:ASUS_GeForce_FX_5950_Ultra.png
+  author:  Hyins
+  license: Public domain (public domain dedication by the author)
+  photo:   ASUS GeForce FX 5950 Ultra Graphic card
+
+images/ati/radeon9800pro.jpg
+  source:  https://commons.wikimedia.org/wiki/File:ATI_Radeon_9800_Pro.jpg
+  author:  JoeT
+  license: Public domain (public domain dedication by the author)
+  photo:   Scheda video ATI Radeon 9800 Pro 128 MB
+
+images/netgear/dg834g.jpg
+  source:  https://commons.wikimedia.org/wiki/File:Netgear-DG834G-Router.jpg
+  author:  Mattym129 (Wikimedia Commons user)
+  license: Public domain (public domain dedication by the author)
+  photo:   My Netgear DG834G Wireless ADSL Modem Router

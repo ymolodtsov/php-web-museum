@@ -1,0 +1,102 @@
+IPB 2.1.5 exhibit (exhibits/ipb) -- archived sources
+=====================================================
+All files fetched raw (Wayback "id_" mode). Rebuild: python3 build.py
+(re-download assets with python3 fetch_assets.py if raw/assets is missing).
+
+Pages (markup used as the page; content swapped for content.py)
+---------------------------------------------------------------
+index.html     https://web.archive.org/web/20060512161953id_/http://forum.imgburn.com/index.php
+               (ImgBurn Support Forum, IPB v2.1.5, stock default skin, style_images/1, logo4.gif)
+showforum.html https://web.archive.org/web/20060329022640id_/http://forum.imgburn.com/index.php?showforum=6
+showtopic.html https://web.archive.org/web/20060329033426id_/http://forum.imgburn.com/index.php?showtopic=1160
+showuser.html  https://web.archive.org/web/20060329105728id_/http://forums.invisionpower.com/index.php?showuser=129
+               (profile body only; IPB v2.1.5 default skin, header/footer from the imgburn index)
+
+Fragments grafted into those pages (real IPB 2.1 output)
+--------------------------------------------------------
+Today's Birthdays rows   https://web.archive.org/web/20060503080902id_/http://forums.invisionpower.com/index.php  (v2.1.5)
+Quote box markup         https://web.archive.org/web/20060620140329id_/http://forum.imgburn.com/index.php?showtopic=1255  (v2.1.6)
+Fast Reply button + box  https://web.archive.org/web/20060629094609id_/http://invisiongames.org/forum/index.php?showtopic=3525  (v2.1.6, stock skin, guests allowed to reply)
+Emoticon <img> markup    https://web.archive.org/web/20060503195349id_/http://forums.xbox-scene.com/index.php?showtopic=500142  (v2.1.4)
+
+Removed from the source pages
+-----------------------------
+imgburn: Google AdSense banner (#adverts_banner), favicon, forum-rules "Information" box, board name/links.
+IPS profile: IP.Blog "My Blog" row, task image, all IPS header/branding (only the profile body is used).
+
+Assets (stylesheet, scripts, images; path <TAB> archived URL)
+-------------------------------------------------------------
+jscripts/ipb_board.js	https://web.archive.org/web/20060620140601id_/http://forum.imgburn.com/jscripts/ipb_board.js
+jscripts/ipb_forum.js	https://web.archive.org/web/20060329003044id_/http://forum.imgburn.com/jscripts/ipb_forum.js
+jscripts/ipb_global.js	https://web.archive.org/web/20060617061200id_/http://forum.imgburn.com/jscripts/ipb_global.js
+jscripts/ipb_profile.js	https://web.archive.org/web/20060509154714id_/http://forums.invisionpower.com/jscripts/ipb_profile.js
+jscripts/ipb_topic.js	https://web.archive.org/web/20060715010125id_/http://forum.imgburn.com/jscripts/ipb_topic.js
+jscripts/ips_menu.js	https://web.archive.org/web/20060617061024id_/http://forum.imgburn.com/jscripts/ips_menu.js
+style_emoticons/default/biggrin.gif	https://web.archive.org/web/20060708152317id_/http://forum.imgburn.com/style_emoticons/default/biggrin.gif
+style_emoticons/default/smile.gif	https://web.archive.org/web/20060616085955id_/http://forum.imgburn.com/style_emoticons/default/smile.gif
+style_images/1/aff_cross.gif	https://web.archive.org/web/20060126222523id_/http://forums.invisionpower.com/style_images/1/aff_cross.gif
+style_images/1/aff_tick.gif	https://web.archive.org/web/20060126204720id_/http://forums.invisionpower.com/style_images/1/aff_tick.gif
+style_images/1/bf_new.gif	https://web.archive.org/web/20060620140737id_/http://forum.imgburn.com/style_images/1/bf_new.gif
+style_images/1/blank.gif	https://web.archive.org/web/20061022143918id_/http://forums.invisionpower.com/style_images/1/blank.gif
+style_images/1/calen.gif	https://web.archive.org/web/20060723104257id_/http://forum.imgburn.com/style_images/1/calen.gif
+style_images/1/click2enlarge.gif	https://web.archive.org/web/20061120112951id_/http://forums.invisionpower.com/style_images/1/click2enlarge.gif
+style_images/1/css_img_code.gif	https://web.archive.org/web/20061120112847id_/http://forums.invisionpower.com/style_images/1/css_img_code.gif
+style_images/1/css_img_quote.gif	https://web.archive.org/web/20061120112958id_/http://forums.invisionpower.com/style_images/1/css_img_quote.gif
+style_images/1/exp_minus.gif	https://web.archive.org/web/20060620140820id_/http://forum.imgburn.com/style_images/1/exp_minus.gif
+style_images/1/exp_plus.gif	https://web.archive.org/web/20060620140758id_/http://forum.imgburn.com/style_images/1/exp_plus.gif
+style_images/1/f_closed.gif	https://web.archive.org/web/20060721124449id_/http://forum.imgburn.com/style_images/1/f_closed.gif
+style_images/1/f_hot.gif	https://web.archive.org/web/20060721124403id_/http://forum.imgburn.com/style_images/1/f_hot.gif
+style_images/1/f_hot_no.gif	https://web.archive.org/web/20060721124520id_/http://forum.imgburn.com/style_images/1/f_hot_no.gif
+style_images/1/f_moved.gif	https://web.archive.org/web/20060721124325id_/http://forum.imgburn.com/style_images/1/f_moved.gif
+style_images/1/f_norm.gif	https://web.archive.org/web/20060721124419id_/http://forum.imgburn.com/style_images/1/f_norm.gif
+style_images/1/f_norm_no.gif	https://web.archive.org/web/20060721124531id_/http://forum.imgburn.com/style_images/1/f_norm_no.gif
+style_images/1/f_poll.gif	https://web.archive.org/web/20060721124438id_/http://forum.imgburn.com/style_images/1/f_poll.gif
+style_images/1/f_poll_no.gif	https://web.archive.org/web/20060721124550id_/http://forum.imgburn.com/style_images/1/f_poll_no.gif
+style_images/1/folder_js_skin/ips_menu_html.js	https://web.archive.org/web/20060617061137id_/http://forum.imgburn.com/style_images/1/folder_js_skin/ips_menu_html.js
+style_images/1/folder_rte_images/rte_tile.gif	https://web.archive.org/web/20051014061513id_/http://forums.invisionpower.com/style_images/1/folder_rte_images/rte_tile.gif
+style_images/1/icon_msg_nonew.gif	https://web.archive.org/web/20060418030326id_/http://forums.invisionpower.com/style_images/1/icon_msg_nonew.gif
+style_images/1/img_larger.gif	https://web.archive.org/web/20061120112936id_/http://forums.invisionpower.com/style_images/1/img_larger.gif
+style_images/1/lastpost.gif	https://web.archive.org/web/20060620140340id_/http://forum.imgburn.com/style_images/1/lastpost.gif
+style_images/1/login-button.gif	https://web.archive.org/web/20060617132306id_/http://forum.imgburn.com/style_images/1/login-button.gif
+style_images/1/logo4.gif	https://web.archive.org/web/20060617061212id_/http://forum.imgburn.com/style_images/1/logo4.gif
+style_images/1/menu_action_down.gif	https://web.archive.org/web/20060714222019id_/http://forum.imgburn.com/style_images/1/menu_action_down.gif
+style_images/1/menu_item.gif	https://web.archive.org/web/20070316092234id_/http://forum.imgburn.com/style_images/1/menu_item.gif
+style_images/1/nav.gif	https://web.archive.org/web/20060617061303id_/http://forum.imgburn.com/style_images/1/nav.gif
+style_images/1/nav_m.gif	https://web.archive.org/web/20060617061315id_/http://forum.imgburn.com/style_images/1/nav_m.gif
+style_images/1/p_card.gif	https://web.archive.org/web/20060715010258id_/http://forum.imgburn.com/style_images/1/p_card.gif
+style_images/1/p_mq_add.gif	https://web.archive.org/web/20060715010333id_/http://forum.imgburn.com/style_images/1/p_mq_add.gif
+style_images/1/p_offline.gif	https://web.archive.org/web/20060715105721id_/http://forum.imgburn.com/style_images/1/p_offline.gif
+style_images/1/p_online.gif	https://web.archive.org/web/20060709032027id_/http://forum.imgburn.com/style_images/1/p_online.gif
+style_images/1/p_pm.gif	https://web.archive.org/web/20060715010221id_/http://forum.imgburn.com/style_images/1/p_pm.gif
+style_images/1/p_quote.gif	https://web.archive.org/web/20060715005939id_/http://forum.imgburn.com/style_images/1/p_quote.gif
+style_images/1/p_up.gif	https://web.archive.org/web/20060715010232id_/http://forum.imgburn.com/style_images/1/p_up.gif
+style_images/1/pages_icon.gif	https://web.archive.org/web/20060622172216id_/http://forum.imgburn.com/style_images/1/pages_icon.gif
+style_images/1/pip.gif	https://web.archive.org/web/20060715010153id_/http://forum.imgburn.com/style_images/1/pip.gif
+style_images/1/post_snapback.gif	https://web.archive.org/web/20060616090042id_/http://forum.imgburn.com/style_images/1/post_snapback.gif
+style_images/1/profile_aim.gif	https://web.archive.org/web/20060418025938id_/http://forums.invisionpower.com/style_images/1/profile_aim.gif
+style_images/1/profile_icq.gif	https://web.archive.org/web/20060418025944id_/http://forums.invisionpower.com/style_images/1/profile_icq.gif
+style_images/1/profile_item.gif	https://web.archive.org/web/20060418030102id_/http://forums.invisionpower.com/style_images/1/profile_item.gif
+style_images/1/profile_msn.gif	https://web.archive.org/web/20060418025950id_/http://forums.invisionpower.com/style_images/1/profile_msn.gif
+style_images/1/profile_yahoo.gif	https://web.archive.org/web/20060418030151id_/http://forums.invisionpower.com/style_images/1/profile_yahoo.gif
+style_images/1/spacer.gif	https://web.archive.org/web/20060715010321id_/http://forum.imgburn.com/style_images/1/spacer.gif
+style_images/1/stats.gif	https://web.archive.org/web/20060620140722id_/http://forum.imgburn.com/style_images/1/stats.gif
+style_images/1/t_new.gif	https://web.archive.org/web/20060714222138id_/http://forum.imgburn.com/style_images/1/t_new.gif
+style_images/1/t_qr.gif	https://web.archive.org/web/20060620031514id_/http://forums.invisionpower.com/style_images/1/t_qr.gif
+style_images/1/t_reply.gif	https://web.archive.org/web/20060715010040id_/http://forum.imgburn.com/style_images/1/t_reply.gif
+style_images/1/tile_back.gif	https://web.archive.org/web/20061120112929id_/http://forums.invisionpower.com/style_images/1/tile_back.gif
+style_images/1/tile_cat.gif	https://web.archive.org/web/20061120112902id_/http://forums.invisionpower.com/style_images/1/tile_cat.gif
+style_images/1/tile_sub.gif	https://web.archive.org/web/20060518064030id_/http://forums.invisionpower.com/style_images/1/tile_sub.gif
+style_images/1/to_post_off.gif	https://web.archive.org/web/20060720050523id_/http://forum.imgburn.com/style_images/1/to_post_off.gif
+style_images/1/user.gif	https://web.archive.org/web/20060620140713id_/http://forum.imgburn.com/style_images/1/user.gif
+style_images/css_3.css	https://web.archive.org/web/20060329003035id_/http://forum.imgburn.com/style_images/css_3.css
+
+Notes / known departures
+------------------------
+- Post signatures: IPB 2.1 hides signatures from guests (guests_sig); no archived guest page of a 2.1
+  board shows them, so signatures appear only in the profile's Signature box (real markup).
+- Fast Reply is rendered open (qr_open display "show", IPB's own value) instead of collapsed.
+- Topic page source is v2.1.5 (Mar 2006); quote and Fast Reply fragments come from v2.1.6 pages of
+  the same default skin. Footer reads v2.1.5.
+- Images were archived between Oct 2005 and Mar 2007 (nearest captures); tile_back/tile_cat digests
+  are identical across that span on forums.invisionpower.com.
+- Forum icons stay "New Posts" (bf_new) as the guest crawler saw them on the source board.

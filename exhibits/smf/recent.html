@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Recent Posts" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="Themes/default/script.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "Themes/default";
+		var smf_images_url = "Themes/default/images";
+		var smf_scripturl = "index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+	// ]]></script>
+	<title>Recent Posts</title>
+	<link rel="stylesheet" type="text/css" href="Themes/default/style.css" />
+	<link rel="stylesheet" type="text/css" href="Themes/default/print.css" media="print" />
+	<link rel="help" href="help.html" target="_blank" />
+	<link rel="search" href="search.html" />
+	<link rel="contents" href="index.html" />
+	<link rel="alternate" type="application/rss+xml" title="Aperture Photography Community - RSS" href="#" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+			document.getElementById("upshrinkHeader2").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_ic = false;
+
+			function shrinkHeaderIC(mode)
+			{
+				document.cookie = "upshrinkIC=" + (mode ? 1 : 0);
+				document.getElementById("upshrink_ic").src = smf_images_url + (mode ? "/expand.gif" : "/collapse.gif");
+
+				document.getElementById("upshrinkHeaderIC").style.display = mode ? "none" : "";
+
+				current_header_ic = mode;
+			}
+		// ]]></script>
+</head>
+<body>
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div class="tborder" >
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="catbg" height="32">
+					<span style="font-family: Verdana, sans-serif; font-size: 140%; ">Aperture Photography Community</span>
+				</td>
+				<td align="right" class="catbg">
+					<img src="Themes/default/images/smflogo.gif" style="margin: 2px;" alt="" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" >
+			<tr>
+				<td class="titlebg2" height="32" align="right">
+					<span class="smalltext">July 21, 2007, 03:22:03 pm</span>
+					<a href="#" onclick="shrinkHeader(!current_header); return false;"><img id="upshrink" src="Themes/default/images/upshrink.gif" alt="*" title="Shrink or expand the header." align="bottom" style="margin: 0 1ex;" /></a>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top" colspan="2">
+					<table width="100%" class="bordercolor" cellpadding="8" cellspacing="1" border="0" style="margin-top: 1px;">
+						<tr>
+							<td colspan="2" width="100%" valign="top" class="windowbg2"><span class="middletext">Welcome, <b>Guest</b>. Please <a href="login.html">login</a> or <a href="#">register</a>.				</span>
+								<script language="JavaScript" type="text/javascript" src="Themes/default/sha1.js"></script>
+
+								<form action="#" method="get" accept-charset="ISO-8859-1" class="middletext" style="margin: 3px 1ex 1px 0;" onsubmit="hashLoginPassword(this, 'c5fee2b0916f976234728b384a677c51');">
+									<input type="text" name="user" size="10" /> <input type="password" size="10" />
+									<select name="cookielength">
+										<option value="60">1 Hour</option>
+										<option value="1440">1 Day</option>
+										<option value="10080">1 Week</option>
+										<option value="43200">1 Month</option>
+										<option value="-1" selected="selected">Forever</option>
+									</select>
+									<input type="submit" value="Login" /><br />
+									<span class="middletext">Login with username, password and session length</span>
+									<input type="hidden" name="hash_passwrd" value="" />
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table id="upshrinkHeader2" width="100%" cellpadding="4" cellspacing="0" border="0">
+			<tr>
+				<td width="90%" class="titlebg2">
+					<span class="smalltext"><b>News</b>: Welcome to Aperture Photography Community! The July photo contest theme is <b>Water</b> -- entries close July 31. New here? Please read the critique guidelines before posting your first photo.</span>
+				</td>
+				<td class="titlebg2" align="right" nowrap="nowrap" valign="top">
+					<form action="#" method="get" accept-charset="ISO-8859-1" style="margin: 0;">
+						<a href="#"><img src="Themes/default/images/filter.gif" align="middle" style="margin: 0 1ex;" alt="" /></a>
+						<input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 11ex;" />
+						<input type="hidden" name="advanced" value="0" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+			<table cellpadding="0" cellspacing="0" border="0" style="margin-left: 10px;">
+				<tr>
+					<td class="maintab_first">&nbsp;</td><td class="maintab_active_first">&nbsp;</td>
+				<td valign="top" class="maintab_active_back">
+					<a href="index.html">Home</a>
+				</td><td class="maintab_active_last">&nbsp;</td>
+				<td valign="top" class="maintab_back">
+					<a href="help.html">Help</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="search.html">Search</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="calendar.html">Calendar</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="login.html">Login</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="#">Register</a>
+				</td>
+				<td class="maintab_last">&nbsp;</td>
+			</tr>
+		</table>
+	<div id="bodyarea" style="padding: 1ex 0px 2ex 0px;">
+		<div style="padding: 3px;"><div class="nav" style="font-size: smaller; margin-bottom: 2ex; margin-top: 2ex;"><b><a href="index.html" class="nav">Aperture Photography Community</a></b>&nbsp;>&nbsp;<b><a href="recent.html" class="nav">Recent Posts</a></b></div></div>
+		<div class="middletext" style="margin-bottom: 1ex;">Pages: [<b>1</b>] <a class="navPages" href="#">2</a> <a class="navPages" href="#">3</a> <b> ... </b><a class="navPages" href="#">10</a> </div>
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;1&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="topic.html#msg146">Re: C&amp;C welcome: sunset over the harbor</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 03:05:46 pm&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile.html">harborlight</a> - Last post by <a href="profile.html">harborlight</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">Thanks all, I&#039;ll try a tighter crop and lift the shadows. Figured the piling added some context but you&#039;re probably right that it&#039;s just dead space.<br /><br /><div class="quoteheader"><a href="topic.html#msg144">Quote from: nightshooter on <b>Today</b> at 02:14:46 pm</a></div><div class="quote">Also, the Flickr version is 1024 wide, guidelines say 800. <img src="Smileys/default/wink.gif" alt="Wink" border="0" /></div>Oops. Fixed. <img src="Smileys/default/embarrassed.gif" alt="Embarrassed" border="0" /></div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;2&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="topic.html#msg145">Re: C&amp;C welcome: sunset over the harbor</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 02:40:26 pm&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile.html">harborlight</a> - Last post by <a href="profile-vista_steve.html">vista_steve</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">Good light. Off topic, but is anyone else&#039;s Vista box slow to import off a card reader? I&#039;ll take it to the other thread.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;3&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="topic.html#msg144">Re: C&amp;C welcome: sunset over the harbor</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 02:14:46 pm&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile.html">harborlight</a> - Last post by <a href="profile-nightshooter.html">nightshooter</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post"><div class="quoteheader"><a href="topic.html#msg132">Quote from: harborlight on <b>Today</b> at 09:14:58 am</a></div><div class="quote">Would love some feedback on the composition -- I keep going back and forth on whether the horizon should be lower.</div>Agree with graytones on the crop. I&#039;d also pull the shadows up slightly, there&#039;s some detail hiding in the pilings. The horizon is fine where it is, on the lower third. Lowering it further would just give you more sky and the sky isn&#039;t the interesting part.<br /><br />Also, the Flickr version is 1024 wide, guidelines say 800. <img src="Smileys/default/wink.gif" alt="Wink" border="0" /></div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;4&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#1">General</a> / <a href="#">General Photography Discussion</a> / <b><a href="#">Re: iPhone camera vs a real one?</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 01:52:44 pm&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile-sunny_d.html">sunny_d</a> - Last post by <a href="profile-vista_steve.html">vista_steve</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">Six hundred bucks for the 8GB model plus a two-year AT&amp;T contract. For that money I&#039;d rather have a D40 kit and a cheap phone. <img src="Smileys/default/smiley.gif" alt="Smiley" border="0" /></div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;5&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#1">General</a> / <a href="#">Gear Talk</a> / <b><a href="topic-poll.html#msg142">Re: Nikon D40 vs Canon 400D, again</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 12:40:09 pm&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile-jkowalski.html">jkowalski</a> - Last post by <a href="profile-oldschoolshooter.html">oldschoolshooter</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post"><div class="quoteheader"><a href="topic-poll.html#msg136">Quote from: jkowalski on <b>Today</b> at 11:02:10 am</a></div><div class="quote">my brother-in-law shoots Canon so I can borrow his 70-300</div>That&#039;s the best reason anyone has given in one of these threads. Borrowing glass beats any spec sheet. Post some soccer shots once you&#039;ve got it.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;6&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="#">Re: First attempt at macro photography</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 11:48:59 am&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile-bugsnapper.html">bugsnapper</a> - Last post by <a href="profile-graytones.html">graytones</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">Brilliant. Mine would have jumped on the lens and I&#039;d have run off screaming.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;7&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="topic.html#msg140">Re: C&amp;C welcome: sunset over the harbor</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 11:41:38 am&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile.html">harborlight</a> - Last post by <a href="profile.html">harborlight</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post"><div class="quoteheader"><a href="topic.html#msg138">Quote from: bugsnapper on <b>Today</b> at 11:20:06 am</a></div><div class="quote">Was that straight out of camera or did you bump the saturation?</div>Shot RAW, converted in Digital Photo Professional with +10 saturation, and that&#039;s it. The sky really was that orange. <img src="Smileys/default/smiley.gif" alt="Smiley" border="0" /></div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;8&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#1">General</a> / <a href="#">General Photography Discussion</a> / <b><a href="#">Re: iPhone camera vs a real one?</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 11:30:52 am&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile-sunny_d.html">sunny_d</a> - Last post by <a href="profile-sunny_d.html">sunny_d</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post"><div class="quoteheader"><a href="#">Quote from: jkowalski on <b>Today</b> at 10:12:40 am</a></div><div class="quote">Has anyone actually seen pictures from it posted on Flickr yet?</div>There&#039;s already a Flickr group for it. Daylight shots look OK. Anything at night is mush.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;9&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="board.html">Photo Critique</a> / <b><a href="topic.html#msg138">Re: C&amp;C welcome: sunset over the harbor</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 11:20:06 am&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile.html">harborlight</a> - Last post by <a href="profile-bugsnapper.html">bugsnapper</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">Lovely colour. Was that straight out of camera or did you bump the saturation? The 400D&#039;s Standard picture style can get a bit hot in the reds.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+		<table width="100%" cellpadding="4" cellspacing="1" border="0" class="bordercolor">
+				<tr class="titlebg2">
+						<td class="middletext">
+								<div style="float: left; width: 3ex;">&nbsp;10&nbsp;</div>
+								<div style="float: left;">&nbsp;<a href="index.html#2">Sharing &amp; Learning</a> / <a href="#">Post-Processing &amp; Software</a> / <b><a href="#">Re: Vista and my card reader, ugh</a></b></div>
+								<div align="right">&nbsp;on: <b>Today</b> at 11:03:08 am&nbsp;</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="catbg" colspan="3">
+							<span class="middletext"> Started by <a href="profile-vista_steve.html">vista_steve</a> - Last post by <a href="profile-graytones.html">graytones</a> </span>
+						</td>
+				</tr>
+				<tr>
+						<td class="windowbg2" colspan="3" valign="top" height="80">
+								<div class="post">I gave up and bought a new SanDisk reader for 20 quid. Vista picked it up straight away. Sometimes it&#039;s just not worth the fight.</div>
+						</td>
+				</tr>
+			</table>
+			<br />
+			<div class="middletext">Pages: [<b>1</b>] <a class="navPages" href="#">2</a> <a class="navPages" href="#">3</a> <b> ... </b><a class="navPages" href="#">10</a> </div>
+	</div>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" align="center" width="100%">
+			<tr>
+				<td width="28%" valign="middle" align="right">
+					<a href="#" target="_blank"><img id="powered-mysql" src="Themes/default/images/powered-mysql.gif" alt="Powered by MySQL" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+					<a href="#" target="_blank"><img id="powered-php" src="Themes/default/images/powered-php.gif" alt="Powered by PHP" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+				</td>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="#" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.3</a> | 
+<a href="#" title="Free Forum Software" target="_blank">SMF &copy; 2006-2007, Simple Machines LLC</a>
+		</span>
+				</td>
+				<td width="28%" valign="middle" align="left">
+					<a href="#" target="_blank"><img id="valid-xhtml10" src="Themes/default/images/valid-xhtml10.gif" alt="Valid XHTML 1.0!" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+					<a href="#" target="_blank"><img id="valid-css" src="Themes/default/images/valid-css.gif" alt="Valid CSS!" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+				</td>
+			</tr>
+		</table>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			window.addEventListener("load", smf_codeFix, false);
+			function smf_codeFix()
+			{
+				var codeFix = document.getElementsByTagName ? document.getElementsByTagName("div") : document.all.tags("div");
+
+				for (var i = 0; i < codeFix.length; i++)
+				{
+					if (codeFix[i].className == "code" && (codeFix[i].scrollWidth > codeFix[i].clientWidth || codeFix[i].clientWidth == 0))
+						codeFix[i].style.overflow = "scroll";
+				}
+			}
+		// ]]></script>
+	</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+</body></html>

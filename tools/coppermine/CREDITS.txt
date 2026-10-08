@@ -1,0 +1,240 @@
+Wanderlens Travel Gallery (Coppermine exhibit): photo sources
+
+All photographs are from Wikimedia Commons and are public domain or CC0 1.0.
+They were centre-cropped, downscaled (photos.py) and given fictional 2004-2005
+camera EXIF (exif.py) for the reconstruction. Titles and captions in the gallery
+are part of the fictional exhibit and do not describe the original uploads.
+
+alps/IMG_4237.JPG  "Zermatt Mascot"
+  Source:  https://commons.wikimedia.org/wiki/File:St._Bernard_dog_with_barrel.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/4/43/St._Bernard_dog_with_barrel.jpg
+  Author:  PxHere
+  Licence: CC0 1.0
+
+alps/IMG_4265.JPG  "Matterhorn from Gornergrat"
+  Source:  https://commons.wikimedia.org/wiki/File:Matterhorn_(63110).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/4/43/Matterhorn_%2863110%29.jpg
+  Author:  Paasikivi
+  Licence: CC0 1.0
+
+alps/IMG_1852.JPG  "Alpine Flowers"
+  Source:  https://commons.wikimedia.org/wiki/File:Matterhorn_suisse.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/f/f3/Matterhorn_suisse.jpg
+  Author:  narya
+  Licence: CC0 1.0
+
+alps/IMG_1872.JPG  "Lake above Zermatt"
+  Source:  https://commons.wikimedia.org/wiki/File:Zermatt,_Switzerland_(Unsplash_ejtY5cAJvI8).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/0/08/Zermatt%2C_Switzerland_%28Unsplash_ejtY5cAJvI8%29.jpg
+  Author:  Joao Branco jfobranco
+  Licence: CC0 1.0
+
+alps/IMG_1899.JPG  "Rhone Glacier"
+  Source:  https://commons.wikimedia.org/wiki/File:1991_Rhonegletscher.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/5/5e/1991_Rhonegletscher.jpg
+  Author:  Jean Stein
+  Licence: CC0 1.0
+
+alps/IMG_1926.JPG  "Ridge Walk, Carnic Alps"
+  Source:  https://commons.wikimedia.org/wiki/File:Kleine_und_Gro%C3%9Fe_Kinigat_Karnischer_Hauptkamm_20070706.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/f/f9/Kleine_und_Gro%C3%9Fe_Kinigat_Karnischer_Hauptkamm_20070706.jpg
+  Author:  Tigerente
+  Licence: CC0 1.0
+
+newengland/IMG_1944.JPG  "Green Mountains at Sunrise"
+  Source:  https://commons.wikimedia.org/wiki/File:Green_Mountain_National_Forest_(20241008-FS-GM-BAG-FallFoliage-003).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/d/d1/Green_Mountain_National_Forest_%2820241008-FS-GM-BAG-FallFoliage-003%29.jpg
+  Author:  Forest Service Photography
+  Licence: Public domain (Commons templates: PD-USGov-USDA-FS)
+
+newengland/IMG_4286.JPG  "Kancamagus Highway"
+  Source:  https://commons.wikimedia.org/wiki/File:Fall_Colors_2019_(20191016-FS-WhiteMountain-001).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/8/8f/Fall_Colors_2019_%2820191016-FS-WhiteMountain-001%29.jpg
+  Author:  usfs_Eastern_Region
+  Licence: Public domain (Commons templates: PD-USGov-USDA-FS)
+
+newengland/IMG_1963.JPG  "Eagle Lake, Acadia"
+  Source:  https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_Eagle_Lake_in_autumn.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/d/d7/Acadia_National_Park%2C_Eagle_Lake_in_autumn.jpg
+  Author:  National Park Service / uncredited derivative work: User:Maps and stuff (cropped to 3:2 ratio removing upper part of image; brightened darker areas)
+  Licence: Public domain (Commons templates: PD-USGov-NPS)
+
+newengland/IMG_1974.JPG  "Birches, Acadia"
+  Source:  https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_deciduous_forest_in_autumn.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/f/f4/Acadia_National_Park%2C_deciduous_forest_in_autumn.jpg
+  Author:  National Park Service / uncredited derivative work: User:Maps and stuff (cropped to 3:2 ratio; white balanced)
+  Licence: Public domain (Commons templates: PD-USGov-NPS)
+
+newengland/IMG_1984.JPG  "View from Gorham Mountain"
+  Source:  https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_from_Gorham_Mountain.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/7/7f/Acadia_National_Park%2C_from_Gorham_Mountain.jpg
+  Author:  National Park Service / uncredited derivative work: User:Maps and stuff (cropped to 3:2 ratio removing most of the overexposed sky)
+  Licence: Public domain (Commons templates: PD-USGov-NPS)
+
+morocco/IMG_4309.JPG  "Jemaa el-Fnaa Storytellers"
+  Source:  https://commons.wikimedia.org/wiki/File:Storytellers_in_Jemaa_el-Fnaa_(Marrakech,_Morocco)_(15722800436).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/0/0b/Storytellers_in_Jemaa_el-Fnaa_%28Marrakech%2C_Morocco%29_%2815722800436%29.jpg
+  Author:  Carlos ZGZ from Paris, France
+  Licence: CC0 1.0
+
+morocco/IMG_2012.JPG  "Souk Semmarine"
+  Source:  https://commons.wikimedia.org/wiki/File:Covered_Souk_Semmarine,_Marrakech,_2008.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/d/da/Covered_Souk_Semmarine%2C_Marrakech%2C_2008.jpg
+  Author:  DimiTalen
+  Licence: CC0 1.0
+
+morocco/IMG_2021.JPG  "Storks on the Wall"
+  Source:  https://commons.wikimedia.org/wiki/File:Ciconia_ciconia,_Storks_on_nest,_Marrakech,_Morocco.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/4/40/Ciconia_ciconia%2C_Storks_on_nest%2C_Marrakech%2C_Morocco.jpg
+  Author:  Bj.schoenmakers
+  Licence: CC0 1.0
+
+morocco/IMG_2047.JPG  "A Door in the Medina"
+  Source:  https://commons.wikimedia.org/wiki/File:The_door_in_the_wall_in_Marrakech.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/8/83/The_door_in_the_wall_in_Marrakech.jpg
+  Author:  Mustang Joe
+  Licence: CC0 1.0
+
+morocco/IMG_2064.JPG  "Chefchaouen Rooftops"
+  Source:  https://commons.wikimedia.org/wiki/File:20230914_10h3540Em_Chefchaouen_enceinte_(53255233962).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/9/99/20230914_10h3540Em_Chefchaouen_enceinte_%2853255233962%29.jpg
+  Author:  Emilien Lebourgeois
+  Licence: Public domain (Commons templates: PD-author-FlickrPDM)
+
+morocco/IMG_2075.JPG  "Chouara Tannery, Fes"
+  Source:  https://commons.wikimedia.org/wiki/File:Tanning_hides_-_Morocco.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/2/25/Tanning_hides_-_Morocco.jpg
+  Author:  Mustang Joe
+  Licence: CC0 1.0
+
+portugal/IMG_4331.JPG  "Rabelo Boats, Porto"
+  Source:  https://commons.wikimedia.org/wiki/File:Port_boats_Porto_Portugal_(52787280519).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/0/0a/Port_boats_Porto_Portugal_%2852787280519%29.jpg
+  Author:  amanderson2
+  Licence: Public domain (Commons templates: PD-author-FlickrPDM)
+
+portugal/IMG_4347.JPG  "Tram, Lisbon"
+  Source:  https://commons.wikimedia.org/wiki/File:December_10,_2006,_Lisbon_89.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/8/8f/December_10%2C_2006%2C_Lisbon_89.jpg
+  Author:  Syced
+  Licence: CC0 1.0
+
+portugal/IMG_2096.JPG  "Belem Tower"
+  Source:  https://commons.wikimedia.org/wiki/File:Torre_de_Bel%C3%A9m._Lisbon,_Portugal._2002_year._(50849056736).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/1/17/Torre_de_Bel%C3%A9m._Lisbon%2C_Portugal._2002_year._%2850849056736%29.jpg
+  Author:  Maxim Sinelshchikov
+  Licence: Public domain (Commons templates: PD-author-FlickrPDM)
+
+portugal/IMG_4370.JPG  "Monserrate Palace, Sintra"
+  Source:  https://commons.wikimedia.org/wiki/File:Monserrate_Sintra2.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/e/e2/Monserrate_Sintra2.jpg
+  Author:  Bunks
+  Licence: CC0 1.0
+
+portugal/IMG_4389.JPG  "Cabo da Roca"
+  Source:  https://commons.wikimedia.org/wiki/File:Cabo_da_Roca_(43607922345).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/f/f8/Cabo_da_Roca_%2843607922345%29.jpg
+  Author:  João Neves
+  Licence: CC0 1.0
+
+portugal/IMG_2106.JPG  "Cliffs near Sagres"
+  Source:  https://commons.wikimedia.org/wiki/File:Vila_do_Bispo_14_(35343649602).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/5/5f/Vila_do_Bispo_14_%2835343649602%29.jpg
+  Author:  em ha
+  Licence: CC0 1.0
+
+tokyo/DSC_1116.JPG  "Senso-ji at Night"
+  Source:  https://commons.wikimedia.org/wiki/File:Five-storied_pagoda_and_Sens%C5%8D-ji_H%C5%8Dz%C5%8Dmon_at_night,_Asakusa,_Tokyo,_2016.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/b/bc/Five-storied_pagoda_and_Sens%C5%8D-ji_H%C5%8Dz%C5%8Dmon_at_night%2C_Asakusa%2C_Tokyo%2C_2016.jpg
+  Author:  DimiTalen
+  Licence: CC0 1.0
+
+tokyo/IMG_4403.JPG  "Shinjuku East Exit"
+  Source:  https://commons.wikimedia.org/wiki/File:August_2007_Shinjuku_6.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/6/6a/August_2007_Shinjuku_6.jpg
+  Author:  Syced
+  Licence: CC0 1.0
+
+tokyo/IMG_4411.JPG  "Nishi-Shinjuku Towers"
+  Source:  https://commons.wikimedia.org/wiki/File:Skyscrapers_in_Nishi-Shinjuku_at_night_-_Shinjuku_Mitsui_Building,_Shinjuku_Sumitomo_Building_-_view_from_Hyatt_Regency_Tokyo_Building_(2016-05-18_by_panayota_@Pixabay_2190035).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/e/e3/Skyscrapers_in_Nishi-Shinjuku_at_night_-_Shinjuku_Mitsui_Building%2C_Shinjuku_Sumitomo_Building_-_view_from_Hyatt_Regency_Tokyo_Building_%282016-05-18_by_panayota_%40Pixabay_2190035%29.jpg
+  Author:  panayota
+  Licence: CC0 1.0
+
+tokyo/DSC_1144.JPG  "Shibuya Side Street"
+  Source:  https://commons.wikimedia.org/wiki/File:Shibuya_night_unsplash.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/9/9b/Shibuya_night_unsplash.jpg
+  Author:  Andre Benz
+  Licence: CC0 1.0
+
+tokyo/DSC_1163.JPG  "Tokyo Tower"
+  Source:  https://commons.wikimedia.org/wiki/File:Illuminated_buildings_and_Tokyo_Tower_at_night_-_Cityscape_in_Minato-ku,_Tokyo_(2017-03_by_Walkerssk_@Pixabay_2138168).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/d/d6/Illuminated_buildings_and_Tokyo_Tower_at_night_-_Cityscape_in_Minato-ku%2C_Tokyo_%282017-03_by_Walkerssk_%40Pixabay_2138168%29.jpg
+  Author:  Walkerssk from Slovakia
+  Licence: CC0 1.0
+
+seasia/IMG_2117.JPG  "Bangkok Tuk-Tuk"
+  Source:  https://commons.wikimedia.org/wiki/File:Tuk_Tuk_Tuk._(51196642663).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/1/15/Tuk_Tuk_Tuk._%2851196642663%29.jpg
+  Author:  Bernard Spragg. NZ from Christchurch, New Zealand
+  Licence: Public domain (Commons templates: PD-author-FlickrPDM)
+
+seasia/IMG_2129.JPG  "Floating Market, Bangkok"
+  Source:  https://commons.wikimedia.org/wiki/File:Vendor_in_the_Damnoen_Saduak_floating_market,_Thailand_(26272499473).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/a/a9/Vendor_in_the_Damnoen_Saduak_floating_market%2C_Thailand_%2826272499473%29.jpg
+  Author:  Mustang Joe
+  Licence: CC0 1.0
+
+seasia/IMG_4432.JPG  "Chiang Mai Night Bazaar"
+  Source:  https://commons.wikimedia.org/wiki/File:Chiangmai_Nightbazaar-1.JPG
+  File:    https://upload.wikimedia.org/wikipedia/commons/0/0a/Chiangmai_Nightbazaar-1.JPG
+  Author:  Rinto Jiang
+  Licence: Public domain (Commons templates: PD-self)
+
+seasia/IMG_2138.JPG  "Luang Prabang Morning Market"
+  Source:  https://commons.wikimedia.org/wiki/File:20191212_Luang_Prabang_market_vegetables.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/1/10/20191212_Luang_Prabang_market_vegetables.jpg
+  Author:  Balon Greyjoy
+  Licence: Public domain (Commons templates: Cc-zero, PD-Laos)
+
+seasia/IMG_2164.JPG  "Angkor Wat Sunrise"
+  Source:  https://commons.wikimedia.org/wiki/File:%E1%9E%90%E1%9F%92%E1%9E%84%E1%9F%83%E1%9E%9A%E1%9F%87%E1%9E%93%E1%9F%85%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9F%E1%9E%B6%E1%9E%91%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%9A%E1%9E%9C%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9F%A1%E1%9F%A4_-_Sunnrise_at_Angkor_Wat_14.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/b/ba/%E1%9E%90%E1%9F%92%E1%9E%84%E1%9F%83%E1%9E%9A%E1%9F%87%E1%9E%93%E1%9F%85%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9F%E1%9E%B6%E1%9E%91%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%9A%E1%9E%9C%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9F%A1%E1%9F%A4_-_Sunnrise_at_Angkor_Wat_14.jpg
+  Author:  Random username 083794703875938
+  Licence: CC0 1.0
+
+seasia/IMG_2190.JPG  "Siem Reap Market Stalls"
+  Source:  https://commons.wikimedia.org/wiki/File:Phnom_krom,_siem_reap_(31133398084).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/1/1d/Phnom_krom%2C_siem_reap_%2831133398084%29.jpg
+  Author:  Stig Berge from Norway
+  Licence: CC0 1.0
+
+seasia/IMG_4456.JPG  "Phnom Penh Riverside"
+  Source:  https://commons.wikimedia.org/wiki/File:Sisowath_quay_phnom_penh_01032011066.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/3/34/Sisowath_quay_phnom_penh_01032011066.jpg
+  Author:  Dtfman
+  Licence: CC0 1.0
+
+seasia/IMG_2202.JPG  "Mekong Delta Boats"
+  Source:  https://commons.wikimedia.org/wiki/File:AA_Stivers_views_Mekong_Delta_(16973802911).jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/3/3c/AA_Stivers_views_Mekong_Delta_%2816973802911%29.jpg
+  Author:  USAID Vietnam
+  Licence: Public domain (Commons templates: PD-USGov-USAID)
+
+seasia/IMG_2224.JPG  "Hoi An Lanterns"
+  Source:  https://commons.wikimedia.org/wiki/File:Hoi_An_-_HoiAn1435.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/b/b8/Hoi_An_-_HoiAn1435.jpg
+  Author:  lumoplank
+  Licence: CC0 1.0
+
+seasia/IMG_2232.JPG  "Halong Bay Limestone Cliffs"
+  Source:  https://commons.wikimedia.org/wiki/File:Ha_Long_Bay_-_Halong1419.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/4/41/Ha_Long_Bay_-_Halong1419.jpg
+  Author:  lumoplank
+  Licence: CC0 1.0
+
+seasia/IMG_2258.JPG  "Halong Bay, Feet Up"
+  Source:  https://commons.wikimedia.org/wiki/File:View_of_Ha_Long_Bay_and_my_foot.jpg
+  File:    https://upload.wikimedia.org/wikipedia/commons/7/78/View_of_Ha_Long_Bay_and_my_foot.jpg
+  Author:  Benoît Prieur
+  Licence: CC0 1.0

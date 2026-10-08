@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>/dev/null / User list</title>
+<link rel="stylesheet" type="text/css" href="style/Oxygen.css" />
+</head>
+<body onload="document.getElementById('userlist').username.focus()">
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+
+<div id="punwrap">
+<div id="punuserlist" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdtitle" class="inbox">
+			<h1><span>/dev/null</span></h1>
+			<p><span>a forum for people who would rather be compiling something</span></p>
+		</div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.html">Index</a></li>
+				<li id="navuserlist"><a href="userlist.html">User list</a></li>
+				<li id="navsearch"><a href="search.html">Search</a></li>
+				<li id="navregister"><a href="register.html">Register</a></li>
+				<li id="navlogin"><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p>You are not logged in.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="blockform">
+	<h2><span>User search</span></h2>
+	<div class="box">
+	<form id="userlist" method="get" action="#">
+		<div class="inform">
+			<fieldset>
+				<legend>Find and sort users</legend>
+				<div class="infldset">
+					<label class="conl">Username<br /><input type="text" name="username" value="" size="25" maxlength="25" /><br /></label>
+					<label class="conl">User group
+					<br /><select name="show_group">
+						<option value="-1" selected="selected">All</option>
+						<option value="1">Administrators</option>
+						<option value="2">Moderators</option>
+						<option value="4">Members</option>
+					</select>
+					<br /></label>
+					<label class="conl">Sort by
+					<br /><select name="sort_by">
+						<option value="username" selected="selected">Username</option>
+						<option value="registered">Registered</option>
+						<option value="num_posts">No. of posts</option>
+					</select>
+					<br /></label>
+					<label class="conl">Sort order
+					<br /><select name="sort_dir">
+						<option value="ASC" selected="selected">Ascending</option>
+						<option value="DESC">Descending</option>
+					</select>
+					<br /></label>
+					<p class="clearb">Enter a username to search for and/or a user group to filter by. The username field can be left blank. Use the wildcard character * for partial matches. Sort users by name, date registered or number of posts and in ascending/descending order.</p>
+				</div>
+			</fieldset>
+		</div>
+		<p><input type="submit" name="search" value="Submit" accesskey="s" /></p>
+	</form>
+	</div>
+</div>
+<div class="linkst">
+	<div class="inbox">
+		<p class="pagelink">Pages: <strong>1</strong></p>
+	</div>
+</div>
+
+<div id="users1" class="blocktable">
+	<h2><span>User list</span></h2>
+	<div class="box">
+		<div class="inbox">
+		<table cellspacing="0">
+		<thead>
+			<tr>
+				<th class="tcl" scope="col">Username</th>
+				<th class="tc2" scope="col">Title</th>
+				<th class="tc3" scope="col">Posts</th>
+				<th class="tcr" scope="col">Registered</th>
+			</tr>
+		</thead>
+		<tbody>
+				<tr>
+					<td class="tcl"><a href="profile-11.html">ahz</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">4</td>
+					<td class="tcr">2005-12-29</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-6.html">dref</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">6</td>
+					<td class="tcr">2005-09-30</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-3.html">horic</a></td>
+					<td class="tc2">Moderator</td>
+					<td class="tc3">9</td>
+					<td class="tcr">2004-11-02</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-8.html">kbuild</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">6</td>
+					<td class="tcr">2005-04-03</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-12.html">lpr</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">6</td>
+					<td class="tcr">2004-09-05</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-2.html">mkay</a></td>
+					<td class="tc2">Administrator</td>
+					<td class="tc3">6</td>
+					<td class="tcr">2004-03-14</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-10.html">pkg</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">7</td>
+					<td class="tcr">2005-06-22</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-4.html">retupmoc</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">9</td>
+					<td class="tcr">2004-06-19</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-9.html">segv</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">7</td>
+					<td class="tcr">2005-01-18</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-5.html">s_h</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">6</td>
+					<td class="tcr">2005-02-27</td>
+				</tr>
+				<tr>
+					<td class="tcl"><a href="profile-7.html">tnorr</a></td>
+					<td class="tc2">New member</td>
+					<td class="tc3">8</td>
+					<td class="tcr">2004-08-11</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="linksb">
+	<div class="inbox">
+		<p class="pagelink">Pages: <strong>1</strong></p>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+			<p class="conr">Powered by <a href="#">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

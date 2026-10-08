@@ -1,0 +1,83 @@
+vBulletin 3.6.4 exhibit (exhibits/vbulletin) -- archived sources
+================================================================
+vBulletin is commercial; no vBulletin code was obtained or run. Every page is
+real vBulletin 3.6.4 output fetched raw from the Wayback Machine ("id_" mode),
+with the community's content replaced by content.py.
+Rebuild: python3 build.py && python3 fetch_assets.py   (assets come from raw/assets
+when present, so a rebuild needs no network).
+
+Source board
+------------
+The CDMA Resource, www.cdmaforums.com/forums/ -- "Powered by vBulletin Version 3.6.4",
+style "Default Style" (styleid 1) with the stock stylesheet byte-for-byte in its
+colours (#E1E1E2 body, #869BBF tcat, #5C7099 thead, #F5F5FF/#E1E4F2 rows), stock
+header template (logo cell + &nbsp;), liquid 100% page width.
+Found via the 2006 vbulletindirectory.com listing (Computers category) after
+probing ~60 boards of the period; most large boards ran custom styles.
+
+Pages (markup used as the page)
+-------------------------------
+index.html        https://web.archive.org/web/20070203020214id_/http://www.cdmaforums.com/forums/
+forumdisplay.html https://web.archive.org/web/20070208103336id_/http://www.cdmaforums.com:80/forums/forumdisplay.php?f=11
+showthread.html   https://web.archive.org/web/20070205021125id_/http://www.cdmaforums.com:80/forums/showthread.php?t=1440&amp;highlight=Free+Humpa
+member.html       header/navbar/footer from the forumdisplay page above; profile body from
+                  https://web.archive.org/web/20070325225735id_/http://www.vbulletin.org:80/forum/member.php??s=66fecc4010345a4241dc97446bfec5b5&username=Paul+M
+                  (vbulletin.org, vB 3.6.x; no 3.6 board with stock templates had a guest-visible,
+                  archived profile page -- they are nofollow/login-only almost everywhere)
+
+Fragments grafted where the source board had changed vBulletin's templates
+------------------------------------------------------------------------------
+Guest welcome inside the forum table + "Moderator" column (forumhome)
+                  https://web.archive.org/web/20070210134805id_/http://forum.doom9.org/   (vB 3.6.4)
+Navbar login form (3.6.4 version with <label>s; the source board kept an older copy)
+                  https://web.archive.org/web/20070211043957id_/http://forum.doom9.org:80/showthread.php?t=113098&amp;highlight=xvid4psp   (vB 3.6.4)
+"1 2 3 4 5 ... Last Page" multipage format (checked against; generated in the source page's own markup)
+                  https://web.archive.org/web/20070120154034id_/http://forum.doom9.org:80/forumdisplay.php?f=12   (vB 3.6.4)
+"Sub-Forums:" line under a forum
+                  https://web.archive.org/web/20061204175110id_/http://www.vbulletin.com/forum/   (vB 3.6.4)
+"X has no contact information." row
+                  https://web.archive.org/web/20070629154918id_/http://www.vbulletin.org/forum/member.php?&username=Marco%20van%20Herwaarden   (vB 3.6.7)
+Reference only (gradient image paths of Jelsoft's stock style):
+                  https://web.archive.org/web/20061204175136id_/http://www.vbulletin.com/forum/clientscript/vbulletin_css/style-b008ac3a-00001.css
+
+Removed from the source pages
+-----------------------------
+Google Analytics (urchin.js), 6 Google AdSense blocks and the "Sponsored Links" boxes,
+ad rows in the thread list, vBShout shoutbox (form + polling JavaScript), v3 Arcade
+(nav button, postbit trophies, menu items), PhotoPlog "My Gallery" link, custom
+profile fields in the postbit (Service Provider / Cell Phone), "Shouts: N" counter,
+avatar images (image.php), "Home" nav button, guest message moved into the header,
+forum-description box under the navbar, hosting company copyright line, cron.php
+image, vbulletin_md5.js (only needed to submit the login form), session ids.
+vbulletin.org additions removed from the profile body: stray table cell, avatar,
+"release level" user-title link, staff colour, username-history hack comments,
+"Hack Information" section. Its cellpadding="4" (vbulletin.org's style setting)
+is written as the stock style's 6.
+
+Assets
+------
+The source board served its images from www.v710.org/forums/images/ and had
+replaced stock files with its own art under the stock names (custom logo in
+misc/vbulletin3_logo_white.gif, phone-shaped forum icons). Those are NOT used.
+Images come from Jelsoft's own copy of the stock vBulletin 3 image set
+(images.vbulletin.com/images_vb3, images_tmp/gradients, www.vbulletin.com/forum/images);
+reputation_highpos.gif from www.vbulletin.org/forum/images (its reputation_pos.gif is
+byte-identical to Jelsoft's). Some files were only archived after 2007
+(2007-06..2016 captures); the vB3 image set did not change across 3.x.
+Script: the source board's own clientscript/vbulletin_global.js?v=364 (header: vBulletin 3.6.4);
+it makes no network requests unless a user triggers an AJAX action.
+Per-file archived URL: raw/assets.tsv
+
+Content decisions (see content.py)
+---------------------------------
+* Guest view, as every archived page is: navbar login form, guest welcome, "may not"
+  posting rules. The old exhibit's logged-in "Welcome, RadeonRaider" bar has no
+  archived 3.6 markup and is gone.
+* "Now" is Mon 12 Feb 2007 11:59 PM GMT. The guest's last visit is 09:14 PM, so
+  forums/threads/posts after that show the "new" icons.
+* Forum display is filtered to "Last Day" (all 9 threads are from today), so it has
+  no page navigation.
+* Hot-thread threshold: stock 15 replies / 150 views (the source board used 20 views);
+  the icon-key text says 150.
+* Profile custom fields (Biography/Location/Interests/Occupation) use the same row
+  markup vBulletin printed for Date of Birth/Age on the vbulletin.org profile.

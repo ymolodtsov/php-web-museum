@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>/dev/null / Moving a small team from CVS to Subversion</title>
+<link rel="stylesheet" type="text/css" href="style/Oxygen.css" />
+</head>
+<body>
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+
+<div id="punwrap">
+<div id="punviewtopic" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdtitle" class="inbox">
+			<h1><span>/dev/null</span></h1>
+			<p><span>a forum for people who would rather be compiling something</span></p>
+		</div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.html">Index</a></li>
+				<li id="navuserlist"><a href="userlist.html">User list</a></li>
+				<li id="navsearch"><a href="search.html">Search</a></li>
+				<li id="navregister"><a href="register.html">Register</a></li>
+				<li id="navlogin"><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p>You are not logged in.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="linkst">
+	<div class="inbox">
+		<p class="pagelink conl">Pages: <strong>1</strong></p>
+		<p class="postlink conr">&nbsp;</p>
+		<ul><li><a href="index.html">Index</a></li><li>&nbsp;&raquo;&nbsp;<a href="forum-1.html">General Programming</a></li><li>&nbsp;&raquo;&nbsp;Moving a small team from CVS to Subversion</li></ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p23" class="blockpost rowodd firstpost">
+	<h2><span><span class="conr">#1&nbsp;</span><a href="topic-8.html#p23">2006-01-05 13:12:40</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile-7.html">tnorr</a></strong></dt>
+					<dd class="usertitle"><strong>New member</strong></dd>
+					<dd class="postavatar"></dd>
+					<dd>From: Uppsala, Sweden</dd>
+					<dd>Registered: 2004-08-11</dd>
+					<dd>Posts: 8</dd>
+					<dd class="usercontacts"><a href="#">Website</a></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3>Moving a small team from CVS to Subversion</h3>
+				<div class="postmsg">
+					<p>Four developers, one CVS repository from 2001, about 9000 commits. Has anyone run cvs2svn on something that size? Mostly worried about branches and binary files that were never marked -kb.</p>
+				</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Offline</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p24" class="blockpost roweven">
+	<h2><span><span class="conr">#2&nbsp;</span><a href="topic-8.html#p24">2006-01-05 14:30:22</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile-10.html">pkg</a></strong></dt>
+					<dd class="usertitle"><strong>New member</strong></dd>
+					<dd class="postavatar"></dd>
+					<dd>From: Austin, TX</dd>
+					<dd>Registered: 2005-06-22</dd>
+					<dd>Posts: 7</dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: Moving a small team from CVS to Subversion</h3>
+				<div class="postmsg">
+					<p>Did it last summer with a repo about twice that. cvs2svn took a couple of hours and got everything except two branches that had been created in odd ways. Fix -kb on your binaries before converting, not after.</p>
+				</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Offline</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p25" class="blockpost rowodd">
+	<h2><span><span class="conr">#3&nbsp;</span><a href="topic-8.html#p25">2006-01-05 18:55:09</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile-2.html">mkay</a></strong></dt>
+					<dd class="usertitle"><strong>Administrator</strong></dd>
+					<dd class="postavatar"></dd>
+					<dd>From: Leeds, UK</dd>
+					<dd>Registered: 2004-03-14</dd>
+					<dd>Posts: 6</dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: Moving a small team from CVS to Subversion</h3>
+				<div class="postmsg">
+					<p>What people like after switching: renames are real and commits are atomic. What they hate: tags are just copies and nothing stops you committing to one.</p>
+				</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Offline</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div id="p38" class="blockpost roweven">
+	<h2><span><span class="conr">#4&nbsp;</span><a href="topic-8.html#p38">2006-01-09 09:20:33</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong><a href="profile-7.html">tnorr</a></strong></dt>
+					<dd class="usertitle"><strong>New member</strong></dd>
+					<dd class="postavatar"></dd>
+					<dd>From: Uppsala, Sweden</dd>
+					<dd>Registered: 2004-08-11</dd>
+					<dd>Posts: 8</dd>
+					<dd class="usercontacts"><a href="#">Website</a></dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<h3> Re: Moving a small team from CVS to Subversion</h3>
+				<div class="postmsg">
+					<p>Converted over the weekend, took 50 minutes. Two people already asked why svn log is so slow over http, so I'm setting up svnserve for them.</p>
+				</div>
+			</div>
+			<div class="clearer"></div>
+			<div class="postfootleft"><p>Offline</p></div>
+			<div class="postfootright"><div>&nbsp;</div></div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox">
+		<p class="postlink conr">&nbsp;</p>
+		<p class="pagelink conl">Pages: <strong>1</strong></p>
+		<ul><li><a href="index.html">Index</a></li><li>&nbsp;&raquo;&nbsp;<a href="forum-1.html">General Programming</a></li><li>&nbsp;&raquo;&nbsp;Moving a small team from CVS to Subversion</li></ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+
+			<div class="conl">
+				<form id="qjump" method="get" action="#">
+					<div><label>Jump to
+					<br /><select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Computing">
+							<option value="1" selected="selected">General Programming</option>
+							<option value="2">Linux &amp; Open Source</option>
+						</optgroup>
+						<optgroup label="Everything else">
+							<option value="3">Off-Topic</option>
+					</optgroup>
+					</select>
+					<input type="submit" value=" Go " accesskey="g" />
+					</label></div>
+				</form>
+			</div>
+			<p class="conr">Powered by <a href="#">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

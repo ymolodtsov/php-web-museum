@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Photo Critique" />
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum" />
+	<script language="JavaScript" type="text/javascript" src="Themes/default/script.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "Themes/default";
+		var smf_images_url = "Themes/default/images";
+		var smf_scripturl = "index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+	// ]]></script>
+	<title>Photo Critique</title>
+	<link rel="stylesheet" type="text/css" href="Themes/default/style.css" />
+	<link rel="stylesheet" type="text/css" href="Themes/default/print.css" media="print" />
+	<link rel="help" href="help.html" target="_blank" />
+	<link rel="search" href="search.html" />
+	<link rel="contents" href="index.html" />
+	<link rel="alternate" type="application/rss+xml" title="Aperture Photography Community - RSS" href="#" />
+	<link rel="index" href="board.html" />
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+			document.getElementById("upshrinkHeader2").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_ic = false;
+
+			function shrinkHeaderIC(mode)
+			{
+				document.cookie = "upshrinkIC=" + (mode ? 1 : 0);
+				document.getElementById("upshrink_ic").src = smf_images_url + (mode ? "/expand.gif" : "/collapse.gif");
+
+				document.getElementById("upshrinkHeaderIC").style.display = mode ? "none" : "";
+
+				current_header_ic = mode;
+			}
+		// ]]></script>
+</head>
+<body>
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div class="tborder" >
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="catbg" height="32">
+					<span style="font-family: Verdana, sans-serif; font-size: 140%; ">Aperture Photography Community</span>
+				</td>
+				<td align="right" class="catbg">
+					<img src="Themes/default/images/smflogo.gif" style="margin: 2px;" alt="" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" >
+			<tr>
+				<td class="titlebg2" height="32" align="right">
+					<span class="smalltext">July 21, 2007, 03:22:03 pm</span>
+					<a href="#" onclick="shrinkHeader(!current_header); return false;"><img id="upshrink" src="Themes/default/images/upshrink.gif" alt="*" title="Shrink or expand the header." align="bottom" style="margin: 0 1ex;" /></a>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top" colspan="2">
+					<table width="100%" class="bordercolor" cellpadding="8" cellspacing="1" border="0" style="margin-top: 1px;">
+						<tr>
+							<td colspan="2" width="100%" valign="top" class="windowbg2"><span class="middletext">Welcome, <b>Guest</b>. Please <a href="login.html">login</a> or <a href="#">register</a>.				</span>
+								<script language="JavaScript" type="text/javascript" src="Themes/default/sha1.js"></script>
+
+								<form action="#" method="get" accept-charset="ISO-8859-1" class="middletext" style="margin: 3px 1ex 1px 0;" onsubmit="hashLoginPassword(this, 'cd5aa6efc01d10b4868a8748679a8f08');">
+									<input type="text" name="user" size="10" /> <input type="password" size="10" />
+									<select name="cookielength">
+										<option value="60">1 Hour</option>
+										<option value="1440">1 Day</option>
+										<option value="10080">1 Week</option>
+										<option value="43200">1 Month</option>
+										<option value="-1" selected="selected">Forever</option>
+									</select>
+									<input type="submit" value="Login" /><br />
+									<span class="middletext">Login with username, password and session length</span>
+									<input type="hidden" name="hash_passwrd" value="" />
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table id="upshrinkHeader2" width="100%" cellpadding="4" cellspacing="0" border="0">
+			<tr>
+				<td width="90%" class="titlebg2">
+					<span class="smalltext"><b>News</b>: Welcome to Aperture Photography Community! The July photo contest theme is <b>Water</b> -- entries close July 31. New here? Please read the critique guidelines before posting your first photo.</span>
+				</td>
+				<td class="titlebg2" align="right" nowrap="nowrap" valign="top">
+					<form action="#" method="get" accept-charset="ISO-8859-1" style="margin: 0;">
+						<a href="#"><img src="Themes/default/images/filter.gif" align="middle" style="margin: 0 1ex;" alt="" /></a>
+						<input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 11ex;" />
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="brd[4]" value="4" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+			<table cellpadding="0" cellspacing="0" border="0" style="margin-left: 10px;">
+				<tr>
+					<td class="maintab_first">&nbsp;</td><td class="maintab_active_first">&nbsp;</td>
+				<td valign="top" class="maintab_active_back">
+					<a href="index.html">Home</a>
+				</td><td class="maintab_active_last">&nbsp;</td>
+				<td valign="top" class="maintab_back">
+					<a href="help.html">Help</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="search.html">Search</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="calendar.html">Calendar</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="login.html">Login</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="#">Register</a>
+				</td>
+				<td class="maintab_last">&nbsp;</td>
+			</tr>
+		</table>
+	<div id="bodyarea" style="padding: 1ex 0px 2ex 0px;">
+	<div style="margin-bottom: 2px;"><a name="top"></a><div class="nav" style="font-size: smaller; margin-bottom: 2ex; margin-top: 2ex;"><b><a href="index.html" class="nav">Aperture Photography Community</a></b>&nbsp;>&nbsp;<b><a href="index.html#2" class="nav">Sharing &amp; Learning</a></b>&nbsp;>&nbsp;<b><a href="board.html" class="nav">Photo Critique</a></b> (Moderator: <a href="profile-maria_lens.html" title="Board Moderator">maria_lens</a>)</div></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="middletext">Pages: [<b>1</b>] <a class="navPages" href="#">2</a> <a class="navPages" href="#">3</a> <b> ... </b><a class="navPages" href="#">156</a> </td>
+				<td align="right" style="padding-right: 1ex;">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+			<div class="tborder" >
+				<table border="0" width="100%" cellspacing="1" cellpadding="4" class="bordercolor">
+					<tr>
+						<td width="9%" colspan="2" class="catbg3"></td>
+
+						<td class="catbg3"><a href="#">Subject</a></td>
+
+						<td class="catbg3" width="11%"><a href="#">Started by</a></td>
+
+						<td class="catbg3" width="4%" align="center"><a href="#">Replies</a></td>
+
+						<td class="catbg3" width="4%" align="center"><a href="#">Views</a></td>
+
+						<td class="catbg3" width="22%"><a href="#">Last post <img src="Themes/default/images/sort_down.gif" alt="" /></a></td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg3" valign="middle" >
+							<img src="Themes/default/images/icons/quick_lock.gif" align="right" alt="" id="lockicon2" style="margin: 0;" />
+							<img src="Themes/default/images/icons/show_sticky.gif" align="right" alt="" id="stickyicon2" style="margin: 0;" />
+							<b><span id="msg_2"><a href="#">Critique guidelines -- read before posting</a></span></b>
+							<small id="pages2"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-maria_lens.html" title="View the profile of maria_lens">maria_lens</a>
+						</td>
+						<td class="windowbg3" valign="middle" width="4%" align="center">
+							1
+						</td>
+						<td class="windowbg3" valign="middle" width="4%" align="center">
+							3402
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 02, 2007, 08:15:39 am<br />
+								by <a href="profile-nightshooter.html">nightshooter</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_132"><a href="topic.html">C&amp;C welcome: sunset over the harbor</a></span>
+							<small id="pages132"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile.html" title="View the profile of harborlight">harborlight</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							6
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							221
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="topic.html#new"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								<b>Today</b> at 03:05:46 pm<br />
+								by <a href="profile.html">harborlight</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_118"><a href="#">First attempt at macro photography</a></span>
+							<small id="pages118"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-bugsnapper.html" title="View the profile of bugsnapper">bugsnapper</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							389
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								<b>Today</b> at 11:48:59 am<br />
+								by <a href="profile-graytones.html">graytones</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_111"><a href="#">Please critique my daughter&#039;s portrait series</a></span>
+							<small id="pages111"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-dadwithcanon.html" title="View the profile of dadwithcanon">dadwithcanon</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							142
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 20, 2007, 07:28:10 pm<br />
+								by <a href="profile.html">harborlight</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_107"><a href="#">B&amp;W conversion -- too harsh?</a></span>
+							<small id="pages107"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-graytones.html" title="View the profile of graytones">graytones</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							98
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 20, 2007, 04:51:51 pm<br />
+								by <a href="profile-nightshooter.html">nightshooter</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_100"><a href="#">Long exposure at the pier -- thoughts?</a></span>
+							<small id="pages100"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-nightshooter.html" title="View the profile of nightshooter">nightshooter</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							256
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 20, 2007, 02:09:36 pm<br />
+								by <a href="profile-vista_steve.html">vista_steve</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_92"><a href="#">New D40 owner, first real attempt</a></span>
+							<small id="pages92"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-kat_b.html" title="View the profile of Kat_B">Kat_B</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							177
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 19, 2007, 10:33:41 am<br />
+								by <a href="profile-oldschoolshooter.html">oldschoolshooter</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_26"><a href="#">Fourth of July fireworks -- first try</a></span>
+							<small id="pages26"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-jkowalski.html" title="View the profile of jkowalski">jkowalski</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							310
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 18, 2007, 09:02:06 pm<br />
+								by <a href="profile-bugsnapper.html">bugsnapper</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_86"><a href="#">Wedding second-shooting: my first set</a></span>
+							<small id="pages86"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-tlee_photo.html" title="View the profile of tlee_photo">tlee_photo</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							205
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 18, 2007, 09:40:12 am<br />
+								by <a href="profile-tlee_photo.html">tlee_photo</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_81"><a href="#">Great blue heron at Mt Auburn</a></span>
+							<small id="pages81"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-rmcallister.html" title="View the profile of rmcallister">rmcallister</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							166
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 17, 2007, 08:30:09 pm<br />
+								by <a href="profile-nightshooter.html">nightshooter</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_73"><a href="#">Street: farmers market, Saturday morning</a></span>
+							<small id="pages73"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-f8andbethere.html" title="View the profile of f8andbethere">f8andbethere</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							141
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 16, 2007, 09:50:46 pm<br />
+								by <a href="profile-f8andbethere.html">f8andbethere</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_55"><a href="#">Natural light portrait, window light only</a></span>
+							<small id="pages55"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-maria_lens.html" title="View the profile of maria_lens">maria_lens</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							186
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 16, 2007, 08:44:42 am<br />
+								by <a href="profile-maria_lens.html">maria_lens</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_71"><a href="#">Green Mountains at dawn</a></span>
+							<small id="pages71"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-woodsmoke.html" title="View the profile of woodsmoke">woodsmoke</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							233
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 16, 2007, 06:58:50 am<br />
+								by <a href="profile-woodsmoke.html">woodsmoke</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_64"><a href="#">Self-portrait attempt (be gentle)</a></span>
+							<small id="pages64"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-sunny_d.html" title="View the profile of sunny_d">sunny_d</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							129
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 14, 2007, 10:40:45 pm<br />
+								by <a href="profile-tlee_photo.html">tlee_photo</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_51"><a href="#">Old mill, Tri-X in Rodinal</a></span>
+							<small id="pages51"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-oldschoolshooter.html" title="View the profile of oldschoolshooter">oldschoolshooter</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							175
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 13, 2007, 11:05:27 pm<br />
+								by <a href="profile-f8andbethere.html">f8andbethere</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_58"><a href="#">HDR experiment -- too much?</a></span>
+							<small id="pages58"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-vista_steve.html" title="View the profile of vista_steve">vista_steve</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							3
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							207
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 13, 2007, 10:10:35 pm<br />
+								by <a href="profile-vista_steve.html">vista_steve</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_47"><a href="#">Panning shots at the county fair</a></span>
+							<small id="pages47"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-jkowalski.html" title="View the profile of jkowalski">jkowalski</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							98
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 12, 2007, 06:20:04 pm<br />
+								by <a href="profile-jkowalski.html">jkowalski</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_42"><a href="#">Lightning from my back porch</a></span>
+							<small id="pages42"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-marcusr.html" title="View the profile of marcusR">marcusR</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							202
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 11, 2007, 07:30:03 am<br />
+								by <a href="profile-dan.html">DanW</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_35"><a href="#">Night skyline, 30 sec at f/11</a></span>
+							<small id="pages35"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-pixelpusher.html" title="View the profile of pixelpusher">pixelpusher</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							154
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 10, 2007, 08:04:31 pm<br />
+								by <a href="profile-vista_steve.html">vista_steve</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="windowbg2" valign="middle" align="center" width="5%">
+							<img src="Themes/default/images/topic/normal_post.gif" alt="" />
+						</td>
+						<td class="windowbg2" valign="middle" align="center" width="4%">
+							<img src="Themes/default/images/post/xx.gif" alt="" />
+						</td>
+						<td class="windowbg" valign="middle" >
+							
+							
+							<span id="msg_31"><a href="#">Rainy day in Leeds</a></span>
+							<small id="pages31"></small>
+						</td>
+						<td class="windowbg2" valign="middle" width="14%">
+							<a href="profile-graytones.html" title="View the profile of graytones">graytones</a>
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							2
+						</td>
+						<td class="windowbg" valign="middle" width="4%" align="center">
+							120
+						</td>
+						<td class="windowbg2" valign="middle" width="22%">
+							<a href="#"><img src="Themes/default/images/icons/last_post.gif" alt="Last post" title="Last post" style="float: right;" /></a>
+							<span class="smalltext">
+								July 08, 2007, 09:01:15 pm<br />
+								by <a href="profile-oldschoolshooter.html">oldschoolshooter</a>
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<a name="bot"></a>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td class="middletext">Pages: [<b>1</b>] <a class="navPages" href="#">2</a> <a class="navPages" href="#">3</a> <b> ... </b><a class="navPages" href="#">156</a> </td>
+			<td align="right" style="padding-right: 1ex;">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div><div class="nav" style="font-size: smaller; margin-bottom: 2ex; margin-top: 2ex;"><b><a href="index.html" class="nav">Aperture Photography Community</a></b>&nbsp;>&nbsp;<b><a href="index.html#2" class="nav">Sharing &amp; Learning</a></b>&nbsp;>&nbsp;<b><a href="board.html" class="nav">Photo Critique</a></b> (Moderator: <a href="profile-maria_lens.html" title="Board Moderator">maria_lens</a>)</div><br /></div>
+	<div class="tborder">
+		<table cellpadding="8" cellspacing="0" width="100%" class="titlebg2">
+			<tr>
+				<td style="padding-top: 2ex;" class="smalltext">
+					<img src="Themes/default/images/topic/my_normal_post.gif" alt="" align="middle" /> Topic you have posted in<br />
+					<img src="Themes/default/images/topic/normal_post.gif" alt="" align="middle" /> Normal Topic<br />
+					<img src="Themes/default/images/topic/hot_post.gif" alt="" align="middle" /> Hot Topic (More than 15 replies)<br />
+					<img src="Themes/default/images/topic/veryhot_post.gif" alt="" align="middle" /> Very Hot Topic (More than 25 replies)
+				</td>
+				<td valign="top" style="padding-top: 2ex;" class="smalltext">
+					<img src="Themes/default/images/icons/quick_lock.gif" alt="" align="middle" /> Locked Topic<br />
+					<img src="Themes/default/images/icons/quick_sticky.gif" alt="" align="middle" /> Sticky Topic<br />
+					<img src="Themes/default/images/topic/normal_poll.gif" alt="" align="middle" /> Poll
+				</td>
+				<td align="right" valign="middle">
+					<form action="#" method="get" accept-charset="ISO-8859-1" name="jumptoForm">
+						<span class="smalltext"><label for="jumpto">Jump to</label>:</span>
+					<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+								<option value="">Please select a destination:</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="#1">General</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="?board=1.0"> => Site News &amp; Announcements</option>
+								<option value="?board=2.0"> => General Photography Discussion</option>
+								<option value="?board=3.0"> => Gear Talk</option>
+								<option value="?board=8.0"> ===> Buy, Sell &amp; Trade</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="#2">Sharing &amp; Learning</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="?board=4.0" selected="selected"> => Photo Critique</option>
+								<option value="?board=5.0"> => Post-Processing &amp; Software</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="#3">Community</option>
+								<option value="" disabled="disabled">-----------------------------</option>
+								<option value="?board=7.0"> => Off Topic</option>
+						</select>&nbsp;
+					<input type="button" value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'index.html' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+<script language="JavaScript" type="text/javascript" src="Themes/default/xml_board.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+
+	// Hide certain bits during topic edit.
+	hide_prefixes.push("lockicon", "stickyicon", "pages", "newicon");
+
+	// Use it to detect when we've stopped editing.
+	document.onclick = modify_topic_click;
+
+	var mouse_on_div;
+	function modify_topic_click()
+	{
+		if (in_edit_mode == 1 && mouse_on_div == 0)
+			modify_topic_save("cd5aa6efc01d10b4868a8748679a8f08");
+	}
+
+	function modify_topic_keypress(oEvent)
+	{
+		if (typeof(oEvent.keyCode) != "undefined" && oEvent.keyCode == 13)
+		{
+			modify_topic_save("cd5aa6efc01d10b4868a8748679a8f08");
+			if (typeof(oEvent.preventDefault) == "undefined")
+				oEvent.returnValue = false;
+			else
+				oEvent.preventDefault();
+		}
+	}
+
+	// For templating, shown when an inline edit is made.
+	function modify_topic_show_edit(subject)
+	{
+		// Just template the subject.
+		setInnerHTML(cur_subject_div, '<input type="text" name="subject" value="' + subject + '" size="60" style="width: 99%;"  maxlength="80" onkeypress="modify_topic_keypress(event)" /><input type="hidden" name="topic" value="' + cur_topic_id + '" /><input type="hidden" name="msg" value="' + cur_msg_id.substr(4) + '" />');
+	}
+
+	// And the reverse for hiding it.
+	function modify_topic_hide_edit(subject)
+	{
+		// Re-template the subject!
+		setInnerHTML(cur_subject_div, '<a href="#">' + subject + '</a>');
+	}
+
+// ]]></script>
+	</div>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			function smfFooterHighlight(element, value)
+			{
+				element.src = smf_images_url + "/" + (value ? "h_" : "") + element.id + ".gif";
+			}
+		// ]]></script>
+		<table cellspacing="0" cellpadding="3" border="0" align="center" width="100%">
+			<tr>
+				<td width="28%" valign="middle" align="right">
+					<a href="#" target="_blank"><img id="powered-mysql" src="Themes/default/images/powered-mysql.gif" alt="Powered by MySQL" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+					<a href="#" target="_blank"><img id="powered-php" src="Themes/default/images/powered-php.gif" alt="Powered by PHP" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+				</td>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="#" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.3</a> | 
+<a href="#" title="Free Forum Software" target="_blank">SMF &copy; 2006-2007, Simple Machines LLC</a>
+		</span>
+				</td>
+				<td width="28%" valign="middle" align="left">
+					<a href="#" target="_blank"><img id="valid-xhtml10" src="Themes/default/images/valid-xhtml10.gif" alt="Valid XHTML 1.0!" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+					<a href="#" target="_blank"><img id="valid-css" src="Themes/default/images/valid-css.gif" alt="Valid CSS!" width="54" height="20" style="margin: 5px 16px;" onmouseover="smfFooterHighlight(this, true);" onmouseout="smfFooterHighlight(this, false);" /></a>
+				</td>
+			</tr>
+		</table>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			window.addEventListener("load", smf_codeFix, false);
+			function smf_codeFix()
+			{
+				var codeFix = document.getElementsByTagName ? document.getElementsByTagName("div") : document.all.tags("div");
+
+				for (var i = 0; i < codeFix.length; i++)
+				{
+					if (codeFix[i].className == "code" && (codeFix[i].scrollWidth > codeFix[i].clientWidth || codeFix[i].clientWidth == 0))
+						codeFix[i].style.overflow = "scroll";
+				}
+			}
+		// ]]></script>
+	</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+</body></html>

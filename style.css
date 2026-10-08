@@ -1,0 +1,313 @@
+/* PHP Web Museum — museum shell stylesheet */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #D4D4D4;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+#wrap {
+	width: 820px;
+	margin: 20px auto;
+	background: #FFFFFF;
+	border: 1px solid #B7B7B7;
+}
+
+a {
+	color: #003399;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #663399;
+}
+
+a:hover {
+	color: #23466C;
+}
+
+/* Masthead */
+
+#masthead {
+	background: #315A89;
+	background: linear-gradient(to bottom, #3B6794, #23466C);
+	color: #FFFFFF;
+	padding: 14px 16px;
+	border-bottom: 1px solid #23466C;
+}
+
+#masthead h1 {
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#masthead h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#masthead p {
+	margin: 2px 0 0 0;
+	font-size: 11px;
+	color: #CBD9E8;
+}
+
+/* Navigation bar */
+
+#navbar {
+	background: #F3F3F3;
+	border-bottom: 1px solid #B7B7B7;
+	padding: 0;
+	margin: 0;
+}
+
+#navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li {
+	display: inline-block;
+}
+
+#navbar li a {
+	display: block;
+	padding: 7px 14px;
+	border-right: 1px solid #B7B7B7;
+	text-decoration: none;
+	color: #23466C;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#navbar li a:hover {
+	background: #DCE4EE;
+	text-decoration: underline;
+}
+
+/* Breadcrumb */
+
+#breadcrumb {
+	padding: 6px 16px;
+	background: #F3F3F3;
+	border-bottom: 1px solid #B7B7B7;
+	font-size: 11px;
+	color: #555555;
+}
+
+#breadcrumb a {
+	font-weight: normal;
+}
+
+/* Main content area */
+
+#content {
+	padding: 16px;
+}
+
+#content h2 {
+	font-size: 18px;
+	color: #23466C;
+	margin: 0 0 4px 0;
+	border-bottom: 1px solid #B7B7B7;
+	padding-bottom: 4px;
+}
+
+#content h3 {
+	font-size: 14px;
+	color: #315A89;
+	margin: 18px 0 6px 0;
+}
+
+#content .subtitle {
+	color: #555555;
+	font-size: 11px;
+	margin-bottom: 16px;
+}
+
+/* Metadata box */
+
+.metabox {
+	border: 1px solid #B7B7B7;
+	background: #F3F3F3;
+	width: 400px;
+	margin: 12px 0;
+	border-collapse: collapse;
+}
+
+.metabox td, .metabox th {
+	border-bottom: 1px solid #DEDEDE;
+	padding: 4px 8px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+.metabox th {
+	width: 110px;
+	color: #555555;
+	font-weight: normal;
+}
+
+.metabox tr:last-child td, .metabox tr:last-child th {
+	border-bottom: none;
+}
+
+/* View exhibit button */
+
+.viewbox {
+	margin: 18px 0;
+	padding: 14px;
+	background: #F3F3F3;
+	border: 1px solid #B7B7B7;
+	text-align: center;
+}
+
+.viewbox a.viewbtn {
+	display: inline-block;
+	padding: 8px 22px;
+	background: #315A89;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	border: 1px solid #23466C;
+}
+
+.viewbox a.viewbtn:hover {
+	background: #23466C;
+}
+
+.viewbox .capdate {
+	margin-top: 8px;
+	font-size: 10px;
+	color: #777777;
+}
+
+/* Inline exhibit preview (iframe embed below the VIEW EXHIBIT button) */
+
+.exhibit-preview {
+	margin: 0 0 18px 0;
+}
+
+.exhibit-preview .preview-label {
+	font-size: 10px;
+	color: #777777;
+	margin-bottom: 4px;
+}
+
+.exhibit-preview iframe {
+	display: block;
+	width: 100%;
+	height: 520px;
+	border: 1px solid #B7B7B7;
+	background: #FFFFFF;
+}
+
+/* Exhibit grid (index listing pages) */
+
+.exhibit-grid {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.exhibit-grid td {
+	border: 1px solid #DEDEDE;
+	padding: 10px;
+	width: 50%;
+	vertical-align: top;
+}
+
+.exhibit-grid h4 {
+	margin: 0 0 4px 0;
+	font-size: 13px;
+}
+
+.exhibit-grid p {
+	margin: 0;
+	color: #333333;
+}
+
+.exhibit-grid .era {
+	color: #777777;
+	font-size: 10px;
+}
+
+/* Footer */
+
+#footer {
+	border-top: 1px solid #B7B7B7;
+	background: #F3F3F3;
+	padding: 10px 16px;
+	font-size: 10px;
+	color: #777777;
+	text-align: center;
+}
+
+#footer p {
+	margin: 3px 0;
+}
+
+/* 80x15 "button" badges */
+.badge80 {
+	display: inline-block;
+	width: 78px;
+	height: 13px;
+	border: 1px solid #000000;
+	font: 8px/13px Verdana, Tahoma, Arial, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+	margin: 0 2px;
+	box-sizing: content-box;
+}
+
+.badge80 .l, .badge80 .r {
+	float: left;
+	height: 13px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.badge80 .l {
+	width: 22px;
+	background: #6C6C6C;
+	border-right: 1px solid #000000;
+}
+
+.badge80 .r {
+	width: 55px;
+}
+
+.badge80.xhtml .r { background: #FF9900; }
+.badge80.css .r { background: #315A89; }
+
+/* Return-to-museum bar used inside exhibit reconstructions */
+
+.museum-returnbar {
+	background: #23466C;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 5px 10px;
+}
+
+.museum-returnbar a {
+	color: #FFFFFF;
+}
+
+ul.plain {
+	margin: 6px 0;
+	padding-left: 18px;
+}
+
+ul.plain li {
+	margin-bottom: 3px;
+}

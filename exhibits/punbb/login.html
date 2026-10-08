@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+<title>/dev/null / Login</title>
+<link rel="stylesheet" type="text/css" href="style/Oxygen.css" />
+<script type="text/javascript">
+<!--
+function process_form(the_form)
+{
+	var element_names = new Object()
+	element_names["req_username"] = "Username"
+	element_names["req_password"] = "Password"
+
+	if (document.all || document.getElementById)
+	{
+		for (i = 0; i < the_form.length; ++i)
+		{
+			var elem = the_form.elements[i]
+			if (elem.name && elem.name.substring(0, 4) == "req_")
+			{
+				if (elem.type && (elem.type=="text" || elem.type=="textarea" || elem.type=="password" || elem.type=="file") && elem.value=='')
+				{
+					alert("\"" + element_names[elem.name] + "\" is a required field in this form.")
+					elem.focus()
+					return false
+				}
+			}
+		}
+	}
+
+	return true
+}
+// -->
+</script>
+</head>
+<body onload="document.getElementById('login').req_username.focus()">
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+
+<div id="punwrap">
+<div id="punlogin" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdtitle" class="inbox">
+			<h1><span>/dev/null</span></h1>
+			<p><span>a forum for people who would rather be compiling something</span></p>
+		</div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.html">Index</a></li>
+				<li id="navuserlist"><a href="userlist.html">User list</a></li>
+				<li id="navsearch"><a href="search.html">Search</a></li>
+				<li id="navregister"><a href="register.html">Register</a></li>
+				<li id="navlogin"><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p>You are not logged in.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="blockform">
+	<h2><span>Login</span></h2>
+	<div class="box">
+		<form id="login" method="get" action="#" onsubmit="return process_form(this)">
+			<div class="inform">
+				<fieldset>
+					<legend>Enter your username and password below</legend>
+						<div class="infldset">
+							<input type="hidden" name="form_sent" value="1" />
+							<input type="hidden" name="redirect_url" value="index.php" />
+							<label class="conl"><strong>Username</strong><br /><input type="text" name="req_username" size="25" maxlength="25" tabindex="1" /><br /></label>
+							<label class="conl"><strong>Password</strong><br /><input type="password" size="16" maxlength="16" tabindex="2" /><br /></label>
+							<p class="clearb">If you have not registered or have forgotten your password click on the appropriate link below.</p>
+							<p><a href="register.html" tabindex="4">Not registered yet?</a>&nbsp;&nbsp;
+							<a href="login-forget.html" tabindex="5">Forgotten your password?</a></p>
+						</div>
+				</fieldset>
+			</div>
+			<p><input type="submit" name="login" value="Login" tabindex="3" /></p>
+		</form>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+			<p class="conr">Powered by <a href="#">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

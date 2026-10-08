@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guestbook &mdash; PHP Web Museum</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<style>
+.gbempty { border: 1px solid #DEDEDE; background: #FFFFFF; padding: 12px 8px; color: #555555; }
+.gbform { border: 1px solid #B7B7B7; background: #F3F3F3; padding: 10px; margin-top: 16px; }
+.gbform input[type=text], .gbform textarea { width: 300px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; border: 1px solid #B7B7B7; }
+.gbform input.code { width: 80px; text-transform: uppercase; }
+.gbform textarea { height: 60px; }
+.gbform table td { padding: 3px; vertical-align: top; }
+.gbform canvas { border: 1px solid #B7B7B7; vertical-align: middle; }
+.gbform .hint { color: #777777; font-size: 10px; }
+.gbmsg { margin: 0 0 8px 0; padding: 5px 8px; border: 1px solid #B7B7B7; background: #FFFFFF; display: none; }
+.gbmsg.err { border-color: #C0392B; color: #A02018; }
+</style>
+</head>
+<body>
+<div id="wrap">
+
+<div id="masthead">
+<h1><a href="../index.html">PHP WEB MUSEUM</a></h1>
+<p>preserving the visual language of the early PHP web, 2000&ndash;2009</p>
+</div>
+
+<div id="navbar">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../cms/index.html">CMS</a></li>
+<li><a href="../forums/index.html">Forums</a></li>
+<li><a href="../other/index.html">Other</a></li>
+<li><a href="../timeline/index.html">Timeline</a></li>
+<li><a href="../about/index.html">About</a></li>
+<li><a href="../links/index.html">Links</a></li>
+<li><a href="index.html">Guestbook</a></li>
+</ul>
+</div>
+
+<div id="breadcrumb">
+<a href="../index.html">PHP Web Museum</a> &gt; Guestbook
+</div>
+
+<div id="content">
+
+<h2>Guestbook</h2>
+<p class="subtitle">0 entries.</p>
+
+<div class="gbempty">No one has signed the guestbook yet.</div>
+
+<div class="gbform">
+<h3>Sign the guestbook</h3>
+<div id="gbmsg" class="gbmsg"></div>
+<form id="gbform" action="#" method="get">
+<table>
+<tr><td>Name:</td><td><input type="text" id="gbname" maxlength="40"></td></tr>
+<tr><td>E-mail:</td><td><input type="text" id="gbemail" maxlength="80"> <span class="hint">(not displayed)</span></td></tr>
+<tr><td>Message:</td><td><textarea id="gbtext" maxlength="1000"></textarea></td></tr>
+<tr><td>Code:</td><td>
+<canvas id="gbcaptcha" width="120" height="36"></canvas>
+<a href="#" id="gbnew" class="hint">new code</a><br>
+<input type="text" id="gbcode" class="code" maxlength="5" autocomplete="off">
+<span class="hint">Type the characters shown in the image.</span>
+<noscript><br><span class="hint">Signing the guestbook needs JavaScript.</span></noscript>
+</td></tr>
+<tr><td></td><td><input type="submit" value="Sign Guestbook"> <input type="reset" value="Clear"></td></tr>
+</table>
+</form>
+</div>
+
+</div>
+
+<div id="footer">
+<p>PHP Web Museum &copy; 2026</p>
+<p>Best viewed at 1024&times;768</p>
+<p><span class="badge80 xhtml"><span class="l">W3C</span><span class="r">XHTML 1.0</span></span><span class="badge80 css"><span class="l">W3C</span><span class="r">CSS</span></span></p>
+</div>
+
+</div>
+<script>
+(function () {
+	var CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+	var canvas = document.getElementById("gbcaptcha");
+	var ctx = canvas.getContext("2d");
+	var code = "";
+
+	function rand(a, b) { return a + Math.random() * (b - a); }
+
+	function draw() {
+		code = "";
+		for (var i = 0; i < 5; i++) code += CHARS.charAt(Math.floor(Math.random() * CHARS.length));
+		var g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+		g.addColorStop(0, "#E4E8EE");
+		g.addColorStop(1, "#C9D1DC");
+		ctx.fillStyle = g;
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		for (var n = 0; n < 160; n++) {
+			ctx.fillStyle = "rgba(35,70,108," + rand(0.1, 0.4) + ")";
+			ctx.fillRect(rand(0, canvas.width), rand(0, canvas.height), 1, 1);
+		}
+		for (var l = 0; l < 4; l++) {
+			ctx.strokeStyle = "rgba(49,90,137," + rand(0.3, 0.6) + ")";
+			ctx.beginPath();
+			ctx.moveTo(rand(0, 20), rand(5, 31));
+			ctx.bezierCurveTo(rand(30, 60), rand(0, 36), rand(60, 90), rand(0, 36), rand(100, 120), rand(5, 31));
+			ctx.stroke();
+		}
+		for (var c = 0; c < code.length; c++) {
+			ctx.save();
+			ctx.translate(14 + c * 21, rand(22, 28));
+			ctx.rotate(rand(-0.35, 0.35));
+			ctx.font = "bold " + Math.round(rand(17, 21)) + "px Verdana, Arial, sans-serif";
+			ctx.fillStyle = ["#23466C", "#315A89", "#4A3A28", "#2F2F2F"][c % 4];
+			ctx.fillText(code.charAt(c), -6, 0);
+			ctx.restore();
+		}
+	}
+
+	function show(text, isError) {
+		var box = document.getElementById("gbmsg");
+		box.textContent = text;
+		box.className = "gbmsg" + (isError ? " err" : "");
+		box.style.display = "block";
+	}
+
+	document.getElementById("gbnew").onclick = function () { draw(); return false; };
+
+	document.getElementById("gbform").onsubmit = function () {
+		var name = document.getElementById("gbname").value.trim();
+		var text = document.getElementById("gbtext").value.trim();
+		var typed = document.getElementById("gbcode").value.trim().toUpperCase();
+		if (!name || !text) {
+			show("Please fill in your name and a message.", true);
+		} else if (typed !== code) {
+			show("The code you entered doesn't match the image. Please try again.", true);
+			document.getElementById("gbcode").value = "";
+			draw();
+		} else {
+			show("Thanks for signing! Entries aren't being saved yet, so yours won't appear here.", false);
+			this.reset();
+			draw();
+		}
+		return false;
+	};
+
+	draw();
+})();
+</script>
+</body>
+</html>
