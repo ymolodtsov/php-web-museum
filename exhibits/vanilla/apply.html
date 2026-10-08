@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - Apply for membership</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/people.css" media="screen" />
+				<script type="text/javascript" src="js/global.js"></script></head>
+	<body >
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div class="SiteContainer Apply">
+	<h1>Clearfix</h1><div class="About">
+	<h2>About membership</h2>
+	<p>This membership <strong>application</strong> form does not grant immediate access to the site. All membership applications are reviewed by an administrator before acceptance. You are <strong>not</strong> guaranteed access to the application by filling out this form.</p>
+	<p>Please do not enter invalid or incorrect information in this form or you will most likely not be granted access to the site.</p>
+	<p>All information entered in this form will be kept strictly confidential.</p>
+			<p><a href="signin.html">Back to sign-in form</a></p>
+		</div>
+		<div id="Form" class="ApplyForm">
+			<fieldset>
+				<legend>Membership Application Form</legend>
+				<p>**All fields are required</p><form id="ApplicationForm" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="Apply" />
+				<input type="hidden" name="ReadTerms" value="0" />
+				</div><ul><li>
+				<label for="txtEmail">Email address</label>
+				<input id="txtEmail" type="text" name="Email" value="" class="Input" maxlength="160" />
+			</li>
+			<li>
+				<label for="txtUsername">Username</label>
+				<input id="txtUsername" type="text" name="Name" value="" class="Input" maxlength="20" />
+			</li>
+			<li>
+				<label for="txtNewPassword">Password</label>
+				<input id="txtNewPassword" type="password" value="" class="Input" />
+			</li>
+			<li>
+				<label for="txtConfirmPassword">Password again</label>
+				<input id="txtConfirmPassword" type="password" value="" class="Input" />
+			</li><li id="TermsOfServiceCheckBox">
+				<input type="checkbox" name="AgreeToTerms" value="1"   /> I have read and agree to the  <a href="terms.html" onclick="PopTermsOfService('/termsofservice.php'); return false;">Terms of Service</a>
+			</li>
+			</ul>
+			<div class="Submit">
+				<input type="submit" name="btnApply" value="Proceed" class="Button" />
+			</div>
+			</form>
+			</fieldset>
+	</div></div></div>
+<div class="Foot Apply"><a href="#">Lussumo Vanilla, Swell, and People</a> Copyright &copy; 2001-2008</div></body>
+</html>

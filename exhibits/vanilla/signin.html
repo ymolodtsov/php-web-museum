@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - Sign In</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/people.css" media="screen" />
+				<script type="text/javascript" src="js/global.js"></script></head>
+	<body  onload="Focus('txtUsername');">
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div class="SiteContainer SignIn">
+	<h1>Clearfix</h1><div id="Form" class="SignInForm">
+	<fieldset><form id="frmSignIn" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="SignIn" />
+				<input type="hidden" name="ReturnUrl" value="" />
+				</div><ul>
+	<li>
+		<label for="txtUsername">Username</label>
+		<input id="txtUsername" type="text" name="Username" value="" class="Input" maxlength="20" />
+	</li>
+	<li>
+		<label for="txtPassword">Password</label>
+		<input id="txtPassword" type="password" value="" class="Input" />
+	</li>
+	<li id="RememberMe">
+		<label for="RememberMeID"><input type="checkbox" name="RememberMe" value="1"   id="RememberMeID" /> Remember me</label>
+	</li>
+</ul>
+<div class="Submit"><input type="submit" name="btnSignIn" value="Proceed" class="Button" /></div>
+</form>
+</fieldset>
+<ul class="MembershipOptionLinks">
+	<li class="ForgotPasswordLink"><a href="password.html">Forgot your password?</a></li>
+	<li class="ApplyForMembershipLink"><a href="apply.html">Apply for membership</a></li>
+</ul>
+</div></div></div>
+<div class="Foot SignIn"><a href="#">Lussumo Vanilla, Swell, and People</a> Copyright &copy; 2001-2008</div></body>
+</html>

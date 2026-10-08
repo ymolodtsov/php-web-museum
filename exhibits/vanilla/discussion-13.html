@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - IE6 PNG fix breaks my links</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.css" media="screen" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.print.css" media="print" />
+				<script type="text/javascript" src="js/global.js"></script>
+				<script type="text/javascript" src="js/vanilla.js"></script>
+				<script type="text/javascript" src="js/ajax.js"></script>
+				<script type="text/javascript" src="js/ac.js"></script></head>
+	<body id="CommentsPage" >
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div id="Session">Not signed in (<a href="signin.html">Sign In</a>)</div><div id="Header">
+			<a name="pgtop"></a>
+			<h1>
+				Clearfix
+			</h1>
+
+			<ul><li class="TabOn"><a href="index.html" >Discussions</a></li><li><a href="categories.html" >Categories</a></li><li><a href="search.html" >Search</a></li></ul>
+	</div><div id="Body"><div id="Panel"><p id="AboutVanilla"><a href="#">Vanilla 1.1.5a</a> is a product of <a href="#">Lussumo</a>. More Information: <a href="#">Documentation</a>, <a href="#">Community Support</a>.</p></div>
+<div id="Content"><div class="ContentInfo Top">
+		<h1><a href="category-2.html">CSS &amp; Layout</a>:  IE6 PNG fix breaks my links</h1>
+		<a href="#pgbottom">Bottom of Page</a>
+		<div class="PageInfo">
+			<p>1 to 6 of 6</p>
+			
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+		</div>
+	</div>
+	<div id="ContentBody">
+		<ol id="Comments"><li id="Comment_69">
+			<a name="Item_1"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-15.html">emdash</a></li>
+					<li>
+						<span>CommentTime</span>3 days ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_69">Using the AlphaImageLoader filter on a background PNG in IE6. Looks right, but links inside the element stop being clickable. Is there a fix, or do I have to use GIFs?
+			</div>
+		</li><li id="Comment_70" class="Alternate">
+			<a name="Item_2"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-3.html">zoom1</a></li>
+					<li>
+						<span>CommentTime</span>3 days ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_70">Classic. Give the links position: relative. Links inside an element with the filter only become clickable again if they're positioned. Don't ask why.
+			</div>
+		</li><li id="Comment_71">
+			<a name="Item_3"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-15.html">emdash</a></li>
+					<li>
+						<span>CommentTime</span>3 days ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_71">position: relative on the a fixed it. Seriously, how did anyone figure that out?
+			</div>
+		</li><li id="Comment_72" class="Alternate">
+			<a name="Item_4"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-7.html">sarah_m</a></li>
+					<li>
+						<span>CommentTime</span>3 days ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_72">Also be careful with repeating backgrounds. The filter doesn't do background-repeat or background-position, it scales or crops. For anything that tiles I use an 8-bit PNG with alpha from Fireworks, which IE6 shows with hard edges instead of a grey box.
+			</div>
+		</li><li id="Comment_73">
+			<a name="Item_5"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-2.html">jenpowell</a></li>
+					<li>
+						<span>CommentTime</span>3 days ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentNotice">Keeps Clearfix tidy. Ask a moderator if a post goes missing.</div><div class="CommentBody" id="CommentBody_73">And keep the filter in an IE6-only stylesheet behind a conditional comment, it's slow. Lots of filtered elements make scrolling sluggish in IE6.
+			</div>
+		</li><li id="Comment_74" class="Alternate">
+			<a name="Item_6"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-15.html">emdash</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_74">Moved it all into ie6.css. The 8-bit PNG trick from Fireworks is great, hadn't seen it before.
+			</div>
+		</li></ol>
+	</div><div class="ContentInfo Middle">
+			<div class="PageInfo">
+				<p>1 to 6 of 6</p>
+				
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+			</div>
+		</div></div>
+	<a id="pgbottom" name="pgbottom">&nbsp;</a>
+	</div>
+</div></body>
+</html>

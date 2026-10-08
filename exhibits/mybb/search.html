@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: search -->
+<html lang="en">
+<head>
+<title>Inkwell - Search</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="#" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="#" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jscripts/prototype.lite.js"></script>
+<script type="text/javascript" src="jscripts/moo.ajax.js"></script>
+<script type="text/javascript" src="jscripts/general.js"></script>
+<script type="text/javascript" src="jscripts/popup_menu.js"></script>
+<link rel="stylesheet" type="text/css" href="css/theme_2.css" />
+<script language="Javascript" type="text/javascript">
+<!--
+	var cookieDomain = "";
+	var cookiePath = "/";
+	var newpm_prompt = "You have received a new private message. Click OK to view it, or Cancel to hide this prompt.";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait..';
+	var saving_changes = 'Saving changes..';
+// -->
+</script>
+
+<!-- end: headerinclude -->
+</head>
+<body>
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+<!-- start: header -->
+	<a name="top" id="top"></a>
+	<div id="container">
+		<div id="header">
+			<div class="logo"><a href="index.html"><img src="images/logo.gif" alt="Inkwell" /></a></div>
+			<div class="menu">
+				<ul>
+					<li><a href="search.html"><img src="images/toplinks/search.gif" alt="" />Search</a></li>
+					<li><a href="memberlist.html"><img src="images/toplinks/memberlist.gif" alt="" />Member List</a></li>
+					<li><a href="calendar.html"><img src="images/toplinks/calendar.gif" alt="" />Calendar</a></li>
+					<li><a href="help.html"><img src="images/toplinks/help.gif" alt="" />Help</a></li>
+				</ul>
+			</div>
+			<hr class="hidden" />
+			<div id="panel">
+				<!-- start: header_welcomeblock_guest -->
+	<span style="float:right;"><strong>Current time:</strong> 03-27-2007, 04:14 PM</span>
+		Hello There, Guest! (<a href="login.html">Login</a> &mdash; <a href="register.html">Register</a>)
+<!-- end: header_welcomeblock_guest -->
+			</div>
+		</div>
+		<hr class="hidden" />
+		<br class="clear" />
+		<div id="content">
+			
+			
+			
+			<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.html">Inkwell</a>
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+ / 
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active">Search</span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+			<br class="clear" />
+<!-- end: header -->
+<form method="get" action="#"><input type="hidden" name="action" value="do_search" />
+<table border="0" cellspacing="1" cellpadding="4" class="tborder">
+<tr>
+<td colspan="2" class="thead"><strong>Inkwell - Search</strong></td>
+</tr>
+<tr>
+<td class="tcat" width="50%"><strong>Search by Keyword</strong></td>
+<td class="tcat" width="50%"><strong>Search by Username</strong></td>
+</tr>
+<tr>
+<td class="trow1">
+<table><tr>
+<td valign="top"><input type="text" class="textbox" name="keywords" size="35" maxlength="250" /></td>
+</tr>
+<tr>
+<td>
+<span class="smalltext"><input type="radio" class="radio" name="postthread" value="1" checked="checked" />search entire post<br /><input type="radio" class="radio" name="postthread" value="2" />search titles only</span></td>
+</tr></table>
+</td>
+<td class="trow1">
+<table><tr>
+<td class="trow1"><input type="text" class="textbox" name="author" size="35" maxlength="30" /><br /><span class="smalltext"><input type="checkbox" class="checkbox" name="matchusername" value="1" checked="checked" />&nbsp; match exact username</span></td>
+<td class="trow1">&nbsp;</td>
+</tr></table>
+</td>
+</tr>
+<tr>
+<td class="tcat"><strong>Search in Forum(s)</strong></td>
+<td class="tcat"><strong>Search Options</strong></td>
+</tr>
+<tr>
+<td class="trow1" rowspan="5"><select name="forums" size="15" multiple="multiple">
+<option value="all" selected="selected">Search All Open Forums</option>
+<option value="all">----------------------</option>
+<option value="1"> General</option>
+<option value="2">&nbsp;&nbsp;&nbsp;&nbsp; Announcements</option>
+<option value="3">&nbsp;&nbsp;&nbsp;&nbsp; Introductions</option>
+<option value="4"> Making Comics</option>
+<option value="5">&nbsp;&nbsp;&nbsp;&nbsp; Show &amp; Tell</option>
+<option value="6">&nbsp;&nbsp;&nbsp;&nbsp; Art &amp; Technique</option>
+<option value="7">&nbsp;&nbsp;&nbsp;&nbsp; Tools of the Trade</option>
+<option value="8">&nbsp;&nbsp;&nbsp;&nbsp; Hosting &amp; Promotion</option>
+<option value="9"> Everything Else</option>
+<option value="10">&nbsp;&nbsp;&nbsp;&nbsp; Off-Topic</option>
+<option value="11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conventions &amp; Meetups</option>
+
+</select></td>
+<td class="trow1">
+<select name="findthreadst">
+<option value="1">Find threads with at least</option>
+<option value="2">Find threads with at most</option>
+</select> <input type="text" class="textbox" name="numreplies" size="2" maxlength="4" />replies<br />
+<br />
+<select name="postdate">
+<option value="0">Find posts from any post date</option>
+<option value="1">Find posts from yesterday</option>
+<option value="7">Find posts from a week ago</option>
+<option value="14">Find posts from 2 weeks ago</option>
+<option value="30">Find posts from a month ago</option>
+<option value="90">Find posts from 3 months ago</option>
+<option value="180">Find posts from 6 months ago</option>
+<option value="365">Find posts from a year ago</option>
+</select>&nbsp;&nbsp; <input type="radio" class="radio" name="pddir" value="1" checked="checked" />and newer  <input type="radio" class="radio" name="pddir" value="0" />and older
+</td>
+</tr>
+<tr>
+<td class="tcat"><strong>Sorting Options</strong></td>
+</tr>
+<tr>
+<td class="trow1">
+<select name="sortby">
+<option value="lastpost">Sort Results by last post date</option>
+<option value="starter">Sort Results by author</option>
+<option value="forum">Sort Results by forum</option>
+</select> in <input type="radio" class="radio" name="sorder" value="asc" />ascending <input type="radio" class="radio" name="sorder" value="desc" checked="checked" />descending order
+</td>
+</tr>
+<tr>
+<td class="tcat"><strong>Display Options</strong></td>
+</tr>
+<tr>
+<td class="trow1">Show Results as <input type="radio" class="radio" name="showresults" value="threads" checked="checked" />threads <input type="radio" class="radio" name="showresults" value="posts" />posts</td>
+</tr>
+</table>
+<div align="center"><br /><input type="submit" class="button" name="submit" value="Search" /></div>
+</form>
+<!-- start: footer -->
+			<br />
+			<div class="bottommenu"><span class="smalltext"><a href="mailto:staff@inkwell-forums.example">Contact Us</a> | <a href="index.html">Inkwell</a> | <a href="#top">Return to Top</a> | <a href="#content">Return to Content</a> | <a href="archive.html">Lite (Archive) Mode</a> | <a href="#">RSS Syndication</a></span>
+			</div>
+			</div>
+		<hr class="hidden" />
+			<div id="copyright">
+				<div id="debug"></div>
+				<!-- You may NOT remove, modify or hinder the visibility of the MyBB copyright at any time.
+				     It must contain the links to the MyBB website and be formatted appropriately.
+
+					 Failure to comply with the above will result in prosecution to the full extent of the law.
+					 This is free software, support us and we'll support you. -->
+Powered By <a href="#" target="_blank">MyBB</a> <br />
+				Copyright &copy; 2002-2007 <strong><a href="#" target="_blank">MyBB Group</a></strong>
+				<!-- End copyright -->
+				<br />
+<br class="clear" />
+		</div>
+		</div>
+<!-- end: footer -->
+</body>
+</html>
+
+<!-- end: search -->

@@ -2,9 +2,7 @@ tools/
 .claude/
 node_modules/
 README.md
-exhibits/mybb/
 exhibits/postnuke/
-exhibits/vanilla/
-forums/mybb/
 cms/postnuke/
-forums/vanilla/
+exhibits/phpbb3/
+forums/phpbb3/

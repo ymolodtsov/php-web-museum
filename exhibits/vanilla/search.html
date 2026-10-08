@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - Search</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.css" media="screen" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.print.css" media="print" />
+				<script type="text/javascript" src="js/global.js"></script>
+				<script type="text/javascript" src="js/vanilla.js"></script>
+				<script type="text/javascript" src="js/ajax.js"></script>
+				<script type="text/javascript" src="js/ac.js"></script></head>
+	<body id="SearchPage"  onload="Focus('txtKeywords');">
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div id="Session">Not signed in (<a href="signin.html">Sign In</a>)</div><div id="Header">
+			<a name="pgtop"></a>
+			<h1>
+				Clearfix
+			</h1>
+
+			<ul><li><a href="index.html" >Discussions</a></li><li><a href="categories.html" >Categories</a></li><li class="TabOn"><a href="search.html" >Search</a></li></ul>
+	</div><div id="Body"><div id="Panel"><p id="AboutVanilla"><a href="#">Vanilla 1.1.5a</a> is a product of <a href="#">Lussumo</a>. More Information: <a href="#">Documentation</a>, <a href="#">Community Support</a>.</p></div>
+<div id="Content"><div id="Form" class="Account Search">
+	<fieldset id="SearchSimpleFields">
+		<legend>Search</legend>
+		<a href="index.html" onclick="ShowAdvancedSearch(); return false;" class="SearchSwitch">Advanced</a><form id="SearchSimple" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="Search" />
+				</div><ul>
+				<li id="MainSearchInput">
+					<label for="txtKeywords">Search terms:</label>
+					<input id="txtKeywords" type="text" name="Keywords" value="" class="SearchInput" />
+				</li>
+				<li id="SimpleSearchRadios">Search:<input type="radio" name="Type"  id="Radio_Topics" value="Topics" checked="checked" class="SearchRadio" />
+			<label for="Radio_Topics" class="Radio">Topics</label>
+			<input type="radio" name="Type"  id="Radio_Comments" value="Comments" class="SearchRadio" />
+			<label for="Radio_Comments" class="Radio">Comments</label>
+			<input type="radio" name="Type"  id="Radio_Users" value="Users" class="SearchRadio" />
+			<label for="Radio_Users" class="Radio">Users</label>
+			</li>
+				<li>
+					<input type="submit" name="btnSubmit" value="Search" class="Button SearchButton" />
+				</li>
+			</ul>
+		</form>
+	</fieldset><fieldset id="SearchDiscussionFields">
+		<legend>Discussion topic search</legend>
+		<a href="index.html" onclick="ShowSimpleSearch(); return false;" class="SearchSwitch">Simple</a><form id="SearchDiscussions" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="Search" />
+				<input type="hidden" name="Type" value="Discussions" />
+				<input type="hidden" name="Advanced" value="1" />
+				</div><ul>
+				<li>
+					<label for="txtDiscussionKeywords">Find discussion topics containing</label>
+					<input id="txtDiscussionKeywords" type="text" name="Keywords" value="" class="SearchInput AdvancedSearchInput" />
+				</li><li>
+						<label for="ddDiscussionCategories">in the category</label><select name="Categories" class="SearchSelect"  id="ddDiscussionCategories">
+		<option value=""  selected="selected">All categories</option>
+			<option value="General" >General</option>
+			<option value="CSS &amp; Layout" >CSS &amp; Layout</option>
+			<option value="JavaScript" >JavaScript</option>
+			<option value="Showcase &amp; Critique" >Showcase &amp; Critique</option>
+			<option value="Jobs" >Jobs</option>
+			<option value="Off Topic" >Off Topic</option>
+			</select>
+		
+					</li><li>
+					<label for="DiscussionAuthUsername">where the author was</label>
+					<input id="DiscussionAuthUsername" name="AuthUsername" type="text" value="" class="SearchInput AdvancedUserInput" />
+					<script type="text/javascript">
+						var DiscussionAutoComplete = new AutoComplete("DiscussionAuthUsername", false);
+						DiscussionAutoComplete.TableID = "DiscussionAutoCompleteResults";
+						DiscussionAutoComplete.KeywordSourceUrl = "/ajax/getusers.php?Search=";
+					</script>
+				</li>
+				<li>
+					<input type="submit" name="btnSubmit" value="Search" class="Button SearchButton" />
+				</li>
+			</ul>
+		</form>
+	</fieldset><fieldset id="SearchCommentFields">
+		<legend>Discussion comment search</legend><form id="SearchComments" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="Search" />
+				<input type="hidden" name="Advanced" value="1" />
+				<input type="hidden" name="Type" value="Comments" />
+				</div><ul>
+				<li>
+					<label for="txtCommentKeywords">Find comments containing</label>
+					<input id="txtCommentKeywords" type="text" name="Keywords" value="" class="SearchInput AdvancedSearchInput" />
+				</li><li>
+						<label for="ddCommentCategories">in the category</label><select name="Categories" class="SearchSelect"  id="ddCommentCategories">
+		<option value=""  selected="selected">All categories</option>
+			<option value="General" >General</option>
+			<option value="CSS &amp; Layout" >CSS &amp; Layout</option>
+			<option value="JavaScript" >JavaScript</option>
+			<option value="Showcase &amp; Critique" >Showcase &amp; Critique</option>
+			<option value="Jobs" >Jobs</option>
+			<option value="Off Topic" >Off Topic</option>
+			</select>
+		
+					</li><li>
+					<label for="CommentAuthUsername">where the author was</label>
+					<input id="CommentAuthUsername" name="AuthUsername" type="text" value="" class="SearchInput AdvancedUserInput" />
+					<script type="text/javascript">
+						var CommentAutoComplete = new AutoComplete("CommentAuthUsername", false);
+						CommentAutoComplete.TableID = "CommentAutoCompleteResults";
+						CommentAutoComplete.KeywordSourceUrl = "/ajax/getusers.php?Search=";
+					</script>
+				</li>
+				<li>
+					<input type="submit" name="btnSubmit" value="Search" class="Button SearchButton" />
+				</li>
+			</ul>
+		</form>
+	</fieldset><fieldset id="SearchUserFields">
+		<legend>User account search</legend><form id="SearchUsers" method="get" action="#"><div><input type="hidden" name="PostBackAction" value="Search" />
+				<input type="hidden" name="Advanced" value="1" />
+				<input type="hidden" name="Type" value="Users" />
+				</div><ul>
+				<li>
+					<label for="txtUserKeywords">Find user accounts containing</label>
+					<input id="txtUserKeywords" type="text" name="Keywords" value="" class="SearchInput AdvancedSearchInput" />
+				</li>
+				<li>
+					<label for="ddRoles">in the role</label>
+					<select name="Roles" class="SearchSelect"  id="ddRoles">
+		<option value=""  selected="selected">All roles</option>
+			<option value="Banned" >Banned</option>
+			<option value="Member" >Member</option>
+			<option value="Moderator" >Moderator</option>
+			<option value="Administrator" >Administrator</option>
+			</select>
+		
+				</li>
+				<li>
+					<label for="ddOrder">sort results by</label>
+					<select name="UserOrder" class="SearchSelect"  id="ddOrder">
+		<option value=""  selected="selected">Username</option>
+			<option value="Date" >Date last active</option>
+			</select>
+		
+				</li>
+				<li>
+					<input type="submit" name="btnSubmit" value="Search" class="Button SearchButton" />
+				</li>
+			</ul>
+		</form>
+	</fieldset>
+</div></div>
+	<a id="pgbottom" name="pgbottom">&nbsp;</a>
+	</div>
+</div></body>
+</html>

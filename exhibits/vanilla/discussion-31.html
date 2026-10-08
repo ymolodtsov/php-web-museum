@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - Event delegation in jQuery 1.2</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.css" media="screen" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.print.css" media="print" />
+				<script type="text/javascript" src="js/global.js"></script>
+				<script type="text/javascript" src="js/vanilla.js"></script>
+				<script type="text/javascript" src="js/ajax.js"></script>
+				<script type="text/javascript" src="js/ac.js"></script></head>
+	<body id="CommentsPage" >
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div id="Session">Not signed in (<a href="signin.html">Sign In</a>)</div><div id="Header">
+			<a name="pgtop"></a>
+			<h1>
+				Clearfix
+			</h1>
+
+			<ul><li class="TabOn"><a href="index.html" >Discussions</a></li><li><a href="categories.html" >Categories</a></li><li><a href="search.html" >Search</a></li></ul>
+	</div><div id="Body"><div id="Panel"><p id="AboutVanilla"><a href="#">Vanilla 1.1.5a</a> is a product of <a href="#">Lussumo</a>. More Information: <a href="#">Documentation</a>, <a href="#">Community Support</a>.</p></div>
+<div id="Content"><div class="ContentInfo Top">
+		<h1><a href="category-3.html">JavaScript</a>:  Event delegation in jQuery 1.2</h1>
+		<a href="#pgbottom">Bottom of Page</a>
+		<div class="PageInfo">
+			<p>1 to 4 of 4</p>
+			
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+		</div>
+	</div>
+	<div id="ContentBody">
+		<ol id="Comments"><li id="Comment_156">
+			<a name="Item_1"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-20.html">aaronw</a></li>
+					<li>
+						<span>CommentTime</span>Sep 20th 2008</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_156">I'm loading table rows with Ajax and my click handlers don't work on the new rows. I know about the livequery plugin. Is that the right approach, or is there a better way?
+			</div>
+		</li><li id="Comment_157" class="Alternate">
+			<a name="Item_2"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-9.html">floatleft</a></li>
+					<li>
+						<span>CommentTime</span>Sep 21st 2008</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_157">Event delegation: one handler on the table, check the target.<br /><br />$('#results').click(function(e) {<br />    var row = $(e.target).parents('tr:first');<br />    if (row.length) { ... }<br />});<br /><br />The handler stays on the table, so rows added later work without rebinding.
+			</div>
+		</li><li id="Comment_158">
+			<a name="Item_3"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-20.html">aaronw</a></li>
+					<li>
+						<span>CommentTime</span>Sep 21st 2008</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_158">Way better than rebinding after every load. Thanks.
+			</div>
+		</li><li id="Comment_159" class="Alternate">
+			<a name="Item_4"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-17.html">jbaker</a></li>
+					<li>
+						<span>CommentTime</span>Sep 22nd 2008</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_159">Also way faster with big tables. One handler instead of 500.
+			</div>
+		</li></ol>
+	</div><div class="ContentInfo Middle">
+			<div class="PageInfo">
+				<p>1 to 4 of 4</p>
+				
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+			</div>
+		</div></div>
+	<a id="pgbottom" name="pgbottom">&nbsp;</a>
+	</div>
+</div></body>
+</html>

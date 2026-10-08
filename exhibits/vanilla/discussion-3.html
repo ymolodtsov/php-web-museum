@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+	<head>
+		<title>Clearfix - IE8 beta 2: EmulateIE7 meta tag, yes or no?</title>
+		<link rel="shortcut icon" href="themes/vanilla/styles/default/favicon.ico" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.css" media="screen" />
+				<link rel="stylesheet" type="text/css" href="themes/vanilla/styles/default/vanilla.print.css" media="print" />
+				<script type="text/javascript" src="js/global.js"></script>
+				<script type="text/javascript" src="js/vanilla.js"></script>
+				<script type="text/javascript" src="js/ajax.js"></script>
+				<script type="text/javascript" src="js/ac.js"></script></head>
+	<body id="CommentsPage" >
+<div style="background:#23466C;color:#FFFFFF;font:11px Verdana,Arial,sans-serif;padding:4px 10px;text-align:left;">&larr; <a href="../../index.html" target="_top" style="color:#FFFFFF;">Return to PHP Web Museum</a></div>
+	<div id="SiteContainer"><div id="Session">Not signed in (<a href="signin.html">Sign In</a>)</div><div id="Header">
+			<a name="pgtop"></a>
+			<h1>
+				Clearfix
+			</h1>
+
+			<ul><li class="TabOn"><a href="index.html" >Discussions</a></li><li><a href="categories.html" >Categories</a></li><li><a href="search.html" >Search</a></li></ul>
+	</div><div id="Body"><div id="Panel"><p id="AboutVanilla"><a href="#">Vanilla 1.1.5a</a> is a product of <a href="#">Lussumo</a>. More Information: <a href="#">Documentation</a>, <a href="#">Community Support</a>.</p></div>
+<div id="Content"><div class="ContentInfo Top">
+		<h1><a href="category-2.html">CSS &amp; Layout</a>:  IE8 beta 2: EmulateIE7 meta tag, yes or no?</h1>
+		<a href="#pgbottom">Bottom of Page</a>
+		<div class="PageInfo">
+			<p>1 to 8 of 8</p>
+			
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+		</div>
+	</div>
+	<div id="ContentBody">
+		<ol id="Comments"><li id="Comment_3">
+			<a name="Item_1"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-11.html">liza</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_3">Our lead wants to add this to every page template before IE8 ships:<br /><br />&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=EmulateIE7&quot; /&gt;<br /><br />The idea is that we don't have to test in IE8 at all for now. I tested the main templates in beta 2 in standards mode and only two things broke (a negative margin on the nav and a min-height). Is it worth locking ourselves into IE7 mode just for that?
+			</div>
+		</li><li id="Comment_4" class="Alternate">
+			<a name="Item_2"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-3.html">zoom1</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_4">I'd fix the two bugs. IE8 standards mode is the first IE in years that does what the spec says most of the time. Pinning everything to IE7 means you keep every IE7 bug you already work around, forever, or until someone remembers to take the tag out.
+			</div>
+		</li><li id="Comment_5">
+			<a name="Item_3"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-12.html">validator</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_5">Counterpoint: it's a beta. Microsoft has changed rendering between betas before. For a big site with lots of templates I can see why a lead would want the safety net until the final release is out.
+			</div>
+		</li><li id="Comment_6" class="Alternate">
+			<a name="Item_4"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-11.html">liza</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_6">That's pretty much his argument. He also doesn't want the &quot;compatibility view&quot; button showing up for our users.
+			</div>
+		</li><li id="Comment_7">
+			<a name="Item_5"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-2.html">jenpowell</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentNotice">Keeps Clearfix tidy. Ask a moderator if a post goes missing.</div><div class="CommentBody" id="CommentBody_7">We did both: the meta tag goes out with the next release, and there's a ticket to remove it and test properly once IE8 final is out. Writing the ticket is the important part. Otherwise it stays there for five years.
+			</div>
+		</li><li id="Comment_8" class="Alternate">
+			<a name="Item_6"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-5.html">brendan_k</a></li>
+					<li>
+						<span>CommentTime</span>1 day ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_8">Note you can send it as an HTTP header too, so you can turn it off server side without touching the templates:<br /><br />X-UA-Compatible: IE=EmulateIE7
+			</div>
+		</li><li id="Comment_9">
+			<a name="Item_7"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-11.html">liza</a></li>
+					<li>
+						<span>CommentTime</span>50 minutes ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_9">Header it is. Thanks all. Fixed the min-height thing anyway, it was a missing doctype on one include. Embarrassing.
+			</div>
+		</li><li id="Comment_10" class="Alternate">
+			<a name="Item_8"></a>
+			<div class="CommentHeader">
+				<ul>
+					<li>
+						
+						<span>CommentAuthor</span><a href="account-3.html">zoom1</a></li>
+					<li>
+						<span>CommentTime</span>25 minutes ago</li>
+				</ul>
+				<span>
+					&nbsp;
+
+				</span>
+			</div><div class="CommentBody" id="CommentBody_10">Happens to all of us. Quirks mode is the gift that keeps on giving.
+			</div>
+		</li></ol>
+	</div><div class="ContentInfo Middle">
+			<div class="PageInfo">
+				<p>1 to 8 of 8</p>
+				
+			<ol class="PageList PageListEmpty">
+		<li>&nbsp;</li>
+			</ol>
+		
+			</div>
+		</div></div>
+	<a id="pgbottom" name="pgbottom">&nbsp;</a>
+	</div>
+</div></body>
+</html>

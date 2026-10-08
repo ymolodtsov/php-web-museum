@@ -15,6 +15,8 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Soundwave Music Community | Invision Power Board 2.1.5 | 4 May 2006 |
 | Aperture Photography Community | Simple Machines Forum 1.1.3 | 21 Jul 2007 |
 | /dev/null | PunBB 1.2.10 | 15 Jan 2006 |
+| Inkwell | MyBB 1.2.3 | 27 Mar 2007 |
+| Clearfix | Vanilla 1.1.5a | 16 Oct 2008 |
 | Open Source Planet | PHP-Nuke 7.1 | 14 Mar 2004 |
 | Riverside Linux User Group | Mambo 4.5.1a (solarflare) | 14 Oct 2004 |
 | Orbital Design Studio | Joomla 1.5.3 | 9 Jun 2008 |
@@ -26,7 +28,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Wanderlens Travel Gallery | Coppermine 1.3.3 | 8 Jun 2005 |
 | TechBits Computer Accessories | osCommerce 2.2 MS2 | 19 Nov 2004 |
 
-MyBB, PostNuke and Vanilla exhibits are on the way.
+PostNuke and phpBB 3 exhibits are on the way.
 
 ## Viewing it locally
 

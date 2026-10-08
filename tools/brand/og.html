@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Inter+Tight:wght@400;700&display=block" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; background: #000; }
+.card {
+	width: 1200px;
+	height: 630px;
+	box-sizing: border-box;
+	padding: 76px 88px 64px;
+	background: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	font-family: "Inter Tight", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+.mark { display: block; width: 64px; height: 64px; }
+h1 {
+	margin: 52px 0 0;
+	font-weight: 700;
+	font-size: 128px;
+	line-height: 0.95;
+	letter-spacing: -0.035em;
+}
+p.sub {
+	margin: 28px 0 0;
+	font-weight: 400;
+	font-size: 38px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	color: #a8a8a8;
+	max-width: 900px;
+}
+.foot {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	border-top: 1px solid #333;
+	padding-top: 22px;
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 22px;
+	color: #8a8a8a;
+	letter-spacing: 0.01em;
+}
+.foot span { white-space: nowrap; }
+.foot .domain { color: #fff; }
+</style>
+</head>
+<body>
+<div class="card">
+	<svg class="mark" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true">
+		<g fill="#fff">
+			<rect x="0" y="0" width="2" height="1"/><rect x="3" y="0" width="1" height="1"/>
+			<rect x="0" y="1" width="1" height="4"/><rect x="2" y="1" width="1" height="4"/><rect x="4" y="1" width="1" height="4"/>
+		</g>
+	</svg>
+	<h1>PHP Web Museum</h1>
+	<p class="sub">The web of the 2000s, rebuilt from the original software.</p>
+	<div class="foot">
+		<span>phpBB &middot; vBulletin &middot; PHP-Nuke &middot; Joomla &middot; WordPress</span>
+		<span class="domain">museum.molodtsov.me</span>
+	</div>
+</div>
+</body>
+</html>
