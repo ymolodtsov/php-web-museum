@@ -28,7 +28,7 @@ FOOTER = """<div id="footer">
 
 SECTIONS = {"cms": ("CMS", "cms"), "forums": ("Forums", "forums"), "other": ("Other", "other")}
 
-SITE = "https://museum.molodtsov.me/"
+SITE = "https://php-web-museum.vercel.app/"
 DESCRIPTION = ("The web of the 2000s, rebuilt from the original software: phpBB, vBulletin, "
                "PHP-Nuke, Joomla, WordPress and more.")
 HEAD_START, HEAD_END = "<!-- museum:head -->", "<!-- /museum:head -->"
