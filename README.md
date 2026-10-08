@@ -11,6 +11,7 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Exhibit | Software | Archive date |
 |---|---|---|
 | Pixel Arena Forums | phpBB 2.0.x (subSilver) | 17 Oct 2006 |
+| Pixel Arena Forums | phpBB 3.0.2 (prosilver) | 17 Oct 2008 |
 | Overclock Hardware Forums | vBulletin 3.6.4 | 12 Feb 2007 |
 | Soundwave Music Community | Invision Power Board 2.1.5 | 4 May 2006 |
 | Aperture Photography Community | Simple Machines Forum 1.1.3 | 21 Jul 2007 |
@@ -28,8 +29,6 @@ The result is plain static files: no PHP, no database, no build step to view it.
 | Retrocomputing Wiki | MediaWiki 1.10.2 (MonoBook) | 11 Sep 2007 |
 | Wanderlens Travel Gallery | Coppermine 1.3.3 | 8 Jun 2005 |
 | TechBits Computer Accessories | osCommerce 2.2 MS2 | 19 Nov 2004 |
-
-A phpBB 3 exhibit is on the way.
 
 ## Viewing it locally
 
